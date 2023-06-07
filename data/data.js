@@ -1,33 +1,7 @@
-export const personalData = {
-  name: 'Max Skewes',
-  role: 'User-Centric Developer (Reactjs)',
-  education: [
-    {
-      certificate:'Full-Stack Coding Certificate',
-      institution: 'University of Oregon',
-      location: 'On-site in Portland, OR',
-    },
-    {
-      certificate:"Associate's Degree of Liberal Arts",
-      institution: 'Marylhurst University',
-      location: 'Marylhurst, OR',
-    },
-    {
-      certificate:"Certificate of Irish Studies",
-      institution: 'University College Cork',
-      location: 'Cork, Ireland',
-    },
-  ],
-  contactLinks: ['mailto:emailto:maxskewes@gmail.com', 'https://linkedin.com/maxskewes'],
-};
-
 export const aboutMe = {
   title: 'About Me',
-  body: [
-    "As a graduate of the University of Oregon's Full-Stack program, I'm a full-stack developer with experience in graphic design. I’ve spent the past several years contributing to the design and development of interactive websites and custom applications projected to serve over 100,000 users. I’ve collaborated with UX designers, product managers, and back-end developers throughout all phases of projects, facilitating the creation intuitive, modern apps and websites for companies across sectors including legal services, real estate, entertainment, and career services.",
-  ],
+  body: "As a graduate of the University of Oregon's Full-Stack program, I'm a full-stack developer with experience in graphic design. I’ve spent the past several years contributing to the design and development of interactive websites and custom applications projected to serve over 100,000 users. I’ve collaborated with UX designers, product managers, and back-end developers throughout all phases of projects, facilitating the creation intuitive, modern apps and websites for companies across sectors including legal services, real estate, entertainment, and career services.",
   bullets: [
-    'Here are a few examples of my work:',
     '- I created intuitive websites for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
     '- I co-founded a nonprofit music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',
     '- I served as lead developer throughout the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with MUI framework to realize a Figma design.',
@@ -50,6 +24,27 @@ export const skills = {
     { icon: '💾', text: 'SQL' },
     { icon: '💾', text: 'noSQL' },
     { icon: '📈', text: 'Data Structures and Algorithms' },
+  ],
+};
+
+export const educationData = {
+  title: 'Education',
+  education: [
+    {
+      certificate: 'Full-Stack Coding Certificate',
+      institution: 'University of Oregon',
+      location: 'On-site in Portland, OR',
+    },
+    {
+      certificate: "Associate's Degree of Liberal Arts",
+      institution: 'Marylhurst University',
+      location: 'Marylhurst, OR',
+    },
+    {
+      certificate: 'Certificate of Irish Studies',
+      institution: 'University College Cork',
+      location: 'Cork, Ireland',
+    },
   ],
 };
 
@@ -107,7 +102,12 @@ export const professionalData = {
         '• Worked with product managers throughout development of features and improvements, promoting seamless user experiences.',
       ],
       skills:
-        'Git · Web Applications · · Figma (Software) · Front-end Coding · Mobile Application Development · Web Application Development · Front-end Development · Web Development · Responsive Web Design · Project Management · Community Organizing · GitHub',
+        'Git · Web Applications · REST APIs · Figma (Software) · Front-end Coding · Mobile Application Development · Web Application Development · Front-end Development · Web Development · Responsive Web Design · Project Management · Community Organizing · GitHub · Jira',
     },
   ],
+};
+
+export const personalInfo = {
+  title: 'Personal',
+  body: 'My primary passion is music, most specifically bluegrass banjo, which I have made the majority of my income from for the last four years. I enjoy working with my hands and what started out as doing minor repairs for students quickly turned into full-on luthiery; that is building quality instruments, primarily banjos and Irish bouzoukis. I have had the opportunity to travel the world playing music, having done three tours in New Zealand, a several month stint in Uganda and most recently my band, Scratchdog Stringband, was awarded a federal grant to tour in eastern Russia. I enjoy teaching others and have taught classes to individuals and at various colleges. I have always loved to experience foreign cultures and spent my college years in Cork, in the south of Ireland. There I studied Gaeilge, the native Celtic Irish language and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science and spent twelve years as a brewer and cider maker. I enjoy building my own stills and making spirits and tinctures at home. Currently I live with my wife and two young sons in Portland, the city where I grew up.',
 };

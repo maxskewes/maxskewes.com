@@ -3,37 +3,27 @@ import React from 'react';
 type EducationProps = {
   data: {
     title: string;
-    experiences: [{
-      role: string;
-      company: string;
-      dates: string;
+    education: {
+      certificate: string;
+      institution: string;
       location: string;
-      description: string;
-      highlights: string;
-      skills: string;
-    }];
+    }[];
   };
 };
 
 const Education = ({ data }: EducationProps) => {
-  const { title, experiences } = data;
+  const { title, education } = data;
 
   return (
     <section>
       <h2 className='mb-6'>{title}</h2>
       <div className='flex flex-col gap-6'>
-        {experiences.map(({ role, company, dates, location, description, highlights, skills }) => (
-          <div key={role} className='flex flex-col rounded-lg'>
+        {education.map(({ certificate, institution, location }) => (
+          <div key={certificate} className='flex flex-col rounded-lg'>
             <div className='bg-grey-light p-6 drop-shadow-md'>
-              <h3>{role}</h3>
-              <p className='mt-2'>{company}</p>
-              <p className='mt-2'>{dates}</p>
+              <h3>{certificate}</h3>
+              <p className='mt-2'>{institution}</p>
               <p className='mt-2'>{location}</p>
-              <p className='mt-2'>{description}</p>
-              <p className='mt-2'>Key Highlights:</p>
-              <p className='mt-2'>{highlights}</p>
-              <p className='mt-2'>Skills:</p>
-              <p className='mt-2'>{skills}</p>
             </div>
           </div>
         ))}

@@ -1,81 +1,132 @@
 import Image from 'next/image';
-import React from 'react';
-
-import { Email, Linkedin, Github } from './icons';
+import Link from 'next/link';
+import {
+  BsPersonLinesFill,
+  BsPersonHeart,
+  BsGithub,
+  BsLinkedin,
+} from 'react-icons/bs';
+import { FaHome } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { RiCheckboxBlankFill } from 'react-icons/ri';
 
 type SidebarProps = {
   data: {
-    education: {
-      institution: string;
-      location: string;
-      certificate: string;
-    };
     contactLinks: string[];
   };
 };
+
+type MSlinkProps = {
+  to: string;
+  children: any;
+};
+
 const Sidebar = ({ data }: SidebarProps) => {
-  const { education, contactLinks } = data;
+  const { contactLinks } = data;
+
+  const MSlink = ({ to, children }: MSlinkProps) => {
+    return (
+      <Link className='flex flex-row text-yellow hover:text-green' href={to}>
+        {children}
+      </Link>
+    );
+  };
+
+  const Xlinks = () => {
+    return (
+      <div className='flex flex-row gap-8 mb-8'>
+        <MSlink to={'/'}>
+          <BsGithub size='1.75rem' />
+        </MSlink>
+        <Link href={'/'}>
+          <BsLinkedin size='1.75rem' />
+        </Link>
+        <Link href={'/'}>
+          <MdEmail size='1.75rem' />
+        </Link>
+      </div>
+    );
+  };
+
+  const NavMenu = () => {
+    return (
+      <>
+        <MSlink to={'/'}>
+            <FaHome size='1.35em' />
+            <h4 className='ml-3'>Home</h4>
+        </MSlink>
+        <Link href={'/'}>
+          <div className='flex flex-row text-grey'>
+            <BsPersonLinesFill size='1.35em' />
+            <h4 className='ml-3'>About</h4>
+          </div>
+        </Link>
+
+        <Link href={'/'}>
+          <div className='flex flex-row text-grey'>
+            <RiCheckboxBlankFill size='1.35em' />
+            <h4 className='ml-3'>App and Website Portfolio</h4>
+          </div>
+        </Link>
+
+        <Link href={'/'}>
+          <div className='flex flex-row text-grey'>
+            <RiCheckboxBlankFill size='1.35em' />
+            <h4 className='ml-3'>Design Portfolio</h4>
+          </div>
+        </Link>
+
+        <Link href={'/'}>
+          <div className='flex flex-row text-grey'>
+            <BsPersonHeart size='1.35em' />
+            <h4 className='ml-3 '>Personal</h4>
+          </div>
+        </Link>
+        <Link href={'/'}>
+          <div className='flex flex-row text-grey'>
+            <MdEmail size='1.35em' />
+            <h4 className='ml-3'>Contact</h4>
+          </div>
+        </Link>
+      </>
+    );
+  };
 
   return (
-    <div className='bg-black flex flex-col  content-between w-full h-100vh sm:h-screen sm:justify-around sm:w-1/3 sm:fixed'>
-      <div className='text-white flex flex-col p-10 items-center'>
+    <div className='bg-black flex flex-col content-between w-full h-100vh sm:h-screen sm:justify-start sm:w-1/5 lg:w-1/4 sm:fixed'>
+      <div className='text-white flex flex-col p-10 items-center w-full'>
         <Image
+          style={{ border: '5px solid purple' }}
           priority
           width={200}
           height={200}
-          className='rounded-full h-full mb-6'
+          className='mb-4 rounded-full h-full'
           src='/images/avatar.jpg'
           alt="Max's face"
           aria-label="Max's face"
         />
-        <h2 className='mb-8 text-white'>Maxwell Countryman Skewes</h2>
-        <h2 className='mb-8'>Full-Stack Developer</h2>
-        {/* <div className='flex flex-col gap-6'>
-        {education.map(({ institution, location, certificate }) => (
-            <div key={institution} className='flex flex-col rounded-lg'>
-              <div className='bg-grey-light p-6 drop-shadow-md'>
-                <h3>{institution}</h3>
-                <p className='mt-2'>{location}</p>
-                <p className='mt-2'>{certificate}</p>
-              </div>
-            </div>
-          ))}
-        </div> */}
 
-        <div className='flex flex-col gap-6'>
-          <div>
-            <p className='mt-2'>Full-Stack Coding Certificate</p>
-            <h3>University of Oregon</h3>
-            <p className='mt-2'>On-site in Portland, OR</p>
-          </div>
-
-          <div>
-            <h3>Associate's Degree of Liberal Arts</h3>
-            <p className='mt-2'>Marylhurst University</p>
-            <p className='mt-2'>Marylhurst, OR</p>
-          </div>
-
-          <div>
-            <h3>Certificate of Irish Studies</h3>
-            <p className='mt-2'>University College Cork</p>
-            <p className='mt-2'>Cork, Ireland</p>
-          </div>
+        <div className='uppercase text-white'>
+          <h1 className='text-left'>Maxwell</h1>
+          <h1 className='text-center text-white'>Countryman</h1>
+          <h1 className='text-right'>Skewes</h1>
         </div>
 
-        <div className='text-white text-center mb-4 mt-4 sm:mt-8'>
-          <h3 className='mb-2'>CONTACT</h3>
-          <div className='flex flex-row justify-center gap-2'>
-            <a className='icons-contactme' href={contactLinks?.[0]} aria-label={'email link'}>
-              <Email />
-            </a>
-            <a className='icons-contactme' href={contactLinks?.[2]} aria-label={'linkedin link'}>
-              <Linkedin />
-            </a>
-            <a className='icons-contactme' href={contactLinks?.[2]} aria-label={'github link'}>
-              <Github />
-            </a>
-          </div>
+        <div className='mb-2 w-full uppercase text-white text-center'>
+          <h3>User-Centric</h3>
+          <h3>Full-Stack Developer</h3>
         </div>
+
+        <div>
+          <Xlinks />
+        </div>
+
+        <div className='flex flex-col gap-2'>
+          <NavMenu />
+        </div>
+      </div>
+      <div className='w-full text-center text-white mb-4'>
+        <h6>maxskewes@gmail.com</h6>
       </div>
     </div>
   );

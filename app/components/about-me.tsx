@@ -5,7 +5,7 @@ import Skills from './skills';
 type AboutMeProps = {
   data: {
     title: string;
-    body: string[];
+    body: string;
     bullets: string[];
   };
   skills: SkillsProps['data'];
@@ -17,16 +17,17 @@ const AboutMe = ({ data, skills }: AboutMeProps) => {
   return (
     <section>
       <h2 className='mb-8'>{title}</h2>
-      {body?.map((el, i) => (
-        <p key={`${id}_${i}`} className='mb-6'>
-          {el}
-        </p>
-      ))}
-      {bullets?.map((el, i) => (
-        <p key={`${id}_${i}`} className='mb-6'>
-          {el}
-        </p>
-      ))}
+      <div>
+        <p className='mb-6'>{body}</p>
+      </div>
+      <div>
+        <p className='mb-6'>Here are a few examples of my work:</p>
+        {bullets?.map((el, i) => (
+          <p key={`${id}_${i}`} className='mb-6'>
+            {el}
+          </p>
+        ))}
+      </div>
       {/* <Skills data={skills} /> */}
     </section>
   );
