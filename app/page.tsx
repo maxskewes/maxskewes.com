@@ -7,9 +7,9 @@ const Page: React.FC = () => {
 	return (
 		<div>
 			<AboutMe data={aboutMe} skills={skills} />
-			<ProfessionalExperience data={professionalData} />
+			{/* <ProfessionalExperience data={professionalData} /> */}
 		</div>
 	);
-};
+}; 
 
 export default Page;

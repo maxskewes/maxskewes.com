@@ -9,7 +9,7 @@ type EducationProps = {
       dates: string;
       location: string;
       description: string;
-      highlights: string[];
+      highlights: string;
       skills: string;
     }];
   };
