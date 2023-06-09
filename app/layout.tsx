@@ -1,5 +1,5 @@
 import './globals.css'
-import {Josefin_Sans} from '@next/font/google'
+import {Josefin_Sans} from 'next/font/google'
 
 import Sidebar from "./components/Sidebar";
 import { contact } from "../data/contact-data";
