@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SectionHeader from './SectionHeader';
 
 const Design = () => {
     return (
       <section>
-        <h2 className='mb-6'>App and Website Portfolio</h2>
+<SectionHeader title={'Graphic Design'} />
         <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
 
              <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>

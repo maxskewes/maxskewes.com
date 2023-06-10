@@ -18,7 +18,7 @@ module.exports = {
 			white: "#fff",
 		},
 		fontFamily: {
-			sans: ["Georgia", "sans-serif"],
+			sans: [ "Merriweather", "sans-serif"],
 			serif: ["Merriweather", "serif"],
 			display: ["Oswald"],
 		},

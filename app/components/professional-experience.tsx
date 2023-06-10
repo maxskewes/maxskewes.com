@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 type ProfessionalExperienceProps = {
   data: {
@@ -16,11 +17,11 @@ type ProfessionalExperienceProps = {
 };
 
 const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
-  const { title, experiences } = data;
+  const { experiences } = data;
 
   return (
     <section>
-      <h2 className='mb-6'>{title}</h2>
+      <SectionHeader title={'Professional Experience'} />
       <div className='flex flex-col gap-6'>
         {experiences.map(
           ({

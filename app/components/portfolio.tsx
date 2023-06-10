@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SectionHeader from './SectionHeader';
 
 const Portfolio = () => {
   return (
     <section>
-      <h2 className='mb-6'>App and Website Portfolio</h2>
+<SectionHeader title={'App and Website Portfolio'} />
       <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
         {/* -------------------dev purpose */}
 
