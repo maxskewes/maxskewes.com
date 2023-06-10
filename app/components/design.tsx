@@ -1,21 +1,40 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 const Design = () => {
     return (
       <section>
         <h2 className='mb-6'>App and Website Portfolio</h2>
-        <div className='flex flex-col gap-6'>
-          <div className='flex flex-col rounded-lg'>
-            <div className='bg-grey-light p-6 drop-shadow-md'>
-              <h3>Resume Scripter</h3>
-              <p className='mt-2'>Portland, OR</p>
-              <p className='mt-2'>https://resumescripter.com/</p>
-              <p className='mt-2'>
-                An app built for employees of a resume-building agency to aid with
-                the development of highly personalized job-seeker documents; eg
-                resumes, cover letters, on-line presence development.
-              </p>
-              <div>RS Works app demo</div>
+        <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
+
+             <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>
+          <h3>Resume Scripter</h3>
+          <p className='mt-2'>Portland, OR</p>
+          <p className='mt-2'>https://resumescripter.com/</p>
+          <p className='mt-2'>
+            An app built for employees of a resume-building agency to aid with the development of
+            highly personalized job-seeker documents; eg resumes, cover letters, on-line presence
+            development.
+          </p>
+          <div className='flex-col text-center'>
+     
+          <div className='flex justify-center items-center'>
+     
+              <Image
+                style={{ border: '5px solid white' }}
+                priority
+                width={200}
+                height={200}
+                className='m-1'
+                src='/images/rs-video.png'
+                alt='RS Works Demo Link'
+                aria-label='RS Works Demo Link'
+              />
+           
             </div>
+            <p className='grow-0'>RS Works app demo</p>
           </div>
+        </div>
   
           <div className='flex flex-col rounded-lg'>
             <div className='bg-grey-light p-6 drop-shadow-md'>

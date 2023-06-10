@@ -1,11 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  BsPersonLinesFill,
-  BsPersonHeart,
-  BsGithub,
-  BsLinkedin,
-} from 'react-icons/bs';
+import { BsPersonLinesFill, BsPersonHeart, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiCheckboxBlankFill } from 'react-icons/ri';
@@ -26,7 +21,7 @@ const Sidebar = ({ data }: SidebarProps) => {
 
   const MSlink = ({ to, children }: MSlinkProps) => {
     return (
-      <Link className='flex flex-row text-yellow hover:text-green' href={to}>
+      <Link className='flex flex-row text-grey hover:text-violet' href={to}>
         {children}
       </Link>
     );
@@ -34,16 +29,16 @@ const Sidebar = ({ data }: SidebarProps) => {
 
   const Xlinks = () => {
     return (
-      <div className='flex flex-row gap-8 mb-8'>
-        <MSlink to={'/'}>
+      <div className='flex flex-row gap-8 m-8'>
+        <MSlink to={'https://github.com/maxskewes'}>
           <BsGithub size='1.75rem' />
         </MSlink>
-        <Link href={'/'}>
+        <MSlink to={'https://www.linkedin.com/in/maxskewes/'}>
           <BsLinkedin size='1.75rem' />
-        </Link>
-        <Link href={'/'}>
+        </MSlink>
+        <MSlink to={'/'}>
           <MdEmail size='1.75rem' />
-        </Link>
+        </MSlink>
       </div>
     );
   };
@@ -52,51 +47,43 @@ const Sidebar = ({ data }: SidebarProps) => {
     return (
       <>
         <MSlink to={'/'}>
-            <FaHome size='1.35em' />
-            <h4 className='ml-3'>Home</h4>
+          <FaHome size='1.35em' />
+          <h4 className='ml-3'>Home</h4>
         </MSlink>
-        <Link href={'/'}>
-          <div className='flex flex-row text-grey'>
+
+        <MSlink to={'/'}>
             <BsPersonLinesFill size='1.35em' />
             <h4 className='ml-3'>About</h4>
-          </div>
-        </Link>
+        </MSlink>
 
-        <Link href={'/'}>
-          <div className='flex flex-row text-grey'>
+        <MSlink to={'/'}>
             <RiCheckboxBlankFill size='1.35em' />
             <h4 className='ml-3'>App and Website Portfolio</h4>
-          </div>
-        </Link>
+        </MSlink>
 
-        <Link href={'/'}>
-          <div className='flex flex-row text-grey'>
+        <MSlink to={'/'}>
             <RiCheckboxBlankFill size='1.35em' />
             <h4 className='ml-3'>Design Portfolio</h4>
-          </div>
-        </Link>
+        </MSlink>
 
-        <Link href={'/'}>
-          <div className='flex flex-row text-grey'>
+        <MSlink to={'/'}>
             <BsPersonHeart size='1.35em' />
             <h4 className='ml-3 '>Personal</h4>
-          </div>
-        </Link>
-        <Link href={'/'}>
-          <div className='flex flex-row text-grey'>
+        </MSlink>
+
+        <MSlink to={'/'}>
             <MdEmail size='1.35em' />
             <h4 className='ml-3'>Contact</h4>
-          </div>
-        </Link>
+        </MSlink>
       </>
     );
   };
 
   return (
-    <div className='bg-black flex flex-col content-between w-full h-100vh sm:h-screen sm:justify-start sm:w-1/5 lg:w-1/4 sm:fixed'>
-      <div className='text-white flex flex-col p-10 items-center w-full'>
+    <div className='bg-greydk flex flex-col content-between w-full h-100vh sm:h-screen sm:justify-start sm:w-1/4 sm:fixed'>
+      <div className='font-family: flex flex-col p-4 md:p-6 lg:p-10 items-center w-full'>
         <Image
-          style={{ border: '5px solid purple' }}
+          style={{ border: '5px solid #a087cc' }}
           priority
           width={200}
           height={200}
@@ -108,13 +95,13 @@ const Sidebar = ({ data }: SidebarProps) => {
 
         <div className='uppercase text-white'>
           <h1 className='text-left'>Maxwell</h1>
-          <h1 className='text-center text-white'>Countryman</h1>
+          <h1 className='text-center'>Countryman</h1>
           <h1 className='text-right'>Skewes</h1>
         </div>
 
-        <div className='mb-2 w-full uppercase text-white text-center'>
-          <h3>User-Centric</h3>
-          <h3>Full-Stack Developer</h3>
+        <div className='m-2 w-full uppercase text-center'>
+          <h2 className='text-white'>User-Centric</h2>
+          <h2 className='text-white'>Full-Stack Developer</h2>
         </div>
 
         <div>
