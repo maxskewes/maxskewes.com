@@ -107,6 +107,42 @@ export const professionalData = {
   ],
 };
 
+export const graphicDesign = {
+  title: 'Graphic Design',
+  examples: [
+    {
+      title: 'evicerated-banjo',
+      imgSrc: '/images/design/evicerated-banjo.jpeg',
+      imgAlt: 'Block Carving of Evicerated Banjo',
+    },
+    {
+      title: 'bbff-tshirt-2022',
+      imgSrc: '/images/design/bbff-tshirt-2022.png',
+      imgAlt: 'T-shirt Bluegrass Fest 2022',
+    },
+    {
+      title: 'papags-logo',
+      imgSrc: '/images/design/papags-site-logo.svg',
+      imgAlt: 'Papa Gs Tofu Website Logo',
+    },
+    {
+      title: 'scratchdog',
+      imgSrc: '/images/design/scratchdog-tshirt.png',
+      imgAlt: 'Scratchdog Stringband Tshirt design',
+    },
+    {
+      title: 'evicerated-banjo',
+      imgSrc: '/images/design/evicerated-banjo.jpeg',
+      imgAlt: 'Block Carving of Evicerated Banjo',
+    },
+    {
+      title: 'evicerated-banjo',
+      imgSrc: '/images/design/evicerated-banjo.jpeg',
+      imgAlt: 'Block Carving of Evicerated Banjo',
+    },
+  ],
+};
+
 export const personalInfo = {
   title: 'Personal',
   body: 'My primary passion is music, most specifically bluegrass banjo, which I have made the majority of my income from for the last four years. I enjoy working with my hands and what started out as doing minor repairs for students quickly turned into full-on luthiery; that is building quality instruments, primarily banjos and Irish bouzoukis. I have had the opportunity to travel the world playing music, having done three tours in New Zealand, a several month stint in Uganda and most recently my band, Scratchdog Stringband, was awarded a federal grant to tour in eastern Russia. I enjoy teaching others and have taught classes to individuals and at various colleges. I have always loved to experience foreign cultures and spent my college years in Cork, in the south of Ireland. There I studied Gaeilge, the native Celtic Irish language and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science and spent twelve years as a brewer and cider maker. I enjoy building my own stills and making spirits and tinctures at home. Currently I live with my wife and two young sons in Portland, the city where I grew up.',

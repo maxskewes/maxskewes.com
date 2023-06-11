@@ -26,6 +26,7 @@ const Education = ({ data }: EducationProps) => {
               <h3 className='font-semibold uppercase'>{certificate}</h3>
               <h3 className='uppercase'>{institution}</h3>
               <p>{location}</p>
+              {/* <p className='text-italic'>{description}</p> */}
             </div>
           </div>
         ))}

@@ -1,9 +1,10 @@
 import React from 'react';
 import AboutMe from './components/about-me';
-import { aboutMe, educationData, skills, professionalData, personalInfo } from '../data/data';
+import { aboutMe, educationData, skills, professionalData, graphicDesign, personalInfo } from '../data/data';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
 import Portfolio from './components/portfolio';
+import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
 
 const Page: React.FC = () => {
@@ -13,8 +14,8 @@ const Page: React.FC = () => {
       <Education data={educationData} />
       <ProfessionalExperience data={professionalData} />
       <Portfolio />
-
-      <Personal data={personalInfo}/>
+      <GraphicDesign data={graphicDesign} />
+      <Personal data={personalInfo} />
     </div>
   );
 };

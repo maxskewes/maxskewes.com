@@ -27,7 +27,7 @@ const Portfolio = () => {
                   width={200}
                   height={200}
                   className='m-1'
-                  src='/images/rs-video.png'
+                  src='/images/portfolio/rs-video.png'
                   alt='RS Works Demo Link'
                   aria-label='RS Works Demo Link'
                 />
@@ -62,7 +62,7 @@ const Portfolio = () => {
                     width={200}
                     height={200}
                     className='m-1'
-                    src='/images/papa-gs-link.png'
+                    src='/images/portfolio/papa-gs-link.png'
                     alt="Papa G's Website Link"
                     aria-label="Papa G's Website Link"
                   />
@@ -99,7 +99,7 @@ const Portfolio = () => {
                     width={200}
                     height={200}
                     className='m-1'
-                    src='/images/cti-link.png'
+                    src='/images/portfolio/cti-link.png'
                     alt='CTIs Website Link'
                     aria-label="CTI's Website Link"
                   />

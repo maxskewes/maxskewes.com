@@ -21,7 +21,7 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
 
   return (
     <section>
-      <SectionHeader title={'Professional Experience'} />
+      <SectionHeader title={data.title} />
       <div className='flex flex-col gap-6'>
         {experiences.map(
           ({
@@ -35,11 +35,12 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
           }) => (
             <div key={role} className='flex flex-col rounded-lg'>
               <div className='bg-grey-light p-6 drop-shadow-md'>
-                <h3>{role}</h3>
-                <p className='mt-2'>{company}</p>
-                <p className='mt-2'>{dates}</p>
-                <p className='mt-2'>{location}</p>
-                <p className='mt-2'>{description}</p>
+                <h3 className='font-semibold uppercase'>{role}</h3>
+                <h4 className='uppercase'>{company}</h4>
+                <h4 className='text-grey'>{location}</h4>
+                <p className='italic text-grey'>{dates}</p>
+                <p className='mt-2'>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{description}</p>
                 {/* <p className='mt-2'>Key Highlights:</p>
                 <p className='mt-2'>{highlights}</p> */}
                 <p className='mt-2'>Skills:</p>
