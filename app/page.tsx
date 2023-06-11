@@ -6,11 +6,13 @@ import Education from './components/education';
 import Portfolio from './components/portfolio';
 import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
+import Resume from './components/resume';
 
 const Page: React.FC = () => {
   return (
     <div>
       <AboutMe data={aboutMe} skills={skills} />
+      <Resume />
       <Education data={educationData} />
       <ProfessionalExperience data={professionalData} />
       <Portfolio />
