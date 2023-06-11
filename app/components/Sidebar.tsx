@@ -18,6 +18,11 @@ type SidebarProps = {
   };
 };
 
+type MSIconLinkProps = {
+  to: string;
+  children: any;
+};
+
 type MSlinkProps = {
   to: string;
   children: any;
@@ -25,6 +30,14 @@ type MSlinkProps = {
 
 const Sidebar = ({ data }: SidebarProps) => {
   const { contactLinks } = data;
+
+  const MSIconLink = ({ to, children }: MSlinkProps) => {
+    return (
+      <Link className='flex flex-row text-white hover:text-violet' href={to}>
+        {children}
+      </Link>
+    );
+  };
 
   const MSlink = ({ to, children }: MSlinkProps) => {
     return (
@@ -34,25 +47,9 @@ const Sidebar = ({ data }: SidebarProps) => {
     );
   };
 
-  const Xlinks = () => {
-    return (
-      <div className='flex flex-row gap-8 m-8'>
-        <MSlink to={'https://github.com/maxskewes'}>
-          <BsGithub size='1.75rem' />
-        </MSlink>
-        <MSlink to={'https://www.linkedin.com/in/maxskewes/'}>
-          <BsLinkedin size='1.75rem' />
-        </MSlink>
-        <MSlink to={'/'}>
-          <MdEmail size='1.75rem' />
-        </MSlink>
-      </div>
-    );
-  };
-
   const NavMenu = () => {
     return (
-      <>
+      <div className='flex flex-col gap-2 my-4'>
         <MSlink to={'/'}>
           <FaHome size='1.35em' />
           <h4 className='ml-3'>Home</h4>
@@ -61,6 +58,11 @@ const Sidebar = ({ data }: SidebarProps) => {
         <MSlink to={'/'}>
           <BsPersonLinesFill size='1.35em' />
           <h4 className='ml-3'>About</h4>
+        </MSlink>
+
+        <MSlink to={'/'}>
+          <RiCheckboxBlankFill size='1.35em' />
+          <h4 className='ml-3'>Resume/CV</h4>
         </MSlink>
 
         <MSlink to={'/'}>
@@ -82,45 +84,53 @@ const Sidebar = ({ data }: SidebarProps) => {
           <MdEmail size='1.35em' />
           <h4 className='ml-3'>Contact</h4>
         </MSlink>
-      </>
+      </div>
     );
   };
 
   return (
     <div className={josefin.className}>
       <div className='bg-greydk flex flex-col content-between w-full h-100vh sm:h-screen sm:justify-start sm:w-1/4 sm:fixed'>
-        <div className='font-family: flex flex-col p-4 md:p-6 lg:p-10 items-center w-full'>
+        <div className='flex flex-col p-4 md:p-6 lg:p-10 items-center w-full'>
           <Image
             style={{ border: '5px solid #a087cc' }}
             priority
-            width={200}
-            height={200}
+            width={160}
+            height={160}
             className='mb-4 rounded-full h-full'
             src='/images/avatar.jpg'
             alt="Max's face"
             aria-label="Max's face"
           />
 
-          <div className='uppercase text-white'>
+          <div className='uppercase text-white mb-2'>
             <h1 className='text-left'>Maxwell</h1>
             <h1 className='text-center'>Countryman</h1>
             <h1 className='text-right'>Skewes</h1>
           </div>
 
-          <div className='m-2 w-full uppercase text-center'>
+          <div className='my-2 w-full uppercase text-center'>
             <h2 className='text-white'>User-Centric</h2>
             <h2 className='text-white'>Full-Stack Developer</h2>
           </div>
 
-          <div>
-            <Xlinks />
+          <div className='w-full mb-2'>
+            <div className='flex flex-row justify-around'>
+              <MSIconLink to={'https://github.com/maxskewes'}>
+                <BsGithub size='1.5rem' />
+              </MSIconLink>
+              <MSIconLink to={'https://www.linkedin.com/in/maxskewes/'}>
+                <BsLinkedin size='1.5rem' />
+              </MSIconLink>
+              <MSIconLink to={'/'}>
+                <MdEmail size='1.5rem' />
+              </MSIconLink>
+            </div>
           </div>
 
-          <div className='flex flex-col gap-2'>
-            <NavMenu />
-          </div>
+          <NavMenu />
         </div>
-        <div className='w-full text-center text-white mb-4'>
+        <div className='w-full text-center text-white my-2'>
           <h6>maxskewes@gmail.com</h6>
         </div>
       </div>

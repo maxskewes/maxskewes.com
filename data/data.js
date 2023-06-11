@@ -131,14 +131,14 @@ export const graphicDesign = {
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
     {
-      title: 'evicerated-banjo',
-      imgSrc: '/images/design/evicerated-banjo.jpeg',
-      imgAlt: 'Block Carving of Evicerated Banjo',
+      title: 'papags-bbq',
+      imgSrc: '/images/design/papags-label-bbq.svg',
+      imgAlt: "Papa G's Tofu BBQ Label",
     },
     {
-      title: 'evicerated-banjo',
-      imgSrc: '/images/design/evicerated-banjo.jpeg',
-      imgAlt: 'Block Carving of Evicerated Banjo',
+      title: 'sherlock-holmes-story-club',
+      imgSrc: '/images/design/sherlock-holmes-story-club.jpg',
+      imgAlt: 'Sherlock Holmes Story Club',
     },
   ],
 };
