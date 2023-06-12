@@ -7,8 +7,8 @@ type CVSectionTitleProps = {
 
 const CVSectionTitle = ({ title }: CVSectionTitleProps) => {
   return (
-    <div className='border-b-2 border-grey mb-2'>
-      <p className='text-2xl uppercase tracking-widest mb-2'>{title}</p>
+    <div className='border-b-2 border-grey mb-4'>
+      <p className='text-xl uppercase tracking-widest mb-1'>{title}</p>
     </div>
   );
 };
@@ -19,12 +19,16 @@ const Resume = () => {
       <div>
         <div>
           <SectionHeader title={'Résumé'} />
-          <a href='/docs/resume.pdf' target='_blank'>
-            VIEW AS A PRINTABLE PDF
+          <a
+            href='/docs/resume.pdf'
+            target='_blank'
+            className='p-1 uppercase border border-grey text-grey rounded-md text-sm'
+          >
+            view as a printable PDF
           </a>
         </div>
 
-        <div className='mb-4'>
+        <div className='bg-white mt-2 p-6 drop-shadow-md'>
           <div className='flex justify-between items-start'>
             <div className='flex items-center'>
               <p className='text-5xl uppercase'>Max&nbsp;</p>
@@ -34,7 +38,7 @@ const Resume = () => {
               {' '}
               <p className='text-5xl text-violet'>&nbsp;</p>
             </div>
-            <div className='flex flex-col text-right pl-40'>
+            <div className='flex flex-col text-right ml-38'>
               <a>e: maxskewes@gmail.com</a>
               <a>github.com/maxskewes</a>
               <a>Portland, OR 97215</a>
@@ -42,7 +46,7 @@ const Resume = () => {
             </div>
           </div>
 
-          <div className='mb-8'>
+          <div className='mb-10'>
             <CVSectionTitle title={'Professional Summary'} />
             <p className='font-serif'>
               User-Centric React Developer with several years of experience contributing to design
@@ -55,13 +59,13 @@ const Resume = () => {
             </p>
           </div>
 
-          <div>
+          <div className='mb-10'>
             <CVSectionTitle title={'Education & Training'} />
 
-            <div className='mb-2'>
+            <div className='mb-8'>
               <div className='flex justify-between items-end'>
                 <p className='uppercase font-medium text-xl'>University of Oregon</p>
-                <i className='font-light'>On Site at their NW Portland, OR Campus</i>
+                <i className='font-light '>On Site, NW Portland, OR Campus</i>
               </div>
               <p className='font-medium text-2xl'>Full Stack Coding Certificate</p>
               <p className='font-light '>
@@ -69,53 +73,48 @@ const Resume = () => {
               </p>
             </div>
 
-            <div className='mb-2'>
+            <div className='mb-8'>
               <div className='flex justify-between items-end'>
-     
                 <p className='uppercase font-medium text-xl'>University College Cork</p>
                 <i className='font-light'>Cork, Ireland</i>
-        
               </div>
               <p className='font-medium text-2xl'>Certificate of Irish Studies</p>
               <p className='font-light '>
-              First Class Hounours in Modern and Ancient Irish language,
-                music theory/practise, Celtic Civilization, Archaeology, and Politics.
+                First Class Hounours in Modern and Ancient Irish language, music theory/practise,
+                Celtic Civilization, Archaeology, and Politics.
               </p>
             </div>
 
-       
-
-            <div>
-              <div>
-                <h5>Marylhurst University</h5>
-                <p>Marylhurst, OR</p>
+            <div className='mb-2'>
+              <div className='flex justify-between items-end'>
+                <p className='uppercase font-medium text-xl'>Marylhurst University</p>
+                <i className='font-light'>Marylhurst, OR</i>
               </div>
-              <h6>Associate Degree of Liberal Arts</h6>
-              <p>with minor focus on Irish Language &#40;Gaeilge&#41;.</p>
+              <p className='font-medium text-2xl'>Associate Degree of Liberal Arts</p>
+              <p className='font-light'>
+                First Class Hounours in Modern and Ancient Irish language, music theory/practise,
+                Celtic Civilization, Archaeology, and Politics.
+              </p>
+              <i className='font-light'>with minor focus on Irish Language &#40;Gaeilge&#41;.</i>
             </div>
           </div>
 
-          <div>
-            <h5>Professional Experience</h5>
+          <div className='mb-10'>
+            <CVSectionTitle title={'Professional Experience'} />
 
-            <div>
-              <div>
-                <div>
-                  <h5>Resume Scripter</h5>
-                  <p>
-                    <i>Portland, OR</i>
-                  </p>
+            <div className='mb-8'>
+              <div className='mb-2'>
+                <div className='flex justify-between items-end'>
+                  <p className='uppercase font-medium text-xl'>Resume Scripter</p>
+                  <i className='font-light'>Portland, OR</i>
                 </div>
-                <div>
-                  <h5>React Developer</h5>
-                  <p>
-                    <i>Oct. 2021 - Feb. 2023</i>
-                  </p>
+                <div className='flex justify-between items-end'>
+                  <p className='font-medium text-2xl'>React Developer</p>
+                  <i className='font-light'>Oct. 2021 - Feb. 2023</i>
                 </div>
               </div>
-
-              <div>
-                <ul>
+              <div className='font-light'>
+                <ul className='list-disc pl-4'>
                   <li>
                     Worked with career-tech startup to develop scalable platform to help workforce
                     development teams craft impressive resumes and cover letters in minutes,
@@ -139,36 +138,23 @@ const Resume = () => {
               </div>
             </div>
 
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <h5>Hack for LA</h5>
-                    <h5>&nbsp;-&nbsp;Civic Tech Index</h5>
-                  </div>
-
-                  <p>
-                    <i>Remote; Los Angeles, CA</i>
-                  </p>
+            <div className='mb-8'>
+              <div className='mb-2'>
+                <div className='flex justify-between items-end'>
+                  <p className='uppercase font-medium text-xl'>Civic Tech Index - Hack for LA</p>
+                  <i className='font-light'>Pro Bono: remote - LA, CA</i>
                 </div>
-                <div>
-                  <div>
-                    <h5>Lead Front End Developer</h5>
-                    <h5>&nbsp;-&nbsp;Pro Bono</h5>
-                  </div>
-
-                  <p>
-                    <i>Mar. 2021 - Jul. 2022</i>
-                  </p>
+                <div className='flex justify-between items-end'>
+                  <p className='font-medium text-2xl'>Lead Front-End Developer</p>
+                  <i className='font-light'>Mar. 2021 - Jul. 2022</i>
                 </div>
               </div>
-
-              <div>
-                <ul>
+              <div className='font-light'>
+                <ul className='list-disc pl-4'>
                   <li>
-                    Served as lead developer throughout creation of React application projected to
-                    serve over 100,000 volunteers worldwide, utilizing ReactJS with Material-UI
-                    framework from Figma design.
+                    Served as lead developer for creation of React application projected to serve
+                    over 100,000 volunteers worldwide, utilizing ReactJS with Material-UI framework
+                    from Figma design.
                   </li>
                   <li>
                     Built online index application uniting civic tech organizations, allowing users
@@ -189,26 +175,19 @@ const Resume = () => {
               </div>
             </div>
 
-            <div>
-              <div>
-                <div>
-                  <h5>Bridgetown Bluegrass Festival</h5>
-
-                  <p>
-                    <i>Portland</i>
-                  </p>
+            <div className='mb-8'>
+              <div className='mb-2'>
+                <div className='flex justify-between items-end'>
+                  <p className='uppercase font-medium text-xl'>Bridgetown Bluegrass Festival</p>
+                  <i className='font-light'>Portland, OR</i>
                 </div>
-                <div>
-                  <h5>Co-founder/Organizer/Designer</h5>
-
-                  <p>
-                    <i>Nov. 2016 - present</i>
-                  </p>
+                <div className='flex justify-between items-end'>
+                  <p className='font-medium text-2xl'>Co-Founder/Organizer/Designer</p>
+                  <i className='font-light'>Nov. 2020 - present</i>
                 </div>
               </div>
-
-              <div>
-                <ul>
+              <div className='font-light'>
+                <ul className='list-disc pl-4'>
                   <li>
                     Oversaw launch and expansion of nonprofit music festival showcasing work of over
                     250 talented artists to date, earning favorable reviews in regional media
@@ -236,24 +215,19 @@ const Resume = () => {
               </div>
             </div>
 
-            <div>
-              <div>
-                <div>
-                  <h5>Independent Contracter</h5>
-                  <p>
-                    <i>Portland, OR</i>
-                  </p>
+            <div className='mb-8'>
+              <div className='mb-2'>
+                <div className='flex justify-between items-end'>
+                  <p className='uppercase font-medium text-xl'>Independent Contractor</p>
+                  <i className='font-light'>remote - Portland, OR</i>
                 </div>
-                <div>
-                  <h5>Website/App Developer</h5>
-                  <p>
-                    <i>Nov. 2020 - present</i>
-                  </p>
+                <div className='flex justify-between items-end'>
+                  <p className='font-medium text-2xl'>Website/App Developer</p>
+                  <i className='font-light'>Nov. 2020 - present</i>
                 </div>
               </div>
-
-              <div>
-                <ul>
+              <div className='font-light'>
+                <ul className='list-disc pl-4'>
                   <li>
                     Created intuitive, modern websites for companies across sectors including legal
                     services, real estate, entertainment, and food and beverage sectors,
