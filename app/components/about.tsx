@@ -1,22 +1,19 @@
 import { useId } from 'react';
-import type { SkillsProps } from './skills';
-import Skills from './skills';
 import SectionHeader from './SectionHeader';
 
-type AboutMeProps = {
+type AboutProps = {
   data: {
     title: string;
     body: string;
     bullets: string[];
   };
-  skills: SkillsProps['data'];
 };
 
-const AboutMe = ({ data, skills }: AboutMeProps) => {
+const About = ({ data }: AboutProps) => {
   const { body, bullets } = data;
   const id = useId();
   return (
-    <section>
+    <section id="about">
       <SectionHeader title={'Introduction'} />
       <div className='ml-4'>
         <div>
@@ -30,10 +27,9 @@ const AboutMe = ({ data, skills }: AboutMeProps) => {
             </p>
           ))}
         </div>
-        {/* <Skills data={skills} /> */}
       </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default About;

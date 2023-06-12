@@ -16,8 +16,8 @@ const Education = ({ data }: EducationProps) => {
   const { title, education } = data;
 
   return (
-    <section>
-      <SectionHeader title={'Education'} />
+    <section id="education">
+      <SectionHeader title={title} />
     
       <div className='flex flex-col gap-6'>
         {education.map(({ certificate, institution, location }) => (

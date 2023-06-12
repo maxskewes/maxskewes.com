@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader';
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id='portfolio'>
 <SectionHeader title={'App and Website Portfolio'} />
       <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
         {/* -------------------dev purpose */}

@@ -14,11 +14,11 @@ type GraphicDesignProps = {
 };
 
 const GraphicDesign = ({ data }: GraphicDesignProps) => {
-  const { examples } = data;
+const {title, examples} = data;
 
   return (
-    <section>
-      <SectionHeader title={'Graphic Design'} />
+    <section id="graphic-design">
+      <SectionHeader title={title} />
       <div className='container mx-auto p-6 grid grid-cols-3 gap-4'>
         {examples.map(({ imgTitle, imgSrc, imgAlt }) => (
           <div

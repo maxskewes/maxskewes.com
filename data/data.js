@@ -1,5 +1,5 @@
-export const aboutMe = {
-  title: 'About Me',
+export const aboutData = {
+  title: 'About',
   body: "As a graduate of the University of Oregon's Full-Stack program, I'm a full-stack developer with experience in graphic design. I’ve spent the past several years contributing to the design and development of interactive websites and custom applications projected to serve over 100,000 users. I’ve collaborated with UX designers, product managers, and back-end developers throughout all phases of projects, facilitating the creation intuitive, modern apps and websites for companies across sectors including legal services, real estate, entertainment, and career services.",
   bullets: [
     '- I created intuitive websites for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
@@ -8,7 +8,7 @@ export const aboutMe = {
   ],
 };
 
-export const skills = {
+export const skillsData = {
   soft: [
     { icon: '👂🏼', text: 'Active Listening' },
     { icon: '💬', text: 'Effective Communication' },
@@ -48,7 +48,7 @@ export const educationData = {
   ],
 };
 
-export const professionalData = {
+export const professionalExperienceData = {
   title: 'Professional Experience',
   experiences: [
     {
@@ -107,7 +107,7 @@ export const professionalData = {
   ],
 };
 
-export const graphicDesign = {
+export const graphicDesignData = {
   title: 'Graphic Design',
   examples: [
     {
@@ -143,7 +143,7 @@ export const graphicDesign = {
   ],
 };
 
-export const personalInfo = {
+export const personalData = {
   title: 'Personal',
   body: 'My primary passion is music, most specifically bluegrass banjo, which I have made the majority of my income from for the last four years. I enjoy working with my hands and what started out as doing minor repairs for students quickly turned into full-on luthiery; that is building quality instruments, primarily banjos and Irish bouzoukis. I have had the opportunity to travel the world playing music, having done three tours in New Zealand, a several month stint in Uganda and most recently my band, Scratchdog Stringband, was awarded a federal grant to tour in eastern Russia. I enjoy teaching others and have taught classes to individuals and at various colleges. I have always loved to experience foreign cultures and spent my college years in Cork, in the south of Ireland. There I studied Gaeilge, the native Celtic Irish language and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science and spent twelve years as a brewer and cider maker. I enjoy building my own stills and making spirits and tinctures at home. Currently I live with my wife and two young sons in Portland, the city where I grew up.',
 };

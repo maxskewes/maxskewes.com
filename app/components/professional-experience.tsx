@@ -10,18 +10,18 @@ type ProfessionalExperienceProps = {
       dates: string;
       location: string;
       description: string;
-      // highlights: string[];
+      highlights: string[];
       skills: string;
     }[];
   };
 };
 
 const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
-  const { experiences } = data;
+  const { title, experiences } = data;
 
   return (
-    <section>
-      <SectionHeader title={data.title} />
+    <section id="professional-experiences">
+      <SectionHeader title={title} />
       <div className='flex flex-col gap-6'>
         {experiences.map(
           ({
@@ -30,7 +30,7 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
             dates,
             location,
             description,
-            // highlights,
+            highlights,
             skills,
           }) => (
             <div key={role} className='flex flex-col rounded-lg'>
@@ -41,8 +41,8 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
                 <p className='italic text-grey'>{dates}</p>
                 <p className='mt-2'>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{description}</p>
-                {/* <p className='mt-2'>Key Highlights:</p>
-                <p className='mt-2'>{highlights}</p> */}
+                <p className='mt-2'>Key Highlights:</p>
+                <p className='mt-2'>{highlights}</p>
                 <p className='mt-2'>Skills:</p>
                 <p className='mt-2'>{skills}</p>
               </div>

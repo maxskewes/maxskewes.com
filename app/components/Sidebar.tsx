@@ -55,32 +55,37 @@ const Sidebar = ({ data }: SidebarProps) => {
           <h4 className='ml-3'>Home</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#about'}>
           <BsPersonLinesFill size='1.35em' />
           <h4 className='ml-3'>About</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#resume-cv'}>
           <RiCheckboxBlankFill size='1.35em' />
           <h4 className='ml-3'>Resume/CV</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#education'}>
+          <RiCheckboxBlankFill size='1.35em' />
+          <h4 className='ml-3'>Education</h4>
+        </MSlink>
+
+        <MSlink to={'#portfolio'}>
           <RiCheckboxBlankFill size='1.35em' />
           <h4 className='ml-3'>App and Website Portfolio</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#graphic-design'}>
           <RiCheckboxBlankFill size='1.35em' />
           <h4 className='ml-3'>Design Portfolio</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#personal'}>
           <BsPersonHeart size='1.35em' />
           <h4 className='ml-3 '>Personal</h4>
         </MSlink>
 
-        <MSlink to={'/'}>
+        <MSlink to={'#contact'}>
           <MdEmail size='1.35em' />
           <h4 className='ml-3'>Contact</h4>
         </MSlink>
