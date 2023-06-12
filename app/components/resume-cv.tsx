@@ -1,21 +1,40 @@
+import React from 'react';
+import SectionHeader from './SectionHeader';
+
+type CVSectionTitleProps = {
+  title: string;
+};
+
+const CVSectionTitle = ({ title }: CVSectionTitleProps) => {
+  return (
+    <div className='border-b-2 border-grey mb-2'>
+      <p className='text-2xl uppercase tracking-widest mb-2'>{title}</p>
+    </div>
+  );
+};
+
 const Resume = () => {
   return (
     <section id='resume-cv'>
       <div>
         <div>
-          <h2>Résumé</h2>
+          <SectionHeader title={'Résumé'} />
           <a href='/docs/resume.pdf' target='_blank'>
             VIEW AS A PRINTABLE PDF
           </a>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <h1>Max</h1>
-              <h1>Skewes</h1>
+        <div className='mb-4'>
+          <div className='flex justify-between items-start'>
+            <div className='flex items-center'>
+              <p className='text-5xl uppercase'>Max&nbsp;</p>
+              <p className='text-5xl text-violet uppercase'>Skewes</p>
             </div>
-            <div>
+            <div className='border-r-4 border-violet h-full'>
+              {' '}
+              <p className='text-5xl text-violet'>&nbsp;</p>
+            </div>
+            <div className='flex flex-col text-right pl-40'>
               <a>e: maxskewes@gmail.com</a>
               <a>github.com/maxskewes</a>
               <a>Portland, OR 97215</a>
@@ -23,9 +42,9 @@ const Resume = () => {
             </div>
           </div>
 
-          <div>
-            <h5>Professional Summary</h5>
-            <p>
+          <div className='mb-8'>
+            <CVSectionTitle title={'Professional Summary'} />
+            <p className='font-serif'>
               User-Centric React Developer with several years of experience contributing to design
               and development of interactive websites and custom applications projected to serve
               over 100,000 users. Well-developed ability to collaborate with UX designers, product
@@ -37,33 +56,34 @@ const Resume = () => {
           </div>
 
           <div>
-            <h5>Education & Training</h5>
+            <CVSectionTitle title={'Education & Training'} />
 
-            <div>
-              <div>
-                <h5>University of Oregon</h5>
-                <p>On Site at their NW Portland, OR Campus</p>
+            <div className='mb-2'>
+              <div className='flex justify-between items-end'>
+                <p className='uppercase font-medium text-xl'>University of Oregon</p>
+                <i className='font-light'>On Site at their NW Portland, OR Campus</i>
               </div>
-              <h6>Full Stack Coding Certificate</h6>
-              <p>
+              <p className='font-medium text-2xl'>Full Stack Coding Certificate</p>
+              <p className='font-light '>
                 Completed intensive coursework in HTML, CSS, JavaScript, React, MySQL, and Node.js.
               </p>
             </div>
 
-            <div>
-              <div>
-                <div>
-                  <h5>University College Cork</h5>
-                  <h5>&#40;Coláiste na hOllscoile Corcaigh&#41;</h5>
-                </div>
-                <p>Cork, Ireland</p>
+            <div className='mb-2'>
+              <div className='flex justify-between items-end'>
+     
+                <p className='uppercase font-medium text-xl'>University College Cork</p>
+                <i className='font-light'>Cork, Ireland</i>
+        
               </div>
-              <h6>Certificate of Irish Studies</h6>
-              <p>
-                Graduated with First Class Hounours; studies in Modern and Ancient Irish language,
+              <p className='font-medium text-2xl'>Certificate of Irish Studies</p>
+              <p className='font-light '>
+              First Class Hounours in Modern and Ancient Irish language,
                 music theory/practise, Celtic Civilization, Archaeology, and Politics.
               </p>
             </div>
+
+       
 
             <div>
               <div>
@@ -124,7 +144,7 @@ const Resume = () => {
                 <div>
                   <div>
                     <h5>Hack for LA</h5>
-                    <h5>&absp;-&absp;Civic Tech Index</h5>
+                    <h5>&nbsp;-&nbsp;Civic Tech Index</h5>
                   </div>
 
                   <p>
@@ -134,7 +154,7 @@ const Resume = () => {
                 <div>
                   <div>
                     <h5>Lead Front End Developer</h5>
-                    <h5>&absp;-&absp;Pro Bono</h5>
+                    <h5>&nbsp;-&nbsp;Pro Bono</h5>
                   </div>
 
                   <p>

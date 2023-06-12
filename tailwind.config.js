@@ -19,7 +19,7 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: [ "Merriweather", "sans-serif"],
-			serif: ["Merriweather", "serif"],
+			serif: ["Helvetica", "serif"],
 			display: ["Oswald"],
 		},
 		fontSize: {
