@@ -23,7 +23,7 @@ const {title, examples} = data;
         {examples.map(({ imgTitle, imgSrc, imgAlt }) => (
           <div
             key={imgTitle}
-            className='col-span-1 flex justify-center items-center bg-grey-light drop-shadow-md'
+            className='col-span-1 flex justify-center items-center bg-grey-light drop-shadow-md rounded'
           >
             <div className='p-2 rounded-md overflow-hidden'>
               <Image

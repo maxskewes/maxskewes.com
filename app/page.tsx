@@ -14,8 +14,8 @@ import Portfolio from './components/portfolio';
 import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
 import Resume from './components/resume-cv';
-import Image from 'next/image';
 import Landing from './components/landing';
+import Contact from './components/contact';
 // import Skills from './components/skills';
 
 const Page: React.FC = () => {
@@ -35,6 +35,12 @@ const Page: React.FC = () => {
         <Portfolio />
         <GraphicDesign data={graphicDesignData} />
         <Personal data={personalData} />
+        <Contact />
+        <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
+          <div className='flex justify-center items-end'>
+            <p className='text-teal font-light opacity-50'>maxskewes@gmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
   );

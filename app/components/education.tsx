@@ -22,7 +22,7 @@ const Education = ({ data }: EducationProps) => {
       <div className='flex flex-col gap-6'>
         {education.map(({ certificate, institution, location }) => (
           <div key={certificate} className='flex flex-col rounded-lg'>
-            <div className='bg-grey-light p-6 drop-shadow-md'>
+            <div className='bg-grey-light p-6 drop-shadow-md rounded'>
               <h3 className='font-semibold uppercase'>{certificate}</h3>
               <h3 className='uppercase'>{institution}</h3>
               <p>{location}</p>

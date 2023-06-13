@@ -81,7 +81,7 @@ const Sidebar = ({ data }: SidebarProps) => {
           <h4 className='ml-3 '>Personal</h4>
         </MSlink>
 
-        <MSlink to={'#contact'}>
+        <MSlink to={'/contact'}>
           <MdEmail size='1.35em' />
           <h4 className='ml-3'>Contact</h4>
         </MSlink>

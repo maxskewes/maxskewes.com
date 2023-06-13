@@ -9,7 +9,7 @@ const Portfolio = () => {
       <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
         {/* -------------------dev purpose */}
 
-        <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>
+        <div className='p-6 rounded overflow-hidden bg-grey-light drop-shadow-md'>
           <h4>Resume Scripter</h4>
           <p className='mt-2'>Portland, OR</p>
           <p className='mt-2'>https://resumescripter.com/</p>
@@ -37,7 +37,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>
+        <div className='p-6 rounded overflow-hidden bg-grey-light drop-shadow-md'>
           <div>
             <h3>Papa G's Organic Tofu</h3>
             <p className='mt-2'>Portland, OR</p>
@@ -73,7 +73,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>
+        <div className='p-6 rounded overflow-hidden bg-grey-light drop-shadow-md'>
           <div>
             <h3>Civic Tech Index</h3>
             <p className='mt-2'>Hack for LA</p>
@@ -110,7 +110,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className='p-6 rounded-md overflow-hidden bg-grey-light drop-shadow-md'>
+        <div className='p-6 rounded overflow-hidden bg-grey-light drop-shadow-md'>
           <h3>Bridgetown Bluegrass Festival</h3>
           <p className='mt-2'>Portland, OR</p>
           <p className='mt-2'>https://papagstofu.com/</p>

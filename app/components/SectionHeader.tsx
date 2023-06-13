@@ -12,12 +12,13 @@ type SectionHeaderProps = {
 
 const SectionHeader = ({ title }: SectionHeaderProps) => {
   return (
+    <div className='pb-2'>
     <div className={josefin.className}>
       <h1 className='uppercase mb-2 pt-12 font-semibold text-teal'>{title}</h1>
-      <span className='pr-6 pb-6 border-t-4 border-violet'>
+      <span className='pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violet pb-2'>
         &nbsp;
       </span>
- 
+    </div>
     </div>
   );
 };

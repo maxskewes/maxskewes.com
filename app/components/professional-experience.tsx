@@ -33,8 +33,8 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
             highlights,
             skills,
           }) => (
-            <div key={role} className='flex flex-col rounded-lg'>
-              <div className='bg-grey-light p-6 drop-shadow-md'>
+            <div key={role} className='flex flex-col '>
+              <div className='bg-grey-light p-6 drop-shadow-md rounded'>
                 <h3 className='font-semibold uppercase'>{role}</h3>
                 <h4 className='uppercase'>{company}</h4>
                 <h4 className='text-grey'>{location}</h4>

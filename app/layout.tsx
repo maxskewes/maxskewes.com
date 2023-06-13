@@ -1,13 +1,7 @@
 import './globals.css';
-import { Josefin_Sans, Work_Sans } from 'next/font/google';
-import Image from 'next/image';
+import { Work_Sans } from 'next/font/google';
 import Sidebar from './components/Sidebar';
 import { contact } from '../data/contact-data';
-
-const josefin = Josefin_Sans({
-  subsets: ['latin'],
-  variable: '--font-josefin',
-});
 
 const worksans = Work_Sans({
   subsets: ['latin'],
@@ -26,9 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='grow:0 '>
           <Sidebar data={contact} />
         </div>
-        <main className='grow-1 p-0 sm:p-0 sm:basis-3/4 ml-auto'>
-          {children}
-        </main>
+        <main className='grow-1 p-0 sm:p-0 sm:basis-3/4 sm:ml-auto'>{children}</main>
       </body>
     </html>
   );

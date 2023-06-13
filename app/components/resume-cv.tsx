@@ -38,7 +38,7 @@ const Resume = () => {
               {' '}
               <p className='text-5xl text-violet'>&nbsp;</p>
             </div>
-            <div className='flex flex-col text-right ml-38'>
+            <div className='flex flex-col text-right ml-38 font-light italic'>
               <a>e: maxskewes@gmail.com</a>
               <a>github.com/maxskewes</a>
               <a>Portland, OR 97215</a>
