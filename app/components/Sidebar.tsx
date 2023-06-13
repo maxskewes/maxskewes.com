@@ -41,7 +41,7 @@ const Sidebar = ({ data }: SidebarProps) => {
 
   const MSlink = ({ to, children }: MSlinkProps) => {
     return (
-      <Link className='flex flex-row text-grey hover:text-violet' href={to}>
+      <Link className='flex flex-row text-grey hover:text-teal' href={to}>
         {children}
       </Link>
     );
@@ -50,10 +50,6 @@ const Sidebar = ({ data }: SidebarProps) => {
   const NavMenu = () => {
     return (
       <div className='flex flex-col gap-2 my-4'>
-        <MSlink to={'/'}>
-          <FaHome size='1.35em' />
-          <h4 className='ml-3'>Home</h4>
-        </MSlink>
 
         <MSlink to={'#about'}>
           <BsPersonLinesFill size='1.35em' />
@@ -95,10 +91,10 @@ const Sidebar = ({ data }: SidebarProps) => {
 
   return (
     <div className={josefin.className}>
-      <div className='bg-greydk flex flex-col content-between w-full h-100vh sm:h-screen sm:justify-start sm:w-1/4 sm:fixed'>
-        <div className='flex flex-col p-4 md:p-6 lg:p-10 items-center w-full'>
+      <div className='bg-greydk flex flex-col w-full h-100vh sm:h-screen sm:justify-start sm:w-1/4 sm:fixed'>
+        <div className='flex flex-col p-4 md:p-6 lg:px-10 items-center w-full'>
           <Image
-            style={{ border: '5px solid #a087cc' }}
+            style={{ border: '5px solid #221a69' }}
             priority
             width={160}
             height={160}

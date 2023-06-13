@@ -10,7 +10,7 @@ const Personal = ({ data }: PersonalProps) => {
   const { body } = data;
 
   return (
-    <section id='personal'>
+    <section id='personal' className='pb-20'>
       <SectionHeader title={'Personal'} />
       <div className='ml-4'>
         <p className='mb-6'>

@@ -7,7 +7,7 @@ type CVSectionTitleProps = {
 
 const CVSectionTitle = ({ title }: CVSectionTitleProps) => {
   return (
-    <div className='border-b-2 border-grey mb-4'>
+    <div className='border-b-2 border-violet mb-4'>
       <p className='text-xl uppercase tracking-widest mb-1'>{title}</p>
     </div>
   );
@@ -16,19 +16,19 @@ const CVSectionTitle = ({ title }: CVSectionTitleProps) => {
 const Resume = () => {
   return (
     <section id='resume-cv'>
-      <div>
+
         <div>
           <SectionHeader title={'Résumé'} />
           <a
             href='/docs/resume.pdf'
             target='_blank'
-            className='p-1 uppercase border border-grey text-grey rounded-md text-sm'
+            className='p-1 uppercase border border-grey text-violet rounded-md text-sm'
           >
             view as a printable PDF
           </a>
         </div>
 
-        <div className='bg-white mt-2 p-6 drop-shadow-md'>
+        <div className='bg-white mt-2 pt-2 p-6 drop-shadow-md'>
           <div className='flex justify-between items-start'>
             <div className='flex items-center'>
               <p className='text-5xl uppercase'>Max&nbsp;</p>
@@ -242,7 +242,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+    
     </section>
   );
 };

@@ -13,7 +13,8 @@ const About = ({ data }: AboutProps) => {
   const { body, bullets } = data;
   const id = useId();
   return (
-    <section id="about">
+    <section id="about" >
+
       <SectionHeader title={'Introduction'} />
       <div className='ml-4'>
         <div>
@@ -22,12 +23,13 @@ const About = ({ data }: AboutProps) => {
         <div>
           <p className='mb-2'>Examples of my work:</p>
           {bullets?.map((el, i) => (
-            <p key={`${id}_${i}`} className='mb-2 ml-4'>
+            <p key={`${id}_${i}`} className='pb-2 ml-4'>
               {el}
             </p>
           ))}
         </div>
       </div>
+     
     </section>
   );
 };

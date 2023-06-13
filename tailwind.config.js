@@ -12,10 +12,11 @@ module.exports = {
 			yellow: "#FFF734",
 			green: "#68F590",
 			grey: "#7a679c",
-			violet: "#8800f7",
+			violet: "#550180",
 			"grey-light": "#FAFAFA",
 			"green-light": "#d2eff1",
 			white: "#fff",
+			teal: "#221a69",
 		},
 		fontFamily: {
 			sans: [ "Merriweather", "sans-serif"],
