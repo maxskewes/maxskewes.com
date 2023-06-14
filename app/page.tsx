@@ -21,7 +21,7 @@ import Contact from './components/contact';
 const Page: React.FC = () => {
   return (
     <div>
-      <div className='bg-fixed'>
+      <div className='w-full h-full'>
         <Landing />
       </div>
       <div className='pb-8 sm:px-8 bg-white/[.850] relative'>

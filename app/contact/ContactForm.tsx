@@ -1,13 +1,13 @@
 'use client';
 
-// import { useState } from 'react';
+import { useState } from 'react';
 
 export default function ContactForm() {
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: any) {
     event.preventDefault();
-    // setLoading(true);
+    setLoading(true);
 
     const data = {
       name: String(event.target.name.value),
@@ -26,16 +26,18 @@ export default function ContactForm() {
     });
 
     if (response.ok) {
+      //add toast
       console.log('Message sent successfully');
-      // setLoading(false);
+      setLoading(false);
       // reset the form
       event.target.name.value = '';
       event.target.email.value = '';
       event.target.message.value = '';
     }
     if (!response.ok) {
+      //add error message
       console.log('Error sending message');
-      // setLoading(false);
+      setLoading(false);
     }
   }
   return (
@@ -86,7 +88,7 @@ export default function ContactForm() {
       <div className='flex justify-center items-center pt-2 md:pt-6'>
         <button
           type='submit'
-          // disabled={loading}
+          disabled={loading}
           className='px-4 py-2 w-40 bg-teal disabled:bg-grey disabled:text-violet text-white font-medium mt-4 rounded-md'
         >
           Send Message

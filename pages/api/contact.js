@@ -5,11 +5,6 @@ const password = process.env.EMAIL_PASS;
 
 export default async function ContactAPI(req, res) {
   const { name, email, message } = req.body;
-  const data = {
-    name,
-    email,
-    message,
-  };
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',

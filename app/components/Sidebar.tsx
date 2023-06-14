@@ -41,7 +41,7 @@ const Sidebar = ({ data }: SidebarProps) => {
 
   const MSlink = ({ to, children }: MSlinkProps) => {
     return (
-      <Link className='flex flex-row text-grey hover:text-teal' href={to}>
+      <Link className='flex flex-row text-grey hover:text-teal' href={to} >
         {children}
       </Link>
     );
@@ -115,7 +115,7 @@ const Sidebar = ({ data }: SidebarProps) => {
             <h2 className='text-white'>Full-Stack Developer</h2>
           </div>
 
-          <div className='w-full mb-2'>
+          <div className='w-full max-w-[12em] mb-2'>
             <div className='flex flex-row justify-around'>
               <MSIconLink to={'https://github.com/maxskewes'}>
                 <BsGithub size='1.5rem' />

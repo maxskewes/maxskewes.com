@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Landing = () => {
   return (
-    <div className='bg-fixed invisible md:visible'>
+    <div className='invisible md:visible'>
     <Image
       src='/images/dev-banjo-porch.jpg'
       alt='Max on porch coding and playing banjo'
@@ -11,7 +11,7 @@ const Landing = () => {
       width={0}
       height={0}
       sizes='100%'
-      style={{ width: '80%', height: 'auto', position: 'fixed' }}
+      style={{ width: 'auto', height: '100%', position: 'fixed', objectFit: 'cover'}}
     />
     </div>
   );
