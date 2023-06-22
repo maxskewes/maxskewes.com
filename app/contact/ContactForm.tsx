@@ -1,6 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import React from 'react';
+import { Josefin_Sans } from 'next/font/google';
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  variable: '--font-josefin',
+});
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -74,25 +81,27 @@ export default function ContactForm() {
         <label className='font-semibold text-teal' htmlFor='message'>
           Message
         </label>
-        <div className="pt-1">
-        <textarea
-          rows={4}
-          required
-          minLength={10}
-          maxLength={500}
-          name='message'
-          className='w-full p-4 bg-gray-50 border border-violet rounded-sm'
-        />
+        <div className='pt-1'>
+          <textarea
+            rows={4}
+            required
+            minLength={10}
+            maxLength={500}
+            name='message'
+            className='w-full p-4 bg-gray-50 border border-violet rounded-sm'
+          />
         </div>
       </div>
       <div className='flex justify-center items-center pt-2 md:pt-6'>
-        <button
-          type='submit'
-          disabled={loading}
-          className='px-4 py-2 w-40 bg-teal disabled:bg-grey disabled:text-violet text-white font-medium mt-4 rounded-md'
-        >
-          Send Message
-        </button>
+        <div className={josefin.className}>
+          <button
+            type='submit'
+            disabled={loading}
+            className='px-4 py-2 w-40 bg-teal disabled:bg-grey disabled:text-violet text-white uppercase font-medium mt-4 rounded-md'
+          >
+            Send
+          </button>
+        </div>
       </div>
     </form>
   );
