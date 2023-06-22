@@ -51,7 +51,7 @@ const Page: React.FC = () => {
      <BackDrop />
      <div className='relative pl-0  md:pl-[200px] lg:pl-[300px]'>
      <NavTop data={contact} />
-      <div className='md:px-4 lg:px-8 bg-white/[.850] relative'>
+      <div className='px-4 lg:px-8 bg-white/[.850] relative'>
         <About data={aboutData} />
         {/* <Skills data={skillsData} /> */}
         <Resume />

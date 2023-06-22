@@ -13,10 +13,9 @@ const About = ({ data }: AboutProps) => {
   const { body, bullets } = data;
   const id = useId();
   return (
-    <section id="about" >
-
+    <section id='about'>
       <SectionHeader title={'Introduction'} />
-      <div className='ml-4 pb-8'>
+      <div className='pb-8'>
         <div>
           <p className='mb-6'>{body}</p>
         </div>
@@ -29,7 +28,6 @@ const About = ({ data }: AboutProps) => {
           ))}
         </div>
       </div>
-     
     </section>
   );
 };
