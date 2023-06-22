@@ -6,13 +6,14 @@ import { FaHome } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiCheckboxBlankFill } from 'react-icons/ri';
 
+
 const josefin = Josefin_Sans({
   subsets: ['latin'],
   // weight: ['400', '700'],
   variable: '--font-josefin',
 });
 
-type SidebarProps = {
+type NavSideProps = {
   data: {
     contactLinks: string[];
   };
@@ -28,7 +29,7 @@ type MSlinkProps = {
   children: any;
 };
 
-const Sidebar = ({ data }: SidebarProps) => {
+const NavSide = ({ data }: NavSideProps) => {
   const { contactLinks } = data;
 
   const MSIconLink = ({ to, children }: MSlinkProps) => {
@@ -90,9 +91,10 @@ const Sidebar = ({ data }: SidebarProps) => {
   };
 
   return (
+    <div className='invisible md:visible h-[200px] md:h-screen w-full md:w-[200px] lg:w-[300px] bg-greydk fixed md:fixed top-0'>
     <div className={josefin.className}>
-      <div className='bg-greydk flex flex-col w-full h-100vh sm:h-screen sm:justify-start sm:w-1/4 sm:fixed'>
-        <div className='flex flex-col p-4 md:p-6 lg:px-10 items-center w-full'>
+  
+    <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
           <Image
             style={{ border: '5px solid #221a69' }}
             priority
@@ -139,4 +141,4 @@ const Sidebar = ({ data }: SidebarProps) => {
   );
 };
 
-export default Sidebar;
+export default NavSide;

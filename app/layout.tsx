@@ -1,6 +1,6 @@
 import './globals.css';
 import { Work_Sans } from 'next/font/google';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/NavSide';
 import { contact } from '../data/contact-data';
 
 const worksans = Work_Sans({
@@ -16,11 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' className={worksans.className}>
-      <body className='flex flex-col sm:flex-row'>
-        <div className='grow:0 '>
-          <Sidebar data={contact} />
-        </div>
-        <main className='grow-1 p-0 sm:p-0 sm:basis-3/4 sm:ml-auto'>{children}</main>
+      <body className='relative'>
+        <Sidebar data={contact} />
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import About from './components/about';
 import {
   aboutData,
@@ -14,21 +15,45 @@ import Portfolio from './components/portfolio';
 import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
 import Resume from './components/resume-cv';
-import Landing from './components/landing';
 import Contact from './components/contact';
+import NavTop from './components/NavTop';
+import { contact } from '../data/contact-data';
 // import Skills from './components/skills';
+
+
+const BackDrop = () => {
+  return (
+    <div className='absolute'>
+        <Image
+          src='/images/dev-banjo-porch.png'
+          alt='Max on porch coding and playing banjo'
+          aria-label='Max on porch coding and playing banjo'
+          width={0}
+          height={0}
+          sizes='100%'
+          style={{
+            zIndex: -1,
+            width: '100%',
+            height: 'auto',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+  );
+};
 
 const Page: React.FC = () => {
   return (
-    <div>
-      <div className='w-full h-full'>
-        <Landing />
-      </div>
-      <div className='pb-8 sm:px-8 bg-white/[.850] relative'>
+    <div className='relative w-full h-auto'>
+     <BackDrop />
+     <div className='relative pl-0  md:pl-[200px] lg:pl-[300px]'>
+     <NavTop data={contact} />
+      <div className='md:px-4 lg:px-8 bg-white/[.850] relative'>
         <About data={aboutData} />
         {/* <Skills data={skillsData} /> */}
-      </div>
-      <div className='sm:px-8 bg-white/[.85] relative'>
         <Resume />
         <Education data={educationData} />
         <ProfessionalExperience data={professionalExperienceData} />
@@ -42,6 +67,7 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

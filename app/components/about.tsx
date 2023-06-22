@@ -16,7 +16,7 @@ const About = ({ data }: AboutProps) => {
     <section id="about" >
 
       <SectionHeader title={'Introduction'} />
-      <div className='ml-4'>
+      <div className='ml-4 pb-8'>
         <div>
           <p className='mb-6'>{body}</p>
         </div>

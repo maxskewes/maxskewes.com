@@ -13,10 +13,13 @@
     @apply text-xl;
   }
   h4 {
-    @apply text-lg;
+    @apply text-base lg:text-lg;
+  }
+  h5 {
+    @apply text-base sm:text-lg;
   }
   p {
-    @apply text-base font-normal;
+    @apply text-sm sm:text-base font-normal;
   }
 }
 
