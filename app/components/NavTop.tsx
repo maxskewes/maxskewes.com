@@ -101,7 +101,7 @@ const NavTop = ({ data }: FixedSidebarProps) => {
   };
 
   return (
-    <div className='static h-auto w-full bg-greydk md:invisible'>
+    <div className='static h-auto w-full bg-greydk'>
       <div className={josefin.className}>
         <div className='flex px-4 pt-4 justify-between items-start'>
           <div className='flex flex-col text-white'>

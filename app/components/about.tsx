@@ -13,7 +13,7 @@ const About = ({ data }: AboutProps) => {
   const { body, bullets } = data;
   const id = useId();
   return (
-    <section id='about'>
+    <section id='about' className='pt-0'>
       <SectionHeader title={'Introduction'} />
       <div className='pb-8'>
         <div>

@@ -91,7 +91,7 @@ const NavSide = ({ data }: NavSideProps) => {
   };
 
   return (
-    <div className='invisible md:visible h-[200px] md:h-screen w-full md:w-[200px] lg:w-[300px] bg-greydk fixed md:fixed top-0'>
+    <div className='hidden md:block h-[200px] md:h-screen w-full md:w-[200px] lg:w-[300px] bg-greydk fixed md:fixed top-0'>
     <div className={josefin.className}>
   
     <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
