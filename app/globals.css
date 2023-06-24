@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply leading-tight text-2xl sm:text-xl md:text-xl lg:text-2xl;
+    @apply leading-tight text-xl lg:text-2xl;
   }
   h2 {
     @apply leading-tight text-xl sm:text-lg md:text-lg lg:text-xl;
@@ -19,7 +19,10 @@
     @apply text-base sm:text-lg;
   }
   p {
-    @apply text-sm sm:text-base font-normal;
+    @apply text-sm sm:text-base font-normal text-slate;
+  }
+  i {
+    @apply text-sm xl:text-base font-light leading-4 lg:leading-5 text-teal;
   }
 }
 

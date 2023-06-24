@@ -34,16 +34,21 @@ export const educationData = {
       certificate: 'Full-Stack Coding Certificate',
       institution: 'University of Oregon',
       location: 'On-site in Portland, OR',
+      description:
+        'Six-month on-site intensive coursework in HTML, CSS, JavaScript, React, MySQL, and Node.js.',
     },
     {
       certificate: "Associate's Degree of Liberal Arts",
       institution: 'Marylhurst University',
       location: 'Marylhurst, OR',
+      description: 'Minor focus on Modern Irish Language (Gaeilge).',
     },
     {
       certificate: 'Certificate of Irish Studies',
       institution: 'University College Cork',
       location: 'Cork, Ireland',
+      description:
+        'First Class Honours in Modern and Ancient Irish language, music theory/practise, Celtic Civilization, Archaeology, and Politics.',
     },
   ],
 };
@@ -67,9 +72,9 @@ export const professionalExperienceData = {
     },
     {
       role: 'Web Developer',
-      company: 'RS Works',
+      company: 'Independent Contractor',
       dates: 'Nov 2021 - Present',
-      location: 'remote',
+      location: 'Remote',
       description:
         'I’ve created intuitive, modern websites for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, implementing e-commerce capabilities for products sold across North America. Through this work, I’ve been contracted to build business websites using ReactJS with TypeScript and frameworks including MUI, Chakra-UI, Create React App, and Next.js.',
       skills:
@@ -107,36 +112,66 @@ export const professionalExperienceData = {
   ],
 };
 
+export const portfolioData = {
+  title: 'App and Website Portfolio',
+  cardInfo: [
+    {
+      cardTitle: 'Resume-Building Application',
+      org: 'evicerated-banjo',
+      link: 'https://resumescripter.com/',
+      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
+      imgSrc: '/images/portfolio/rs-video.png',
+      imgAlt: 'RS Works Demo',
+    },
+    {
+      cardTitle: 'Resume-Building Application',
+      org: 'evicerated-banjo',
+      link: 'https://resumescripter.com/',
+      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
+      imgSrc: '/images/portfolio/rs-video.png',
+      imgAlt: 'RS Works Demo',
+    },
+    {
+      cardTitle: 'Resume-Building Application',
+      org: 'evicerated-banjo',
+      link: 'https://resumescripter.com/',
+      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
+      imgSrc: '/images/portfolio/rs-video.png',
+      imgAlt: 'RS Works Demo',
+    },
+  ],
+};
+
 export const graphicDesignData = {
   title: 'Graphic Design',
   examples: [
     {
-      title: 'evicerated-banjo',
+      imgTitle: 'evicerated-banjo',
       imgSrc: '/images/design/evicerated-banjo.jpeg',
       imgAlt: 'Block Carving of Evicerated Banjo',
     },
     {
-      title: 'bbff-tshirt-2022',
+      imgTitle: 'bbff-tshirt-2022',
       imgSrc: '/images/design/bbff-tshirt-2022.png',
       imgAlt: 'T-shirt Bluegrass Fest 2022',
     },
     {
-      title: 'papags-logo',
+      imgTitle: 'papags-logo',
       imgSrc: '/images/design/papags-site-logo.svg',
       imgAlt: 'Papa Gs Tofu Website Logo',
     },
     {
-      title: 'scratchdog',
+      imgTitle: 'scratchdog',
       imgSrc: '/images/design/scratchdog-tshirt.png',
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
     {
-      title: 'papags-bbq',
+      imgTitle: 'papags-bbq',
       imgSrc: '/images/design/papags-label-bbq.svg',
       imgAlt: "Papa G's Tofu BBQ Label",
     },
     {
-      title: 'sherlock-holmes-story-club',
+      imgTitle: 'sherlock-holmes-story-club',
       imgSrc: '/images/design/sherlock-holmes-story-club.jpg',
       imgAlt: 'Sherlock Holmes Story Club',
     },

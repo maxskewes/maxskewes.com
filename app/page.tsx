@@ -8,10 +8,11 @@ import {
   professionalExperienceData,
   graphicDesignData,
   personalData,
+  portfolioData,
 } from '../data/data';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
-import Portfolio from './components/portfolio';
+import PortfolioTemp from './components/portfolio-temp';
 import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
 import Resume from './components/resume-cv';
@@ -57,9 +58,9 @@ const Page: React.FC = () => {
 
           {/* <Skills data={skillsData} /> */}
           <Resume />
-          <Education data={educationData} />
           <ProfessionalExperience data={professionalExperienceData} />
-          <Portfolio />
+          <Education data={educationData} />
+          <PortfolioTemp data={portfolioData} />
           <GraphicDesign data={graphicDesignData} />
           <Personal data={personalData} />
           <Contact />

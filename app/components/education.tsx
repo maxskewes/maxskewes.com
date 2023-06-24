@@ -8,6 +8,7 @@ type EducationProps = {
       certificate: string;
       institution: string;
       location: string;
+      description: string;
     }[];
   };
 };
@@ -20,13 +21,14 @@ const Education = ({ data }: EducationProps) => {
       <SectionHeader title={title} />
     
       <div className='flex flex-col gap-6'>
-        {education.map(({ certificate, institution, location }) => (
+        {education.map(({ certificate, institution, location, description }) => (
           <div key={certificate} className='flex flex-col rounded-lg'>
             <div className='bg-grey-light p-6 drop-shadow-md rounded'>
-              <h3 className='font-semibold uppercase'>{certificate}</h3>
-              <h3 className='uppercase'>{institution}</h3>
-              <p>{location}</p>
-              {/* <p className='text-italic'>{description}</p> */}
+              <h3 className='font-semibold uppercase text-slate'>{certificate}</h3>
+              <h4 className='uppercase text-grey font-semibold'>{institution}</h4>
+              <p className='text-base text-grey font-medium'>{location}</p>
+              <i className='mt-2 font-normal text-slate'>
+                  {description}</i>
             </div>
           </div>
         ))}

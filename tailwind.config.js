@@ -11,12 +11,13 @@ module.exports = {
 			"greydk": "#262626",
 			yellow: "#FFF734",
 			green: "#68F590",
-			grey: "#7a679c",
+			grey: "#575757",
 			violet: "#550180",
 			"grey-light": "#FAFAFA",
 			"green-light": "#d2eff1",
 			white: "#fff",
 			teal: "#221a69",
+			slate: "#444444", 
 		},
 		fontFamily: {
 			sans: [ "Merriweather", "sans-serif"],
@@ -24,7 +25,7 @@ module.exports = {
 			display: ["Oswald"],
 		},
 		fontSize: {
-			sm: "0.8rem",
+			sm: "0.85rem",
 			base: "1rem",
 			lg: "1.15rem",
 			xl: "1.25rem",
