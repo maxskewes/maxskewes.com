@@ -19,6 +19,7 @@ import Resume from './components/resume-cv';
 import Contact from './components/contact';
 import NavTop from './components/NavTop';
 import { contact } from '../data/contact-data';
+import NavSide from './components/NavSide';
 // import Skills from './components/skills';
 
 const BackDrop = () => {
@@ -49,14 +50,15 @@ const Page: React.FC = () => {
   return (
     <div className='relative w-full h-auto'>
       <BackDrop />
-      <div className='relative pl-0  md:pl-[200px] lg:pl-[300px]'>
-        <div className='md:hidden'>
-          <NavTop data={contact} />
-        </div>
-        <div className='px-4 lg:px-8 bg-white/[.850] relative'>
-          <About data={aboutData} />
 
-          {/* <Skills data={skillsData} /> */}
+      <div className='md:hidden'>
+        <NavTop data={contact} />
+      </div>
+      <NavSide />
+      {/* <div className='relative pl-0  md:pl-[200px] lg:pl-[300px]'> */}
+      <div className='bg-white/[.850] inline-block w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
+        <div className='px-4 lg:px-8'>
+          <About data={aboutData} />
           <Resume />
           <ProfessionalExperience data={professionalExperienceData} />
           <Education data={educationData} />

@@ -1,11 +1,15 @@
 import { Josefin_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsPersonLinesFill, BsPersonHeart, BsGithub, BsLinkedin } from 'react-icons/bs';
+import {
+  BsPersonLinesFill,
+  BsPersonHeart,
+  BsGithub,
+  BsLinkedin,
+} from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiCheckboxBlankFill } from 'react-icons/ri';
-
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -13,88 +17,11 @@ const josefin = Josefin_Sans({
   variable: '--font-josefin',
 });
 
-type NavSideProps = {
-  data: {
-    contactLinks: string[];
-  };
-};
-
-type MSIconLinkProps = {
-  to: string;
-  children: any;
-};
-
-type MSlinkProps = {
-  to: string;
-  children: any;
-};
-
-const NavSide = ({ data }: NavSideProps) => {
-  const { contactLinks } = data;
-
-  const MSIconLink = ({ to, children }: MSlinkProps) => {
-    return (
-      <Link className='flex flex-row text-white hover:text-violet' href={to}>
-        {children}
-      </Link>
-    );
-  };
-
-  const MSlink = ({ to, children }: MSlinkProps) => {
-    return (
-      <Link className='flex flex-row text-grey hover:text-teal' href={to} >
-        {children}
-      </Link>
-    );
-  };
-
-  const NavMenu = () => {
-    return (
-      <div className='flex flex-col gap-2 my-4'>
-
-        <MSlink to={'#about'}>
-          <BsPersonLinesFill size='1.35em' />
-          <h4 className='ml-3'>About</h4>
-        </MSlink>
-
-        <MSlink to={'#resume-cv'}>
-          <RiCheckboxBlankFill size='1.35em' />
-          <h4 className='ml-3'>Resume/CV</h4>
-        </MSlink>
-
-        <MSlink to={'#education'}>
-          <RiCheckboxBlankFill size='1.35em' />
-          <h4 className='ml-3'>Education</h4>
-        </MSlink>
-
-        <MSlink to={'#portfolio'}>
-          <RiCheckboxBlankFill size='1.35em' />
-          <h4 className='ml-3'>App and Website Portfolio</h4>
-        </MSlink>
-
-        <MSlink to={'#graphic-design'}>
-          <RiCheckboxBlankFill size='1.35em' />
-          <h4 className='ml-3'>Design Portfolio</h4>
-        </MSlink>
-
-        <MSlink to={'#personal'}>
-          <BsPersonHeart size='1.35em' />
-          <h4 className='ml-3 '>Personal</h4>
-        </MSlink>
-
-        <MSlink to={'/contact'}>
-          <MdEmail size='1.35em' />
-          <h4 className='ml-3'>Contact</h4>
-        </MSlink>
-      </div>
-    );
-  };
-
+const NavSide = () => {
   return (
-    <div className='hidden md:block h-[200px] md:h-screen w-full md:w-[200px] lg:w-[300px] bg-greydk fixed md:fixed top-0'>
-    <div className={josefin.className}>
-  
-    <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
+    <div className='inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
+      <div className={josefin.className}>
+        <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
           <Image
             style={{ border: '5px solid #221a69' }}
             priority
@@ -119,19 +46,50 @@ const NavSide = ({ data }: NavSideProps) => {
 
           <div className='w-full max-w-[12em] mb-2'>
             <div className='flex flex-row justify-around'>
-              <MSIconLink to={'https://github.com/maxskewes'}>
+              <Link href={'https://github.com/maxskewes'} passHref>
                 <BsGithub size='1.5rem' />
-              </MSIconLink>
-              <MSIconLink to={'https://www.linkedin.com/in/maxskewes/'}>
-                <BsLinkedin size='1.5rem' />
-              </MSIconLink>
-              <MSIconLink to={'/'}>
+              </Link>
+              <Link href={'https://www.linkedin.com/in/maxskewes/'}>
+                  <BsLinkedin size='1.5rem' />
+              </Link>
+              <Link href={'/contact'}>
                 <MdEmail size='1.5rem' />
-              </MSIconLink>
+              </Link>
             </div>
           </div>
 
-          <NavMenu />
+          <div className='flex flex-col gap-2 my-4 z-9' >
+            <Link href={'#professional-experiences'} passHref>
+              <h4 className='ml-3'>Professional Experience</h4>
+            </Link>
+
+            <Link href={'#resume-cv'}>
+              <h4 className='ml-3'>Resume/CV</h4>
+            </Link>
+
+            <Link href={'#education'}>
+              <h4 className='ml-3'>Education</h4>
+            </Link>
+
+            <Link href={'#portfolio'}>
+              <h4 className='ml-3'>App and Website Portfolio</h4>
+            </Link>
+
+            <Link href={'#graphic-design'}>
+              <RiCheckboxBlankFill size='1.35em' />
+              <h4 className='ml-3'>Design Portfolio</h4>
+            </Link>
+
+            <Link href={'#personal'}>
+              <BsPersonHeart size='1.35em' />
+              <h4 className='ml-3 '>Personal</h4>
+            </Link>
+
+            <Link href={'/contact'}>
+              <MdEmail size='1.35em' />
+              <h4 className='ml-3'>Contact</h4>
+            </Link>
+          </div>
         </div>
         <div className='w-full text-center text-white my-2'>
           <h6>maxskewes@gmail.com</h6>

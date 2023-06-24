@@ -1,6 +1,6 @@
 import './globals.css';
 import { Work_Sans } from 'next/font/google';
-import Sidebar from './components/NavSide';
+import NavSide from './components/NavSide';
 import { contact } from '../data/contact-data';
 
 const worksans = Work_Sans({
@@ -13,12 +13,18 @@ export const metadata = {
   description: 'Cirriculum Vitæ',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang='en' className={worksans.className}>
       <body className='relative'>
-        <Sidebar data={contact} />
-        <main>{children}</main>
+        <main>
+          {/* <NavSide /> */}
+          {children}
+        </main>
       </body>
     </html>
   );

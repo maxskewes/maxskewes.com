@@ -17,6 +17,7 @@ module.exports = {
 			"green-light": "#d2eff1",
 			white: "#fff",
 			teal: "#221a69",
+			"teallt": "#7986CB",
 			slate: "#444444", 
 		},
 		fontFamily: {

@@ -46,7 +46,6 @@ const NavTop = ({ data }: FixedSidebarProps) => {
             padding: 0,
           }}
         >
-          {' '}
           {children}
         </p>
       </Link>
