@@ -16,85 +16,34 @@ type FixedSidebarProps = {
   };
 };
 
-type MSlinkProps = {
+type MLinkProps = {
   to: string;
-  children: any;
+  name?: string;
+  children?: any;
+};
+
+
+// height: 'size',
+// width: 'size',
+// display: 'flex',
+// justifySelf: 'center',
+// alignSelf: 'center',
+
+
+const MLink = ({ to, name, children }: MLinkProps) => {
+  return (
+    <Link href={to} className='text-white hover:text-violet'>
+      {children}
+      {name}
+    </Link>
+  );
 };
 
 const NavTop = ({ data }: FixedSidebarProps) => {
   const { contactLinks } = data;
 
-  const MSIconLink = ({ to, children }: MSlinkProps) => {
-    return (
-      <Link className='flex flex-row text-white hover:text-violet' href={to}>
-        {children}
-      </Link>
-    );
-  };
 
-  const MSlink = ({ to, children }: MSlinkProps) => {
-    return (
-      <Link
-        className='flex flex-row text-center text-grey hover:text-teal'
-        href={to}
-      >
-        <p
-          style={{
-            height: 'size',
-            width: 'size',
-            display: 'flex',
-            justifySelf: 'center',
-            alignSelf: 'center',
-            margin: 0,
-            padding: 0,
-          }}
-        >
-          {children}
-        </p>
-      </Link>
-    );
-  };
 
-  const NavSpace = () => {
-    return (
-      <div className='flex items-center text-grey mx-4'>
-        {/* <MdCircle
-          size={'.5rem'}
-          style={{
-            height: 'size',
-            width: 'size',
-            display: 'flex',
-            justifySelf: 'center',
-            alignSelf: 'center',
-            margin: 0,
-            padding: 0,
-          }}
-        /> */}
-      </div>
-    );
-  };
-
-  const NavMenu = () => {
-    return (
-      <div className='flex flex-col grow justify-center items-center'>
-        <div className='uppercase flex flex-row gap-2 items-around grow'>
-          <MSlink to={'#resume-cv'}>Resume/CV</MSlink>
-          <NavSpace />
-          <MSlink to={'#portfolio'}>App/Website Portfolio</MSlink>
-          <NavSpace />
-          <MSlink to={'#graphic-design'}>Design Portfolio</MSlink>
-        </div>
-
-        <div className='uppercase flex flex-row gap-2 grow'>
-          <MSlink to={'#education'}>Education</MSlink>
-          <NavSpace />
-          <MSlink to={'#personal'}>Personal</MSlink>
-          <NavSpace />
-          <MSlink to={'/contact'}>Contact</MSlink>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div className='static h-auto w-full bg-greydk'>
@@ -126,20 +75,36 @@ const NavTop = ({ data }: FixedSidebarProps) => {
               <h5 className='text-white'>Full-Stack Developer</h5>
             </div>
             <div className='flex flex-row justify-around'>
-              <MSIconLink to={'https://github.com/maxskewes'}>
+              <MLink to={'https://github.com/maxskewes'}>
                 <BsGithub size='1.5rem' />
-              </MSIconLink>
-              <MSIconLink to={'https://www.linkedin.com/in/maxskewes/'}>
+              </MLink>
+              <MLink to={'https://www.linkedin.com/in/maxskewes/'}>
                 <BsLinkedin size='1.5rem' />
-              </MSIconLink>
-              <MSIconLink to={'/'}>
+              </MLink>
+              <MLink to={'/'}>
                 <MdEmail size='1.5rem' />
-              </MSIconLink>
+              </MLink>
             </div>
           </div>
         </div>
         <div className='w-full'>
-          <NavMenu />
+        <div className='flex flex-col grow justify-center items-center'>
+        <div className='uppercase flex flex-row gap-2 items-around grow'>
+          <MLink to={'#resume-cv'}>Resume/CV</MLink>
+
+          <MLink to={'#portfolio'}>App/Website Portfolio</MLink>
+
+          <MLink to={'#graphic-design'}>Design Portfolio</MLink>
+        </div>
+
+        <div className='uppercase flex flex-row gap-2 grow'>
+          <MLink to={'#education'}>Education</MLink>
+
+          <MLink to={'#personal'}>Personal</MLink>
+
+          <MLink to={'/contact'}>Contact</MLink>
+        </div>
+      </div>
         </div>
       </div>
     </div>

@@ -17,9 +17,24 @@ const josefin = Josefin_Sans({
   variable: '--font-josefin',
 });
 
+type MLinkSmProps = {
+  to: string;
+  name?: string;
+  children?: any;
+};
+
+const MLinkSm = ({ to, name, children }: MLinkSmProps) => {
+  return (
+    <Link href={to} className='text-white hover:text-violet'>
+      {children}
+      {name}
+    </Link>
+  );
+};
+
 const NavSide = () => {
   return (
-    <div className='inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
+    <div className='hidden md:inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
       <div className={josefin.className}>
         <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
           <Image
@@ -44,45 +59,36 @@ const NavSide = () => {
             <h2 className='text-white'>Full-Stack Developer</h2>
           </div>
 
-          <div className='w-full max-w-[12em] mb-2'>
+          <div className='w-full max-w-[12em] m-2'>
             <div className='flex flex-row justify-around'>
-              <Link href={'https://github.com/maxskewes'}>
+              <MLinkSm to={'https://github.com/maxskewes'}>
                 <BsGithub size='1.5rem' />
-              </Link>
-              <Link href={'https://www.linkedin.com/in/maxskewes/'}>
+              </MLinkSm>
+              <MLinkSm to={'https://www.linkedin.com/in/maxskewes/'}>
                 <BsLinkedin size='1.5rem' />
-              </Link>
-              <Link href={'/contact'}>
+              </MLinkSm>
+              <MLinkSm to={'/contact'}>
                 <MdEmail size='1.5rem' />
-              </Link>
+              </MLinkSm>
             </div>
           </div>
 
           <div className='flex flex-col gap-2 my-4 z-9'>
-            <Link href={'#professional-experiences'} passHref>
+            <MLinkSm to={'#professional-experiences'}>
               Professional Experience
-            </Link>
+            </MLinkSm>
 
-            <Link href={'#resume-cv'}>Resume/CV</Link>
+            <MLinkSm to={'#resume-cv'}>Resume/CV</MLinkSm>
 
-            <Link href={'#education'}>Education</Link>
+            <MLinkSm to={'#education'}>Education</MLinkSm>
 
-            <Link href={'#portfolio'}>App and Website Portfolio</Link>
+            <MLinkSm to={'#portfolio'}>App and Website Portfolio</MLinkSm>
 
-            <Link href={'#graphic-design'}>
-              <RiCheckboxBlankFill size='1.35em' />
-              Design Portfolio
-            </Link>
+            <MLinkSm to={'#graphic-design'}>Design Portfolio</MLinkSm>
 
-            <Link href={'#personal'}>
-              <BsPersonHeart size='1.35em' />
-              Personal
-            </Link>
+            <MLinkSm to={'#personal'}>Personal</MLinkSm>
 
-            <Link href={'/contact'}>
-              <MdEmail size='1.35em' />
-              Contact
-            </Link>
+            <MLinkSm to={'/contact'}>Contact</MLinkSm>
           </div>
         </div>
         <div className='w-full text-center text-white my-2'>
