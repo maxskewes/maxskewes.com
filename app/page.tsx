@@ -12,7 +12,7 @@ import {
 } from '../data/data';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
-import PortfolioTemp from './components/portfolio-temp';
+import Portfolio from './components/portfolio';
 import GraphicDesign from './components/graphic-design';
 import Personal from './components/personal';
 import Resume from './components/resume-cv';
@@ -60,7 +60,7 @@ const Page: React.FC = () => {
           <Resume />
           <ProfessionalExperience data={professionalExperienceData} />
           <Education data={educationData} />
-          <PortfolioTemp data={portfolioData} />
+          <Portfolio data={portfolioData} />
           <GraphicDesign data={graphicDesignData} />
           <Personal data={personalData} />
           <Contact />

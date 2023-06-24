@@ -3,6 +3,12 @@ import { useState } from 'react';
 import { VscTriangleDown, VscTriangleUp } from 'react-icons/vsc';
 import { RiExternalLinkFill } from 'react-icons/ri';
 import SectionHeader from './SectionHeader';
+import { Josefin_Sans } from 'next/font/google';
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  variable: '--font-josefin',
+});
 
 type CVSectionTitleProps = {
   title: string;
@@ -54,36 +60,46 @@ const Resume = () => {
   const [cvOpen, setCVOpen] = useState(false);
 
   return (
-    <section id='resume-cv'>
-      <SectionHeader title={'Résumé - Curriculum Vitæ'} />
+    <section id='resume-cv' className='pt-0'>
+      <div className={josefin.className}>
+        <div className='flex flex-col justify-center items-center'>
+          <h2 className='uppercase mb-2 pt-12 font-semibold text-teal'>
+            Résumé -<a className='tracking-tight'> Curriculum Vitæ</a>
+          </h2>
+          <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violet'>
+            &nbsp;
+          </p>
 
-      <div className='w-[300px]'>
-        <div className='border border-violet rounded-md inline-flex items-center w-full mb-2 p-1'>
-          <a
-            href='/docs/resume.pdf'
-            target='_blank'
-            className='flex grow items-center justify-center uppercase text-violet text-sm'
-          >
-            <div className='inline-flex items-center justify-center'>
-              <div className='pr-1'>open as a printable PDF</div>
-              <RiExternalLinkFill />
-            </div>
-          </a>
-        </div>
+          <div className='flex flex-col justify-center items-center'>
+            <a
+              href='/docs/resume.pdf'
+              target='_blank'
+              className='border border-[2px] border-violet rounded-md px-4 w-68 uppercase mt-4'
+            >
+              <div className='inline-flex items-center justify-center text-sm text-violet font-semibold'>
+                <div className='pr-1'>open as a printable PDF</div>
+                <RiExternalLinkFill />
+              </div>
+            </a>
 
-        <div className='uppercase border border-violet text-violet rounded-md text-sm text-center p-1 w-full'>
-          <button onClick={() => setCVOpen(!cvOpen)} className='uppercase'>
-            {cvOpen ? (
-              <div className='inline-flex items-center'>
-                <div className='pr-1'>hide resume</div> <VscTriangleDown />
-              </div>
-            ) : (
-              <div className='inline-flex items-center'>
-                <div className='pr-1'>view below</div>
-                <VscTriangleUp />
-              </div>
-            )}
-          </button>
+            <button
+              onClick={() => setCVOpen(!cvOpen)}
+              className='border border-[2px] border-violet rounded-md px-4 w-60 uppercase mt-4'
+            >
+              {cvOpen ? (
+                <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
+                  <a className='pr-1'>hide resume</a>
+                  <VscTriangleUp />
+                </p>
+              ) : (
+                <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
+                  <a className='pr-1'>view below</a>
+
+                  <VscTriangleDown />
+                </p>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 

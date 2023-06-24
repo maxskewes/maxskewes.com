@@ -117,27 +117,39 @@ export const portfolioData = {
   cardInfo: [
     {
       cardTitle: 'Resume-Building Application',
-      org: 'evicerated-banjo',
+      org: 'RS Works',
       link: 'https://resumescripter.com/',
-      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
+      description:
+        'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
       imgSrc: '/images/portfolio/rs-video.png',
       imgAlt: 'RS Works Demo',
     },
     {
-      cardTitle: 'Resume-Building Application',
-      org: 'evicerated-banjo',
-      link: 'https://resumescripter.com/',
-      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
-      imgSrc: '/images/portfolio/rs-video.png',
-      imgAlt: 'RS Works Demo',
+      cardTitle: "Website for Papa's G's Organics",
+      org: "Papa G's Organic Tofu",
+      link: 'https://papagstofu.com/',
+      description:
+        'A website built with Reactjs. Designed and created all components, graphics, artwork, and layout.',
+      imgSrc: '/images/portfolio/papa-gs-link.png',
+      imgAlt: "Papa G's Website Link",
     },
     {
-      cardTitle: 'Resume-Building Application',
-      org: 'evicerated-banjo',
-      link: 'https://resumescripter.com/',
-      description: 'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
-      imgSrc: '/images/portfolio/rs-video.png',
-      imgAlt: 'RS Works Demo',
+      cardTitle: 'Civic Tech Index',
+      org: 'Hack for LA',
+      link: 'http://civictechindex.org/home  *production temporarily paused*',
+      description:
+        'A Hack for LA project, the CTI is web application to catalog every open source civic tech project and enable developers to connect willing volunteers with their dream projects to help with civic issues.',
+      imgSrc: '/images/portfolio/cti-link.png',
+      imgAlt: 'CTI Website Link',
+    },
+    {
+      cardTitle: 'Music Festival Website',
+      org: 'Bridgetown Bluegrass Festival',
+      link: 'https://bridgetownbluegrass.com/',
+      description:
+        "A full-stack website built with React and Nextjs. Payment APIs developed with Stripe. All contact, volunteer, and performance application routing developed with nodemailer API. Designed and created all components, graphics, artwork, and layout. Animation created with Framer's open-source Motion library for Reactjs.",
+      imgSrc: '/images/portfolio/cti-link.png',
+      imgAlt: 'Bridgetown Bluegrass Website',
     },
   ],
 };
