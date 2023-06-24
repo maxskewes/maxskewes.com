@@ -46,11 +46,11 @@ const NavSide = () => {
 
           <div className='w-full max-w-[12em] mb-2'>
             <div className='flex flex-row justify-around'>
-              <Link href={'https://github.com/maxskewes'} passHref>
+              <Link href={'https://github.com/maxskewes'}>
                 <BsGithub size='1.5rem' />
               </Link>
               <Link href={'https://www.linkedin.com/in/maxskewes/'}>
-                  <BsLinkedin size='1.5rem' />
+                <BsLinkedin size='1.5rem' />
               </Link>
               <Link href={'/contact'}>
                 <MdEmail size='1.5rem' />
@@ -58,36 +58,30 @@ const NavSide = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-2 my-4 z-9' >
+          <div className='flex flex-col gap-2 my-4 z-9'>
             <Link href={'#professional-experiences'} passHref>
-              <h4 className='ml-3'>Professional Experience</h4>
+              Professional Experience
             </Link>
 
-            <Link href={'#resume-cv'}>
-              <h4 className='ml-3'>Resume/CV</h4>
-            </Link>
+            <Link href={'#resume-cv'}>Resume/CV</Link>
 
-            <Link href={'#education'}>
-              <h4 className='ml-3'>Education</h4>
-            </Link>
+            <Link href={'#education'}>Education</Link>
 
-            <Link href={'#portfolio'}>
-              <h4 className='ml-3'>App and Website Portfolio</h4>
-            </Link>
+            <Link href={'#portfolio'}>App and Website Portfolio</Link>
 
             <Link href={'#graphic-design'}>
               <RiCheckboxBlankFill size='1.35em' />
-              <h4 className='ml-3'>Design Portfolio</h4>
+              Design Portfolio
             </Link>
 
             <Link href={'#personal'}>
               <BsPersonHeart size='1.35em' />
-              <h4 className='ml-3 '>Personal</h4>
+              Personal
             </Link>
 
             <Link href={'/contact'}>
               <MdEmail size='1.35em' />
-              <h4 className='ml-3'>Contact</h4>
+              Contact
             </Link>
           </div>
         </div>

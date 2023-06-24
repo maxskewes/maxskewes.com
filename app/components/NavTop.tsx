@@ -34,7 +34,10 @@ const NavTop = ({ data }: FixedSidebarProps) => {
 
   const MSlink = ({ to, children }: MSlinkProps) => {
     return (
-      <Link className='flex flex-row text-center text-grey hover:text-teal' href={to}>
+      <Link
+        className='flex flex-row text-center text-grey hover:text-teal'
+        href={to}
+      >
         <p
           style={{
             height: 'size',
@@ -83,17 +86,11 @@ const NavTop = ({ data }: FixedSidebarProps) => {
         </div>
 
         <div className='uppercase flex flex-row gap-2 grow'>
-          <MSlink to={'#education'}>
-            <p className='ml-3'>Education</p>
-          </MSlink>
+          <MSlink to={'#education'}>Education</MSlink>
           <NavSpace />
-          <MSlink to={'#personal'}>
-            <p className='ml-3'>Personal</p>
-          </MSlink>
+          <MSlink to={'#personal'}>Personal</MSlink>
           <NavSpace />
-          <MSlink to={'/contact'}>
-            <p className='ml-3'>Contact</p>
-          </MSlink>
+          <MSlink to={'/contact'}>Contact</MSlink>
         </div>
       </div>
     );
