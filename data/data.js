@@ -167,21 +167,21 @@ export const graphicDesignData = {
       imgSrc: '/images/design/bbff-tshirt-2022.png',
       imgAlt: 'T-shirt Bluegrass Fest 2022',
     },
-    {
-      imgTitle: 'papags-logo',
-      imgSrc: '/images/design/papags-site-logo.svg',
-      imgAlt: 'Papa Gs Tofu Website Logo',
-    },
+    // {
+    //   imgTitle: 'papags-logo',
+    //   imgSrc: '/images/design/papags-site-logo.svg',
+    //   imgAlt: 'Papa Gs Tofu Website Logo',
+    // },
     {
       imgTitle: 'scratchdog',
       imgSrc: '/images/design/scratchdog-tshirt.png',
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
-    {
-      imgTitle: 'papags-bbq',
-      imgSrc: '/images/design/papags-label-bbq.svg',
-      imgAlt: "Papa G's Tofu BBQ Label",
-    },
+    // {
+    //   imgTitle: 'papags-bbq',
+    //   imgSrc: '/images/design/papags-label-bbq.svg',
+    //   imgAlt: "Papa G's Tofu BBQ Label",
+    // },
     {
       imgTitle: 'sherlock-holmes-story-club',
       imgSrc: '/images/design/sherlock-holmes-story-club.jpg',
