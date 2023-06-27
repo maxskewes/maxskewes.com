@@ -33,7 +33,7 @@ type MLinkProps = {
 
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
-    <Link href={to} className='text-white hover:text-violet'>
+    <Link href={to} className='text-white hover:text-teallt'>
       {children}
       <p>{name}</p>
     </Link>
@@ -63,8 +63,10 @@ const NavTop = ({ data }: FixedSidebarProps) => {
           {/* <div               className='w-100 sm:w-120 h-100 sm:h-120'> */}
           <Image
             priority
-            fill
-            sizes='(max-width: 640px) 100px, (max-width: 768px) 120px, 50px'
+            width={100}
+            height={100}
+            // fill
+            // sizes='(max-width: 640px) 100px, (max-width: 768px) 120px, 50px'
             className='rounded-full'
             src='/images/avatar.jpg'
             alt="Max's face"
@@ -94,12 +96,12 @@ const NavTop = ({ data }: FixedSidebarProps) => {
 
         <button
           onClick={() => setNavOpen(!NavOpen)}
-          className='flex justify-end w-full'
+          className='flex justify-end w-full text-white hover:text-teallt'
         >
           {NavOpen ? (
-            <MdClose color='white' />
+            <MdClose />
           ) : (
-            <BiMenuAltRight color='white' />
+            <BiMenuAltRight />
           )}
         </button>
 

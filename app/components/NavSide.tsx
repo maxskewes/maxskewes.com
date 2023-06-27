@@ -21,7 +21,7 @@ type MLinkSmProps = {
 
 const MLinkSm = ({ to, name, children }: MLinkSmProps) => {
   return (
-    <Link href={to} className='text-white hover:text-violet text-'>
+    <Link href={to} className='text-white hover:text-teallt'>
       {children}
       {name}
     </Link>
@@ -34,7 +34,7 @@ const NavSide = () => {
       <div className={josefin.className}>
         <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
           <Image
-            style={{ border: '5px solid #221a69' }}
+            // style={{ border: '5px solid #221a69' }}
             priority
             width={160}
             height={160}
