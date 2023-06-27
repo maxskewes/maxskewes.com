@@ -23,34 +23,34 @@ import { contact } from '../data/contact-data';
 import NavSide from './components/NavSide';
 // import Skills from './components/skills';
 
-const BackDrop = () => {
-  return (
-    <div className='absolute'>
-      <Image
-        src='/images/dev-banjo-porch.png'
-        alt='Max on porch coding and playing banjo'
-        aria-label='Max on porch coding and playing banjo'
-        width={0}
-        height={0}
-        sizes='100%'
-        style={{
-          zIndex: -1,
-          width: '100%',
-          height: 'auto',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          objectFit: 'cover',
-        }}
-      />
-    </div>
-  );
-};
+// const BackDrop = () => {
+//   return (
+//     <div className='absolute'>
+//       <Image
+//         src='/images/dev-banjo-porch.png'
+//         alt='Max on porch coding and playing banjo'
+//         aria-label='Max on porch coding and playing banjo'
+//         width={0}
+//         height={0}
+//         sizes='100%'
+//         style={{
+//           zIndex: -1,
+//           width: '100%',
+//           height: 'auto',
+//           position: 'fixed',
+//           top: 0,
+//           left: 0,
+//           objectFit: 'cover',
+//         }}
+//       />
+//     </div>
+//   );
+// };
 
 const Page: React.FC = () => {
   return (
     <div className='relative w-full h-auto'>
-      <BackDrop />
+      {/* <BackDrop /> */}
 
       <div className='md:hidden'>
         <NavTop data={contact} />
