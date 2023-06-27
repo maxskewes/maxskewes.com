@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import Link from 'next/link';
 import SectionHeader from './SectionHeader';
 
@@ -26,8 +26,7 @@ const {title, examples} = data;
             className='col-span-1 flex justify-center items-center bg-grey-light drop-shadow-md rounded'
           >
             <div className='p-2 rounded-md overflow-hidden w-auto h-auto'>
-              <Image
-                priority
+              <img
                 width={200}
                 height={200}
                 className='m-1'

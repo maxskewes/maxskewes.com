@@ -1,6 +1,6 @@
 'use client'
 import { Josefin_Sans } from 'next/font/google';
-import Image from 'next/image';
+
 import Link from 'next/link';
 import {
   BsGithub,
@@ -34,9 +34,8 @@ const NavSide = () => {
     <div className='hidden md:inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
       <div className={josefin.className}>
         <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
-          <Image
+          <img
             // style={{ border: '5px solid #221a69' }}
-            priority
             width={160}
             height={160}
             className='mb-4 rounded-full h-full'
