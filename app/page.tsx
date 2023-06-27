@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-
+import Image from 'next/image';
 import About from './components/about';
 import {
   aboutData,
@@ -26,7 +26,7 @@ import NavSide from './components/NavSide';
 const BackDrop = () => {
   return (
     <div className='absolute'>
-      <img
+      <Image
         src='/images/dev-banjo-porch.png'
         alt='Max on porch coding and playing banjo'
         aria-label='Max on porch coding and playing banjo'
@@ -50,7 +50,7 @@ const BackDrop = () => {
 const Page: React.FC = () => {
   return (
     <div className='relative w-full h-auto'>
-      <BackDrop />
+      {/* <BackDrop /> */}
 
       <div className='md:hidden'>
         <NavTop data={contact} />

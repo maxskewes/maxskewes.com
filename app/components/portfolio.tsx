@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import SectionHeader from './SectionHeader';
 
@@ -39,8 +39,9 @@ const Portfolio = ({ data }: PortfolioProps) => {
               <div className='flex-col text-center'>
                 <div className='flex justify-center items-center'>
                   <Link href={link}>
-                    <img
+                    <Image
                       style={{ border: '5px solid white' }}
+                      priority
                       width={200}
                       height={200}
                       className='m-1'

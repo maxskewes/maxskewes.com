@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Josefin_Sans } from 'next/font/google';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdClose, MdEmail, MdCircle } from 'react-icons/md';
@@ -61,7 +61,8 @@ const NavTop = ({ data }: FixedSidebarProps) => {
           </div>
 
           {/* <div               className='w-100 sm:w-120 h-100 sm:h-120'> */}
-          <img
+          <Image
+            priority
             width={100}
             height={100}
             // fill
