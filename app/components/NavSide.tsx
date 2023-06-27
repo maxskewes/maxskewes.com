@@ -2,18 +2,14 @@ import { Josefin_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  BsPersonLinesFill,
-  BsPersonHeart,
   BsGithub,
   BsLinkedin,
 } from 'react-icons/bs';
-import { FaHome } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { RiCheckboxBlankFill } from 'react-icons/ri';
+
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
-  // weight: ['400', '700'],
   variable: '--font-josefin',
 });
 
@@ -25,7 +21,7 @@ type MLinkSmProps = {
 
 const MLinkSm = ({ to, name, children }: MLinkSmProps) => {
   return (
-    <Link href={to} className='text-white hover:text-violet'>
+    <Link href={to} className='text-white hover:text-violet text-'>
       {children}
       {name}
     </Link>

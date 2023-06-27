@@ -19,7 +19,7 @@
     @apply text-base sm:text-lg;
   }
   p {
-    @apply text-sm sm:text-base font-normal text-slate;
+    @apply text-sm sm:text-base;
   }
   i {
     @apply text-sm xl:text-base font-light leading-4 lg:leading-5 text-teal;
