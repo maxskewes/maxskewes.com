@@ -44,7 +44,7 @@ const NavTop = ({ data }: FixedSidebarProps) => {
   const [NavOpen, setNavOpen] = useState(false);
 
   return (
-    <div className='static h-auto w-full bg-greydk p-4'>
+    <div id='page-top' className='static h-auto w-full bg-greydk p-4'>
       <div className={josefin.className}>
         <div className='flex justify-between items-start'>
           <div className='flex flex-col text-white pt-1'>
