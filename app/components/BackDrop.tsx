@@ -10,7 +10,7 @@ const BackDrop = () => {
         width={0}
         height={'0'}
         sizes='100%'
-        className='sticky object-cover h-screen w-screen lg:h-auto'
+        className='fixed object-cover h-screen w-screen lg:h-auto'
         style={{
           zIndex: -1,
         }}

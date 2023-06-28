@@ -15,7 +15,11 @@ export const metadata = {
   description: 'Cirriculum Vitæ',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang='en' className={worksans.className}>
       <body>
@@ -27,7 +31,9 @@ export default function RootLayout({ children }) {
         </header>
         <main>
           <BackDrop />
-          {children}</main>
+          {children}
+        </main>
+        <TopNavButton />
       </body>
     </html>
   );

@@ -62,7 +62,7 @@ const NavTop = () => {
                 <div className='flex flex-row w-full justify-around pt-2'>
                   <MLink to={'#education'} name={'Education'} />
                   <MLink to={'#personal'} name={'Personal'} />
-                  <MLink to={'/contact'} name={'Contact'} />
+                  <MLink to={'#contact'} name={'Contact'} />
                 </div>
               </div>
             )}
