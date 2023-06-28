@@ -104,7 +104,7 @@ const Resume = () => {
       </div>
 
       {cvOpen && (
-        <div className='bg-white mt-2 pt-2 p-6 drop-shadow-md'>
+        <div className='bg-white mt-2 pt-2 p-6 shadow-md'>
           <div className='flex flex-col-reverse sm:flex-row justify-between pb-4'>
             <div className='flex items-center'>
               <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase'>

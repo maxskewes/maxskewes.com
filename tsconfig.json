@@ -38,7 +38,7 @@
     "app/components/icons/Email.jsx",
     "app/components/icons/Linkedin.jsx",
     "app/components/nav-menu.js"
-  ],
+, "app/layout.js"  ],
   "exclude": [
     "node_modules"
   ]

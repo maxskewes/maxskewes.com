@@ -28,7 +28,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
           ({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
             <div
               key={cardTitle}
-              className='p-6 rounded overflow-hidden bg-grey-light drop-shadow-md'
+              className='p-6 rounded overflow-hidden bg-grey-light shadow-md'
             >
               <h3 className='font-semibold uppercase text-slate'>
                 {cardTitle}

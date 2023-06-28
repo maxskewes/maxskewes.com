@@ -1,15 +1,16 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import { TbArrowBigUpFilled } from 'react-icons/tb';
 
 const TopNavButton = () => {
   return (
-
     <Link
-    href='#page-top'
-    className='z-99 h-10 w-10 flex justify-center align-center opacity-50 bg-teal rounded-full fixed bottom-5 right-5'
-    ><TbArrowBigUpFilled color='white' fontSize={24} className='mt-1.5' /></Link>
-  )
-}
+      href='#page-top'
+      className='md:hidden h-10 w-10 flex justify-center align-center opacity-50 bg-teal rounded-full fixed bottom-5 right-5'
+    >
+      <TbArrowBigUpFilled color='white' fontSize={24} className='mt-1.5' />
+    </Link>
+  );
+};
 
-export default TopNavButton
+export default TopNavButton;

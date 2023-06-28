@@ -16,9 +16,7 @@ const About = ({ data }: AboutProps) => {
     <section id='about' className='pt-0'>
       <SectionHeader title={'Introduction'} />
       <div className='pb-8'>
-        <div>
-          <p className='mb-6'>{body}</p>
-        </div>
+        <p className='mb-6'>{body}</p>
         <div>
           <p className='mb-2'>Examples of my work:</p>
           {bullets?.map((el, i) => (

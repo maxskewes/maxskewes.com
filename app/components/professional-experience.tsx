@@ -33,20 +33,19 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
             highlights,
             skills,
           }) => (
-            <div key={role} className='flex flex-col rounded-lg'>
-              <div className='bg-grey-light p-6 drop-shadow-md rounded'>
-                <h3 className='font-semibold uppercase text-slate'>{role}</h3>
-                <h4 className='uppercase text-grey font-semibold'>{company}</h4>
-                <p className='text-base text-grey font-medium'>{location}</p>
-                <i className='text-base text-grey font-normal'>{dates}</i>
-                <p className='mt-2'>
-                  &nbsp;&nbsp;{description}
-                </p>
-                {highlights ? <p className='mt-2'>Key Highlights:</p> : null}
-                <p className='pl-2'>{highlights}</p>
-                <p className='mt-2'>Skills:</p>
-                <p className='pl-2'>{skills}</p>
-              </div>
+            <div
+              key={role}
+              className='bg-grey-light p-6 shadow-md rounded'
+            >
+              <h3 className='font-semibold uppercase text-slate'>{role}</h3>
+              <h4 className='uppercase text-grey font-semibold'>{company}</h4>
+              <p className='text-base text-grey font-medium'>{location}</p>
+              <i className='text-base text-grey font-normal'>{dates}</i>
+              <p className='mt-2'>&nbsp;&nbsp;{description}</p>
+              {highlights ? <p className='mt-2'>Key Highlights:</p> : null}
+              <p className='pl-2'>{highlights}</p>
+              <p className='mt-2'>Skills:</p>
+              <p className='pl-2'>{skills}</p>
             </div>
           )
         )}

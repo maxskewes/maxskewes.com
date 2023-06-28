@@ -19,11 +19,11 @@ const {title, examples} = data;
   return (
     <section id="graphic-design">
       <SectionHeader title={title} />
-      <div className='container mx-auto p-6 grid grid-cols-3 gap-4'>
+      <div className='mx-auto p-6 grid grid-cols-3 gap-4'>
         {examples.map(({ imgTitle, imgSrc, imgAlt }) => (
           <div
             key={imgTitle}
-            className='col-span-1 flex justify-center items-center bg-grey-light drop-shadow-md rounded'
+            className='col-span-1 flex justify-center items-center bg-grey-light shadow-md rounded'
           >
             <div className='p-2 rounded-md overflow-hidden w-auto h-auto'>
               <Image
