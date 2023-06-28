@@ -1,3 +1,4 @@
+import BackDrop from './components/BackDrop';
 import NavSide from './components/NavSide';
 import NavTop from './components/NavTop';
 import TopNavButton from './components/TopNavButton';
@@ -24,7 +25,8 @@ export default function RootLayout({ children }) {
             <NavSide />
           </nav>
         </header>
-        <main className='z-1 bg-white/[.850] w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
+        <main>
+          <BackDrop />
           {children}</main>
       </body>
     </html>

@@ -82,29 +82,33 @@ const Resume = () => {
               </div>
             </a>
 
-            <button
-              onClick={() => setCVOpen(!cvOpen)}
-              className='border border-[2px] border-violet rounded-md px-4 w-60 uppercase mt-4'
-            >
-              {cvOpen ? (
-                <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
+            {cvOpen ? (
+              <button
+                onClick={() => setCVOpen(!cvOpen)}
+                className='border border-[2px] border-violet bg-violet rounded-md px-4 w-60 uppercase mt-4'
+              >
+                <p className='inline-flex items-center text-sm text-white font-semibold tracking-wide'>
                   <a className='pr-1'>hide resume</a>
                   <VscTriangleUp />
                 </p>
-              ) : (
+              </button>
+            ) : (
+              <button
+                onClick={() => setCVOpen(!cvOpen)}
+                className='border border-[2px] border-violet rounded-md px-4 w-60 uppercase mt-4'
+              >
                 <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
                   <a className='pr-1'>view below</a>
-
                   <VscTriangleDown />
                 </p>
-              )}
-            </button>
+              </button>
+            )}
           </div>
         </div>
       </div>
 
       {cvOpen && (
-        <div className='bg-white mt-2 pt-2 p-6 shadow-md'>
+        <div className='bg-white mt-6 pt-2 p-6 shadow-md'>
           <div className='flex flex-col-reverse sm:flex-row justify-between pb-4'>
             <div className='flex items-center'>
               <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase'>

@@ -46,7 +46,7 @@ const NavTop = () => {
 
               <button
                 onClick={() => setNavOpen(!NavOpen)}
-                className='flex justify-end w-full text-white hover:text-teallt'
+                className='flex grow justify-end w-full text-white hover:text-teallt'
               >
                 {NavOpen ? <MdClose /> : <BiMenuAltRight />}
               </button>
