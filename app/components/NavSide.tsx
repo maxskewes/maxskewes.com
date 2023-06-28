@@ -1,12 +1,8 @@
 import { Josefin_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  BsGithub,
-  BsLinkedin,
-} from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -32,7 +28,7 @@ const NavSide = () => {
   return (
     <div className='hidden md:inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
       <div className={josefin.className}>
-        <div className='flex flex-col align-center p-4 md:p-6 lg:px-10 items-center'>
+        <div className='flex flex-col grow justify-start p-4 md:p-6 lg:px-10 items-center'>
           <Image
             priority
             width={160}
@@ -86,9 +82,10 @@ const NavSide = () => {
             <MLinkSm to={'/contact'}>Contact</MLinkSm>
           </div>
         </div>
-        <div className='w-full text-center text-white my-2'>
-          <h6>maxskewes@gmail.com</h6>
-        </div>
+      </div>
+      <div className='grow'></div>
+      <div className='w-full text-center my-2'>
+        <p className='text-white text-sm font-light tracking-wider'>maxskewes@gmail.com</p>
       </div>
     </div>
   );
