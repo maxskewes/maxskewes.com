@@ -1,7 +1,6 @@
+import TopNavButton from './components/TopNavButton';
 import './globals.css';
 import { Work_Sans } from 'next/font/google';
-import NavSide from './components/NavSide';
-import { contact } from '../data/contact-data';
 
 const worksans = Work_Sans({
   subsets: ['latin'],
@@ -22,7 +21,6 @@ export default function RootLayout({
     <html lang='en' className={worksans.className}>
       <body className='relative'>
         <main>
-          {/* <NavSide /> */}
           {children}
         </main>
       </body>

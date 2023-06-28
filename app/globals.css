@@ -33,7 +33,7 @@
 }
 
 section {
-  @apply pt-20;
+  @apply pt-20 relative;
 }
 
 main h2 {

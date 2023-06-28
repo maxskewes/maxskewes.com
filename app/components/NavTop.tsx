@@ -13,7 +13,7 @@ const josefin = Josefin_Sans({
   variable: '--font-josefin',
 });
 
-type FixedSidebarProps = {
+type NavProps = {
   data: {
     contactLinks: string[];
   };
@@ -25,12 +25,6 @@ type MLinkProps = {
   children?: any;
 };
 
-// height: 'size',
-// width: 'size',
-// display: 'flex',
-// justifySelf: 'center',
-// alignSelf: 'center',
-
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
     <Link href={to} className='text-white hover:text-teallt'>
@@ -40,11 +34,11 @@ const MLink = ({ to, name, children }: MLinkProps) => {
   );
 };
 
-const NavTop = ({ data }: FixedSidebarProps) => {
+const NavTop = ({ data }: NavProps) => {
   const [NavOpen, setNavOpen] = useState(false);
 
   return (
-    <div id='page-top' className='static h-auto w-full bg-greydk p-4'>
+    <div id='page-top' className='top-0 h-auto w-full bg-greydk p-4'>
       <div className={josefin.className}>
         <div className='flex justify-between items-start'>
           <div className='flex flex-col text-white pt-1'>
@@ -60,7 +54,6 @@ const NavTop = ({ data }: FixedSidebarProps) => {
             </div>
           </div>
 
-          {/* <div               className='w-100 sm:w-120 h-100 sm:h-120'> */}
           <Image
             priority
             width={100}
@@ -68,7 +61,7 @@ const NavTop = ({ data }: FixedSidebarProps) => {
             // fill
             // sizes='(max-width: 640px) 100px, (max-width: 768px) 120px, 50px'
             className='rounded-full'
-            src='/images/avatar.jpg'
+            src='/images/ugly-mug.jpg'
             alt="Max's face"
             aria-label="Max's face"
           />

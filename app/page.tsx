@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import About from './components/about';
@@ -21,6 +21,8 @@ import Contact from './components/contact';
 import NavTop from './components/NavTop';
 import { contact } from '../data/contact-data';
 import NavSide from './components/NavSide';
+import TopNavButton from './components/TopNavButton';
+import NavSticky from './components/NavSticky';
 // import Skills from './components/skills';
 
 const BackDrop = () => {
@@ -50,13 +52,13 @@ const BackDrop = () => {
 const Page: React.FC = () => {
   return (
     <div className='relative w-full h-auto'>
-      {/* <BackDrop /> */}
+      <BackDrop />
 
-      <div className='md:hidden'>
+      <div className='md:hidden z-99'>
         <NavTop data={contact} />
       </div>
       <NavSide />
-      {/* <div className='relative pl-0  md:pl-[200px] lg:pl-[300px]'> */}
+
       <div className='bg-white/[.850] inline-block w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
         <div className='px-4 lg:px-8'>
           <About data={aboutData} />
@@ -69,12 +71,15 @@ const Page: React.FC = () => {
           <Contact />
           <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
             <div className='flex justify-center items-end'>
-              <p className='text-teal font-light opacity-50'>
-                maxskewes@gmail.com
-              </p>
+              <p className='text-teal font-light opacity-50'>maxskewes@gmail.com</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='md:hidden'>
+        <TopNavButton />
+        <NavSticky data={contact} />
       </div>
     </div>
   );

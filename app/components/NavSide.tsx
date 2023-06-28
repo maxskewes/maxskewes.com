@@ -39,7 +39,7 @@ const NavSide = () => {
             width={160}
             height={160}
             className='mb-4 rounded-full h-full'
-            src='/images/avatar.jpg'
+            src='/images/ugly-mug.jpg'
             alt="Max's face"
             aria-label="Max's face"
           />
@@ -69,7 +69,7 @@ const NavSide = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-2 my-4 z-9'>
+          <div className='flex flex-col gap-2 my-4'>
             <MLinkSm to={'#professional-experiences'}>
               Professional Experience
             </MLinkSm>
