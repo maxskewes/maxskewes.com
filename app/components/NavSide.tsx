@@ -65,27 +65,24 @@ const NavSide = () => {
           </div>
 
           <div className='flex flex-col gap-2 my-4'>
-            <MLinkSm to={'#professional-experiences'}>
+          <MLinkSm to={'#about'}>About</MLinkSm>
+            <MLinkSm to={'#resume-cv'}>Resume/CV</MLinkSm>
+            <MLinkSm to={'#professional-experience'}>
               Professional Experience
             </MLinkSm>
-
-            <MLinkSm to={'#resume-cv'}>Resume/CV</MLinkSm>
-
             <MLinkSm to={'#education'}>Education</MLinkSm>
-
             <MLinkSm to={'#portfolio'}>App and Website Portfolio</MLinkSm>
-
             <MLinkSm to={'#graphic-design'}>Design Portfolio</MLinkSm>
-
             <MLinkSm to={'#personal'}>Personal</MLinkSm>
-
-            <MLinkSm to={'/contact'}>Contact</MLinkSm>
+            <MLinkSm to={'#contact'}>Contact</MLinkSm>
           </div>
         </div>
       </div>
-      <div className='grow'></div>
-      <div className='w-full text-center my-2'>
-        <p className='text-white text-sm font-light tracking-wider'>maxskewes@gmail.com</p>
+
+      <div className='flex flex-col justify-end w-full grow-2 text-center my-2'>
+        <p className='text-white text-sm font-light tracking-wider'>
+          maxskewes@gmail.com
+        </p>
       </div>
     </div>
   );

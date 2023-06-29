@@ -55,9 +55,10 @@ const NavTop = () => {
             {NavOpen && (
               <div className='flex flex-col w-full mt-2 pt-2'>
                 <div className='flex flex-row w-full justify-around'>
+                  <MLink to={'#about'} name={'About'} />
                   <MLink to={'#resume-cv'} name={'Resume/CV'} />
-                  <MLink to={'#portfolio'} name={'App/Website Portfolio'} />
-                  <MLink to={'#graphic-design'} name={'Design Portfolio'} />
+                  <MLink to={'#professional-experience'} name={'Experience'} />
+                  <MLink to={'#portfolio'} name={'Portfolios'} />
                 </div>
                 <div className='flex flex-row w-full justify-around pt-2'>
                   <MLink to={'#education'} name={'Education'} />

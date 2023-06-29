@@ -1,6 +1,5 @@
 export const aboutData = {
-  title: 'About',
-  body: "As a graduate of the University of Oregon's Full-Stack program, I'm a full-stack developer with experience in graphic design. I’ve spent the past several years contributing to the design and development of interactive websites and custom applications projected to serve over 100,000 users. I’ve collaborated with UX designers, product managers, and back-end developers throughout all phases of projects, facilitating the creation intuitive, modern apps and websites for companies across sectors including legal services, real estate, entertainment, and career services.",
+  title: 'Introduction',
   bullets: [
     '- I created intuitive websites for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
     '- I co-founded a nonprofit music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',

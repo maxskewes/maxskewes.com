@@ -20,7 +20,7 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
   const { title, experiences } = data;
 
   return (
-    <section id='professional-experiences'>
+    <section id='professional-experience'>
       <SectionHeader title={title} />
       <div className='flex flex-col gap-6'>
         {experiences.map(

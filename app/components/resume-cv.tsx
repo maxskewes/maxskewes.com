@@ -98,7 +98,7 @@ const Resume = () => {
                 className='border border-[2px] border-violet rounded-md px-4 w-60 uppercase mt-4'
               >
                 <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
-                  <a className='pr-1'>view below</a>
+                  <a className='pr-1'>view resume below</a>
                   <VscTriangleDown />
                 </p>
               </button>
