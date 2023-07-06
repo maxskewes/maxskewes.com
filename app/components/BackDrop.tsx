@@ -4,7 +4,8 @@ const BackDrop = () => {
   return (
     <div className='absolute'>
       <Image
-        src='/images/dev-banjo-porch.png'
+        priority
+        src='/images/dev-banjo-porch.jpg'
         alt='Max on porch coding and playing banjo'
         aria-label='Max on porch coding and playing banjo'
         width={0}
