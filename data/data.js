@@ -147,7 +147,7 @@ export const portfolioData = {
       link: 'https://bridgetownbluegrass.com/',
       description:
         "A full-stack website built with React and Nextjs. Payment APIs developed with Stripe. All contact, volunteer, and performance application routing developed with nodemailer API. Designed and created all components, graphics, artwork, and layout. Animation created with Framer's open-source Motion library for Reactjs.",
-      imgSrc: '/images/portfolio/cti-link.png',
+      imgSrc: '/images/portfolio/bbff-link-thumbnail.jpg',
       imgAlt: 'Bridgetown Bluegrass Website',
     },
   ],
@@ -167,18 +167,23 @@ export const graphicDesignData = {
       imgAlt: 'T-shirt Bluegrass Fest 2022',
     },
     {
-      imgTitle: 'papags-logo',
-      imgSrc: '/images/design/papags-site-logo.svg',
-      imgAlt: 'Papa Gs Tofu Website Logo',
-    },
-    {
       imgTitle: 'scratchdog',
       imgSrc: '/images/design/scratchdog-tshirt.png',
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
+    // {
+    //   imgTitle: 'papags-logo',
+    //   imgSrc: '/images/design/papags-site-logo.svg',
+    //   imgAlt: 'Papa Gs Tofu Website Logo',
+    // },
+    {
+      imgTitle: 'papags-sesame',
+      imgSrc: '/images/design/pg-sesame.jpg',
+      imgAlt: "Papa G's Tofu Sesame Label",
+    },
     {
       imgTitle: 'papags-bbq',
-      imgSrc: '/images/design/papags-label-bbq.svg',
+      imgSrc: '/images/design/pg-bbq.jpg',
       imgAlt: "Papa G's Tofu BBQ Label",
     },
     {
