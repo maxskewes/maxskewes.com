@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import About from './components/about';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
@@ -23,7 +24,7 @@ const Page: React.FC = () => {
 
   return (
     <div className='z-1 bg-white/[.850] w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
-      <div className='px-4 lg:px-8'>
+      <motion.div animate={{y: 200}} className='px-4 lg:px-8'>
         <About data={aboutData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
@@ -39,7 +40,7 @@ const Page: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
