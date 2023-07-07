@@ -7,6 +7,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdClose, MdEmail } from 'react-icons/md';
 import { BiMenuAltRight } from 'react-icons/bi';
 import useScroll from '../hooks/useScroll';
+import { motion } from 'framer-motion';
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -72,7 +73,12 @@ const NavTop = () => {
       ) : (
         <div id='page-top' className='top-0 h-auto w-full bg-greydk p-4'>
           <div className={josefin.className}>
-            <div className='flex justify-between items-start'>
+            <motion.div
+              className='flex justify-between items-start'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
               <div className='flex flex-col text-white pt-1'>
                 <div className='uppercase'>
                   <p className='text-left'>Maxwell</p>
@@ -80,9 +86,7 @@ const NavTop = () => {
                   <p className='text-left'>Skewes</p>
                 </div>
                 <div>
-                  <p className='font-serif text-[12px] font-thin pt-2'>
-                    maxskewes@gmail.com
-                  </p>
+                  <p className='font-serif text-[12px] font-thin pt-2'>maxskewes@gmail.com</p>
                 </div>
               </div>
 
@@ -114,7 +118,7 @@ const NavTop = () => {
                   </MLink>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <button
               onClick={() => setNavOpen(!NavOpen)}
