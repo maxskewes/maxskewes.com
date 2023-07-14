@@ -1,6 +1,5 @@
 import { useId } from 'react';
 import SectionHeader from './SectionHeader';
-import { motion } from 'framer-motion';
 
 type AboutProps = {
   data: {
@@ -13,11 +12,7 @@ const About = ({ data }: AboutProps) => {
   const { title, bullets } = data;
   const id = useId();
   return (
-    <motion.section id='about' className='pt-0'
-    initial={{ opacity: 0, y: 0 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    >
+    <section id='about' className='pt-0'>
       <SectionHeader title={title} />
       <div className='pb-8'>
         <p className='mb-6'>
@@ -37,7 +32,7 @@ const About = ({ data }: AboutProps) => {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

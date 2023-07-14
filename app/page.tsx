@@ -24,9 +24,7 @@ const Page: React.FC = () => {
 
   return (
     <div className='z-1 bg-white/[.850] w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
-      <div
-        className='px-4 lg:px-8'
-      >
+      <motion.div animate={{y: 200}} className='px-4 lg:px-8'>
         <About data={aboutData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
@@ -37,10 +35,12 @@ const Page: React.FC = () => {
         <Contact />
         <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
           <div className='flex justify-center items-end'>
-            <p className='text-teal font-light opacity-50'>maxskewes@gmail.com</p>
+            <p className='text-teal font-light opacity-50'>
+              maxskewes@gmail.com
+            </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
