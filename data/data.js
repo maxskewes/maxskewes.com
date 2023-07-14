@@ -141,15 +141,15 @@ export const portfolioData = {
       imgSrc: '/images/portfolio/cti-link.png',
       imgAlt: 'CTI Website Link',
     },
-    {
-      cardTitle: 'Music Festival Website',
-      org: 'Bridgetown Bluegrass Festival',
-      link: 'https://bridgetownbluegrass.com/',
-      description:
-        "A full-stack website built with React and Nextjs. Payment APIs developed with Stripe. All contact, volunteer, and performance application routing developed with nodemailer API. Designed and created all components, graphics, artwork, and layout. Animation created with Framer's open-source Motion library for Reactjs.",
-      imgSrc: '/images/portfolio/cti-link.png',
-      imgAlt: 'Bridgetown Bluegrass Website',
-    },
+    // {
+    //   cardTitle: 'Music Festival Website',
+    //   org: 'Bridgetown Bluegrass Festival',
+    //   link: 'https://bridgetownbluegrass.com/',
+    //   description:
+    //     "A full-stack website built with React and Nextjs. Payment APIs developed with Stripe. All contact, volunteer, and performance application routing developed with nodemailer API. Designed and created all components, graphics, artwork, and layout. Animation created with Framer's open-source Motion library for Reactjs.",
+    //   imgSrc: '/images/portfolio/cti-link.png',
+    //   imgAlt: 'Bridgetown Bluegrass Website',
+    // },
   ],
 };
 
