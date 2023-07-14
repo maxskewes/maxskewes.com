@@ -1,8 +1,10 @@
+'use client';
 import { Josefin_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -28,7 +30,12 @@ const NavSide = () => {
   return (
     <div className='hidden md:inline-block h-screen w-[200px] lg:w-[300px] bg-greydk fixed p-0'>
       <div className={josefin.className}>
-        <div className='flex flex-col grow justify-start p-4 md:p-6 lg:px-10 items-center'>
+        <motion.div
+          className='flex flex-col grow justify-start p-4 md:p-6 lg:px-10 items-center'
+          initial={{ opacity: 0, x: -60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.35 }}
+        >
           <Image
             priority
             width={160}
@@ -65,24 +72,20 @@ const NavSide = () => {
           </div>
 
           <div className='flex flex-col gap-2 my-4'>
-          <MLinkSm to={'#about'}>About</MLinkSm>
+            <MLinkSm to={'#about'}>About</MLinkSm>
             <MLinkSm to={'#resume-cv'}>Resume/CV</MLinkSm>
-            <MLinkSm to={'#professional-experience'}>
-              Professional Experience
-            </MLinkSm>
+            <MLinkSm to={'#professional-experience'}>Professional Experience</MLinkSm>
             <MLinkSm to={'#education'}>Education</MLinkSm>
             <MLinkSm to={'#portfolio'}>App and Website Portfolio</MLinkSm>
             <MLinkSm to={'#graphic-design'}>Design Portfolio</MLinkSm>
             <MLinkSm to={'#personal'}>Personal</MLinkSm>
             <MLinkSm to={'#contact'}>Contact</MLinkSm>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className='flex flex-col justify-end w-full grow-2 text-center my-2'>
-        <p className='text-white text-sm font-light tracking-wider'>
-          maxskewes@gmail.com
-        </p>
+        <p className='text-white text-sm font-light tracking-wider'>maxskewes@gmail.com</p>
       </div>
     </div>
   );
