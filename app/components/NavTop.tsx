@@ -22,10 +22,28 @@ type MLinkProps = {
 
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
-    <Link href={to} className='text-white hover:text-teallt'>
+    <Link href={to} className='text-white hover:text-teallt py-2'>
       {children}
-      <p>{name}</p>
+      <p className='uppercase'>{name}</p>
     </Link>
+  );
+};
+
+const LinkBox = () => {
+  return (
+    <div className='flex flex-row w-full mt-2 pt-2'>
+      <div className='flex flex-col w-full items-start'>
+        <MLink to={'#about'} name={'About'} />
+        <MLink to={'#education'} name={'Education'} />
+        <MLink to={'#personal'} name={'Personal'} />
+        <MLink to={'#contact'} name={'Contact'} />
+      </div>
+      <div className='flex flex-col w-full justify-center items-end'>
+        <MLink to={'#resume-cv'} name={'Resume/CV'} />
+        <MLink to={'#portfolio'} name={'Portfolios'} />
+        <MLink to={'#professional-experience'} name={'Experience'} />
+      </div>
+    </div>
   );
 };
 
@@ -54,19 +72,7 @@ const NavTop = () => {
             </div>
 
             {NavOpen && (
-              <div className='flex flex-col w-full mt-2 pt-2'>
-                <div className='flex flex-row w-full justify-around'>
-                  <MLink to={'#about'} name={'About'} />
-                  <MLink to={'#resume-cv'} name={'Resume/CV'} />
-                  <MLink to={'#professional-experience'} name={'Experience'} />
-                  <MLink to={'#portfolio'} name={'Portfolios'} />
-                </div>
-                <div className='flex flex-row w-full justify-around pt-2'>
-                  <MLink to={'#education'} name={'Education'} />
-                  <MLink to={'#personal'} name={'Personal'} />
-                  <MLink to={'#contact'} name={'Contact'} />
-                </div>
-              </div>
+              <LinkBox />
             )}
           </div>
         </div>
@@ -86,7 +92,7 @@ const NavTop = () => {
                     <p className='text-left'>Skewes</p>
                   </div>
                   <div>
-                    <p className='font-serif text-[12px] font-thin pt-2'>
+                    <p className='font-serif text-[12px] font-light pt-2'>
                       maxskewes@gmail.com
                     </p>
                   </div>
@@ -130,18 +136,7 @@ const NavTop = () => {
               </button>
 
               {NavOpen && (
-                <div className='flex flex-col w-full'>
-                  <div className='flex flex-row w-full justify-around pb-2'>
-                    <MLink to={'#resume-cv'} name={'Resume/CV'} />
-                    <MLink to={'#portfolio'} name={'App/Website Portfolio'} />
-                    <MLink to={'#graphic-design'} name={'Design Portfolio'} />
-                  </div>
-                  <div className='flex flex-row w-full justify-around pb-2'>
-                    <MLink to={'#education'} name={'Education'} />
-                    <MLink to={'#personal'} name={'Personal'} />
-                    <MLink to={'/contact'} name={'Contact'} />
-                  </div>
-                </div>
+                <LinkBox />
               )}
             </div>
           </motion.div>
