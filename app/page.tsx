@@ -24,7 +24,12 @@ const Page: React.FC = () => {
 
   return (
     <div className='z-1 bg-white/[.850] w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
-      <motion.div animate={{y: 0}} className='px-4 lg:px-8'>
+      <motion.div
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.2 }}
+        className='px-4 lg:px-8'
+      >
         <About data={aboutData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
