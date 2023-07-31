@@ -114,15 +114,15 @@ export const professionalExperienceData = {
 export const portfolioData = {
   title: 'App and Website Portfolio',
   cardInfo: [
-    {
-      cardTitle: 'Resume-Building Application',
-      org: 'RS Works',
-      link: 'https://resumescripter.com/',
-      description:
-        'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
-      imgSrc: '/images/portfolio/rs-video.png',
-      imgAlt: 'RS Works Demo',
-    },
+    // {
+    //   cardTitle: 'Resume-Building Application',
+    //   org: 'RS Works',
+    //   link: 'https://resumescripter.com/',
+    //   description:
+    //     'An app built for employees of a resume-building agency to aid with the development of highly personalized job-seeker documents; eg resumes, cover letters, on-line presence development.',
+    //   imgSrc: '/images/portfolio/rs-video.png',
+    //   imgAlt: 'RS Works Demo',
+    // },
     {
       cardTitle: "Website for Papa's G's Organics",
       org: "Papa G's Organic Tofu",

@@ -18,6 +18,7 @@ import {
   personalData,
   portfolioData,
 } from '../data/data';
+import RSWvideo from './components/RSWvideo';
 
 const Page: React.FC = () => {
   const scrollPos = useScroll();
@@ -31,6 +32,7 @@ const Page: React.FC = () => {
         className='px-4 lg:px-8'
       >
         <About data={aboutData} />
+        {/* <RSWvideo /> */}
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
         <Education data={educationData} />

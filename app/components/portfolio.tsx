@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import SectionHeader from './SectionHeader';
+import RSWvideo from './RSWvideo';
 
 type PortfolioProps = {
   data: {
@@ -24,6 +25,8 @@ const Portfolio = ({ data }: PortfolioProps) => {
     <section id='portfolio'>
       <SectionHeader title={title} />
       <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
+        <RSWvideo />
+
         {cardInfo.map(
           ({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
             <div
@@ -34,7 +37,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
                 {cardTitle}
               </h3>
               <h4 className='uppercase text-grey font-semibold'>{org}</h4>
-       
+
               <p className='mt-2 font-normal text-slate'>{description}</p>
               <div className='flex-col text-center'>
                 <div className='flex justify-center items-center'>
@@ -51,7 +54,9 @@ const Portfolio = ({ data }: PortfolioProps) => {
                     />
                   </Link>
                 </div>
-                <p className='text-base text-grey font-normal'>{link}</p>
+                <Link href={link}>
+                  <p className='text-base text-grey font-normal'>{link}</p>
+                </Link>
               </div>
             </div>
           )
