@@ -135,7 +135,7 @@ export const portfolioData = {
     {
       cardTitle: 'Civic Tech Index',
       org: 'Hack for LA',
-      link: 'http://civictechindex.org/home  *production temporarily paused*',
+      link: 'http://civictechindex.org/home',
       description:
         'A Hack for LA project, the CTI is web application to catalog every open source civic tech project and enable developers to connect willing volunteers with their dream projects to help with civic issues.',
       imgSrc: '/images/portfolio/cti-link.png',
@@ -171,16 +171,16 @@ export const graphicDesignData = {
       imgSrc: '/images/design/scratchdog-tshirt.png',
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
-    // {
-    //   imgTitle: 'papags-logo',
-    //   imgSrc: '/images/design/papags-site-logo.svg',
-    //   imgAlt: 'Papa Gs Tofu Website Logo',
-    // },
     {
-      imgTitle: 'papags-sesame',
-      imgSrc: '/images/design/pg-sesame.jpg',
-      imgAlt: "Papa G's Tofu Sesame Label",
+      imgTitle: 'papags-logo',
+      imgSrc: '/images/design/papags-site-logo.svg',
+      imgAlt: 'Papa Gs Tofu Website Logo',
     },
+    // {
+    //   imgTitle: 'papags-sesame',
+    //   imgSrc: '/images/design/pg-sesame.jpg',
+    //   imgAlt: "Papa G's Tofu Sesame Label",
+    // },
     {
       imgTitle: 'papags-bbq',
       imgSrc: '/images/design/pg-bbq.jpg',
