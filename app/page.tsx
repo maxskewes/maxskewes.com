@@ -38,7 +38,7 @@ const Page: React.FC = () => {
         <Contact />
         <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
           <div className='flex justify-center items-end'>
-            <p className='text-teal font-light opacity-50'>
+            <p className='text-sky-800 font-light opacity-50'>
               maxskewes@gmail.com
             </p>
           </div>

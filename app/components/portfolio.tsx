@@ -24,7 +24,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
   return (
     <section id='portfolio'>
       <SectionHeader title={title} />
-      <div className='grid lg:grid-cols-2 gap-4 auto-rows-max'>
+      <div className='grid gap-4 auto-rows-max'>
         <RSWvideo />
 
         {cardInfo.map(

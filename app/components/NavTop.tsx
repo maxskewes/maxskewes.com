@@ -22,7 +22,7 @@ type MLinkProps = {
 
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
-    <Link href={to} className='text-white hover:text-teallt py-2'>
+    <Link href={to} className='text-white hover:text-sky-600 py-2'>
       {children}
       <p className='uppercase'>{name}</p>
     </Link>
