@@ -58,7 +58,7 @@ export const professionalExperienceData = {
     {
       role: 'Frontend React Developer',
       company: 'RS Works',
-      dates: 'Nov 2021 - Present',
+      dates: 'Sep. 2021 - Present',
       location: 'Portland, OR',
       description:
         'I worked with a career-tech startup to develop a scalable platform to help workforce development teams craft impressive resumes and cover letters in minutes, projected to serve over 50,000 job seekers in first the year of launch. I’ve consistently leveraged my skillsets in project management, vendor relations, and web development to ensure the timely completion of critical initiatives. In this capacity, I collaborated with a software engineer and UX consultant throughout the development of a complex ReactJS application, promoting full adherence to Figma design specifications across multiple display sizes while ensuring alignment with current ADA guidelines.',

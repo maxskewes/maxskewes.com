@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { VscTriangleDown, VscTriangleUp } from 'react-icons/vsc';
 import { RiExternalLinkFill } from 'react-icons/ri';
-import SectionHeader from './SectionHeader';
 import { Josefin_Sans } from 'next/font/google';
 
 const josefin = Josefin_Sans({
@@ -193,7 +192,7 @@ const Resume = () => {
               org={'Resume Scripter'}
               location='Portland, OR'
               title={'React Developer'}
-              date={'Oct. 2021 - Feb. 2023'}
+              date={'Sep. 2021 - present'}
             >
               <div className='font-light'>
                 <ul className='list-disc pl-4'>

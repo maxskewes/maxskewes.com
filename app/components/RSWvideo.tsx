@@ -1,8 +1,7 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ReactPlayer from 'react-player/youtube';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const RSWvideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -10,10 +9,7 @@ const RSWvideo = () => {
   const StartVideo = () => {
     return (
       <div className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'>
-        <ReactPlayer
-          url='https://www.youtube.com/watch?v=kB7g9qxbEvc&t=81s'
-          playing
-        />
+        <ReactPlayer url='https://www.youtube.com/watch?v=kB7g9qxbEvc&t=81s' playing />
       </div>
     );
   };
@@ -30,15 +26,13 @@ const RSWvideo = () => {
         </div>
       ) : null}
       <div className='p-6 rounded overflow-hidden bg-grey-light shadow-md'>
-        <h3 className='font-semibold uppercase text-slate'>
-          Resume Building App
-        </h3>
+        <h3 className='font-semibold uppercase text-slate'>Resume Building App</h3>
         <h4 className='uppercase text-grey font-semibold'>RS Works</h4>
 
         <p className='mt-2 font-normal text-slate'>
-          An app built for employees of a resume-building agency to aid with the
-          development of highly personalized job-seeker documents; eg resumes,
-          cover letters, on-line presence development.
+          An app built for employees of a resume-building agency to aid with the development of
+          highly personalized job-seeker documents; eg resumes, cover letters, on-line presence
+          development.
         </p>
         <div className='flex-col text-center'>
           <div className='flex justify-center items-center'>
@@ -60,9 +54,7 @@ const RSWvideo = () => {
             </button>
           </div>
           {/* <Link href={'https://resumescripter.com/'}> */}
-          <p className='text-base text-grey font-normal'>
-            https://resumescripter.com/
-          </p>
+          <p className='text-base text-grey font-normal'>https://resumescripter.com/</p>
           {/* </Link> */}
         </div>
       </div>
