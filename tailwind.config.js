@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,22 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        black: '#191A19',
-        'greydk': '#262626',
-        yellow: '#FFF734',
-        green: '#68F590',
-        grey: '#575757',
-        violet: '#550180',
-        'grey-light': '#FAFAFA',
-        'green-light': '#d2eff1',
-        white: '#fff',
-        'teal': '#221a69',
-        'teallt': '#7986CB',
-        slate: '#444444',
-      },
-    },
     fontFamily: {
       sans: ['Merriweather', 'sans-serif'],
       serif: ['Helvetica', 'serif'],
@@ -41,6 +23,11 @@ module.exports = {
       '6xl': '3.5rem',
     },
     extend: {
+      colors: {
+        bluesteel: '#221a69',
+        bluesteellight: '#7986cb',
+        violhabbit: '#550180',
+      },
       screens: {
         sm: '640px',
         // => @media (min-width: 640px) { ... }

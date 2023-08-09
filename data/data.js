@@ -32,22 +32,23 @@ export const educationData = {
     {
       certificate: 'Full-Stack Coding Certificate',
       institution: 'University of Oregon',
-      location: 'On-site in Portland, OR',
+      location: 'On-site: Portland, OR campus',
       description:
         'Six-month on-site intensive coursework in HTML, CSS, JavaScript, React, MySQL, and Node.js.',
     },
     {
-      certificate: "Associate's Degree of Liberal Arts",
+      certificate: "Associate Degree of Liberal Arts",
       institution: 'Marylhurst University',
-      location: 'Marylhurst, OR',
-      description: 'Minor focus on Modern Irish Language (Gaeilge).',
+      location: 'Lake Oswego, OR',
+      description: 'Minor focus on Modern Irish Language (Gaeilge)',
     },
     {
       certificate: 'Certificate of Irish Studies',
       institution: 'University College Cork',
+      institution2: '(Coláiste na hOllscoile)',
       location: 'Cork, Ireland',
       description:
-        'First Class Honours in Modern and Ancient Irish language, music theory/practise, Celtic Civilization, Archaeology, and Politics.',
+        'First Class Honours: Modern and Ancient Irish language, Music Theory/Practise, Celtic Civilization, Archaeology, Politics',
     },
   ],
 };
@@ -98,7 +99,7 @@ export const professionalExperienceData = {
       role: 'Lead Frontend Developer - Pro Bono',
       company: 'Hack for LA',
       dates: 'Mar 2021 - Jul 2022',
-      location: 'remote',
+      location: 'Remote (Los Angeles, CA)',
       description:
         'I served as the lead developer throughout the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with Material-UI framework to realize a Figma design. During this time, I built an online index application uniting civic tech organizations, allowing users to quickly locate and filter organizations and volunteer opportunities based on causes, affiliations, and regions.',
       hightlights: [

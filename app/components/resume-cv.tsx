@@ -23,8 +23,8 @@ type CVEntryProps = {
 
 const CVSectionTitle = ({ title }: CVSectionTitleProps) => {
   return (
-    <div className='border-b-2 border-violet mb-4'>
-      <p className='text-md lg:text-xl text-teal uppercase tracking-widest mb-1'>
+    <div className='border-b-2 border-violhabbit mb-4'>
+      <p className='text-md lg:text-xl text-bluesteel uppercase tracking-widest mb-1'>
         {title}
       </p>
     </div>
@@ -36,10 +36,10 @@ const CVEntry = ({ org, location, title, date, children }: CVEntryProps) => {
     <div className='mb-8'>
       <div className='flex justify-between items-start'>
         <div className='inline'>
-          <p className='uppercase font-semibold text-lg lg:text-xl text-slate'>
+          <p className='uppercase font-semibold text-lg lg:text-xl text-zinc-800'>
             {title}
           </p>
-          <p className='font-medium text-lg text-grey'>{org}</p>
+          <p className='font-medium text-lg text-zinc-600'>{org}</p>
         </div>
 
         <div className='inline pt-2'>
@@ -62,10 +62,10 @@ const Resume = () => {
     <section id='resume-cv' className='pt-0'>
       <div className={josefin.className}>
         <div className='flex flex-col justify-center items-center'>
-          <h2 className='uppercase mb-2 pt-12 font-semibold text-teal'>
+          <h2 className='uppercase mb-2 pt-12 font-semibold text-bluesteel'>
             Résumé -<a className='tracking-tight'> Curriculum Vitæ</a>
           </h2>
-          <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violet'>
+          <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>
             &nbsp;
           </p>
 
@@ -73,9 +73,9 @@ const Resume = () => {
             <a
               href='/docs/resume.pdf'
               target='_blank'
-              className='border border-[2px] border-violet rounded-md px-4 w-68 uppercase mt-4'
+              className='border border-[2px] border-violhabbit rounded-md px-4 w-68 uppercase mt-4'
             >
-              <div className='inline-flex items-center justify-center text-sm text-violet font-semibold'>
+              <div className='inline-flex items-center justify-center text-sm text-violhabbit font-semibold'>
                 <div className='pr-1'>open as a printable PDF</div>
                 <RiExternalLinkFill />
               </div>
@@ -84,7 +84,7 @@ const Resume = () => {
             {cvOpen ? (
               <button
                 onClick={() => setCVOpen(!cvOpen)}
-                className='border border-[2px] border-violet bg-violet rounded-md px-4 w-60 uppercase mt-4'
+                className='border border-[2px] border-violhabbit bg-violhabbit rounded-md px-4 w-60 uppercase mt-4'
               >
                 <p className='inline-flex items-center text-sm text-white font-semibold tracking-wide'>
                   <a className='pr-1'>hide resume</a>
@@ -94,9 +94,9 @@ const Resume = () => {
             ) : (
               <button
                 onClick={() => setCVOpen(!cvOpen)}
-                className='border border-[2px] border-violet rounded-md px-4 w-60 uppercase mt-4'
+                className='border border-[2px] border-violhabbit rounded-md px-4 w-60 uppercase mt-4'
               >
-                <p className='inline-flex items-center text-sm text-violet font-semibold tracking-wide'>
+                <p className='inline-flex items-center text-sm text-violhabbit font-semibold tracking-wide'>
                   <a className='pr-1'>view resume below</a>
                   <VscTriangleDown />
                 </p>
@@ -110,10 +110,10 @@ const Resume = () => {
         <div className='bg-white mt-6 pt-2 p-6 shadow-md'>
           <div className='flex flex-col-reverse sm:flex-row justify-between pb-4'>
             <div className='flex items-center'>
-              <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase'>
+              <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-zinc-800 uppercase'>
                 Max&nbsp;
               </p>
-              <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-violet uppercase'>
+              <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-violhabbit uppercase'>
                 Skewes
               </p>
             </div>
@@ -123,6 +123,9 @@ const Resume = () => {
               </i>
               <i className='font-light text-sm xl:text-base'>
                 github.com/maxskewes
+              </i>
+              <i className='font-light text-sm xl:text-base'>
+           linkedin.com/in/maxskewes
               </i>
               <i className='font-light text-sm xl:text-base'>
                 Portland, OR 97215
@@ -166,8 +169,8 @@ const Resume = () => {
               location={'Cork, Ireland'}
             >
               <p className='font-light'>
-                First Class Hounours in Modern and Ancient Irish language, music
-                theory/practise, Celtic Civilization, Archaeology, and Politics.
+                First Class Hounours: Modern and Ancient Irish language, Music
+                Theory/Practise, Celtic Civilization, Archaeology, Politics
               </p>
             </CVEntry>
             <CVEntry
@@ -176,10 +179,9 @@ const Resume = () => {
               location='Marylhurst, OR'
             >
               <p className='font-light'>
-                First Class Hounours in Modern and Ancient Irish language, music
-                theory/practise, Celtic Civilization, Archaeology, and Politics.
+             Assiciate Degree of Liberal Arts
               </p>
-              <i className='text-slate'>
+              <i className='text-zinc-500'>
                 Minor focus on Irish Language &#40;Gaeilge&#41;.
               </i>
             </CVEntry>

@@ -20,7 +20,7 @@ type MLinkSmProps = {
 
 const MLinkSm = ({ to, name, children }: MLinkSmProps) => {
   return (
-    <Link href={to} className='text-white hover:text-sky-600'>
+    <Link href={to} className='text-white hover:text-bluesteellight'>
       {children}
       {name}
     </Link>

@@ -35,12 +35,12 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
           }) => (
             <div
               key={role}
-              className='bg-grey-light p-6 shadow-md rounded'
+              className='bg-zinc-100 p-6 shadow-md rounded'
             >
-              <h3 className='font-semibold uppercase text-slate'>{role}</h3>
-              <h4 className='uppercase text-grey font-semibold'>{company}</h4>
-              <p className='text-base text-grey font-medium'>{location}</p>
-              <i className='text-base text-grey font-normal'>{dates}</i>
+              <h3 className='font-semibold uppercase text-zinc-800'>{role}</h3>
+              <h4 className='uppercase text-zinc-600 font-semibold'>{company}</h4>
+              <p className='text-base text-zinc-800 font-medium'>{location}</p>
+              <i className='text-base text-zinc-600 font-normal'>{dates}</i>
               <p className='mt-2'>&nbsp;&nbsp;{description}</p>
               {highlights ? <p className='mt-2'>Key Highlights:</p> : null}
               <p className='pl-2'>{highlights}</p>

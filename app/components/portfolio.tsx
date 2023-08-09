@@ -31,14 +31,14 @@ const Portfolio = ({ data }: PortfolioProps) => {
           ({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
             <div
               key={cardTitle}
-              className='p-6 rounded overflow-hidden bg-grey-light shadow-md'
+              className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md'
             >
-              <h3 className='font-semibold uppercase text-slate'>
+              <h3 className='font-semibold uppercase text-zinc-800'>
                 {cardTitle}
               </h3>
-              <h4 className='uppercase text-grey font-semibold'>{org}</h4>
+              <h4 className='uppercase text-zinc-600 font-semibold'>{org}</h4>
 
-              <p className='mt-2 font-normal text-slate'>{description}</p>
+              <p className='mt-2 font-normal text-zinc-800'>{description}</p>
               <div className='flex-col text-center'>
                 <div className='flex justify-center items-center'>
                   <Link href={link}>

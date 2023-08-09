@@ -22,7 +22,7 @@
     @apply text-sm sm:text-base;
   }
   i {
-    @apply text-sm xl:text-base font-light leading-4 lg:leading-5 text-sky-800;
+    @apply text-sm xl:text-base font-light leading-4 lg:leading-5 text-bluesteel;
   }
 }
 

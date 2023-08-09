@@ -22,7 +22,7 @@ type MLinkProps = {
 
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
-    <Link href={to} className='text-white hover:text-sky-600 py-2'>
+    <Link href={to} className='text-white hover:text-bluesteellight py-2'>
       {children}
       <p className='uppercase'>{name}</p>
     </Link>
@@ -31,19 +31,25 @@ const MLink = ({ to, name, children }: MLinkProps) => {
 
 const LinkBox = () => {
   return (
-    <div className='flex flex-row w-full mt-2 pt-2'>
-      <div className='flex flex-col w-full items-start'>
-        <MLink to={'#about'} name={'About'} />
-        <MLink to={'#education'} name={'Education'} />
-        <MLink to={'#personal'} name={'Personal'} />
-        <MLink to={'#contact'} name={'Contact'} />
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.2 }}
+    >
+      <div className='flex flex-row w-full mt-2 pt-2'>
+        <div className='flex flex-col w-full items-start'>
+          <MLink to={'#about'} name={'About'} />
+          <MLink to={'#education'} name={'Education'} />
+          <MLink to={'#personal'} name={'Personal'} />
+          <MLink to={'#contact'} name={'Contact'} />
+        </div>
+        <div className='flex flex-col w-full justify-center items-end'>
+          <MLink to={'#resume-cv'} name={'Resume/CV'} />
+          <MLink to={'#portfolio'} name={'Portfolios'} />
+          <MLink to={'#professional-experience'} name={'Experience'} />
+        </div>
       </div>
-      <div className='flex flex-col w-full justify-center items-end'>
-        <MLink to={'#resume-cv'} name={'Resume/CV'} />
-        <MLink to={'#portfolio'} name={'Portfolios'} />
-        <MLink to={'#professional-experience'} name={'Experience'} />
-      </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -54,7 +60,7 @@ const NavTop = () => {
   return (
     <div className='md:hidden'>
       {scrollPos > 1 ? (
-        <div id='page-top' className='fixed top-0 h-auto w-full bg-greydk p-4'>
+        <div id='page-top' className='fixed top-0 h-auto w-full bg-zinc-800 p-4'>
           <div className={josefin.className}>
             <div className='flex justify-between items-start pt-1'>
               <div>
@@ -65,19 +71,17 @@ const NavTop = () => {
 
               <button
                 onClick={() => setNavOpen(!NavOpen)}
-                className='flex grow justify-end w-full text-white hover:text-teallt'
+                className='flex grow justify-end w-full text-white hover:text-bluesteellight'
               >
                 {NavOpen ? <MdClose /> : <BiMenuAltRight />}
               </button>
             </div>
 
-            {NavOpen && (
-              <LinkBox />
-            )}
+            {NavOpen && <LinkBox />}
           </div>
         </div>
       ) : (
-        <div id='page-top' className='top-0 h-auto w-full bg-greydk p-4'>
+        <div id='page-top' className='top-0 h-auto w-full bg-zinc-800 p-4'>
           <motion.div
             initial={{ y: 0, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -92,9 +96,7 @@ const NavTop = () => {
                     <p className='text-left'>Skewes</p>
                   </div>
                   <div>
-                    <p className='font-serif text-[12px] font-light pt-2'>
-                      maxskewes@gmail.com
-                    </p>
+                    <p className='font-serif text-[12px] font-light pt-2'>maxskewes@gmail.com</p>
                   </div>
                 </div>
 
@@ -130,14 +132,12 @@ const NavTop = () => {
 
               <button
                 onClick={() => setNavOpen(!NavOpen)}
-                className='flex justify-end w-full text-white hover:text-teallt'
+                className='flex justify-end w-full text-white hover:text-bluesteellight'
               >
                 {NavOpen ? <MdClose /> : <BiMenuAltRight />}
               </button>
 
-              {NavOpen && (
-                <LinkBox />
-              )}
+              {NavOpen && <LinkBox />}
             </div>
           </motion.div>
         </div>

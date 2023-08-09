@@ -29,73 +29,83 @@ const RSWvideo = () => {
           <StartVideo />
         </div>
       ) : null}
-      <div className='p-6 rounded overflow-hidden bg-grey-light shadow-md flex-col'>
-        <h3 className='font-semibold uppercase text-slate text-center'>
-          RS Works: Resume Building Application
-        </h3>
-        <p className='font-normal text-grey text-center'>
-          An app built for employees of a resume-building agency to aid with the development of
-          highly personalized job-seeker documents; eg resumes, cover letters, on-line presence
-          development, etc.
-        </p>
-        <h4 className='uppercase text-grey font-semibold text-center'>by Resume Scripter</h4>
 
-        <div className='flex-col text-center justify-center items-center'>
-          <div className='m-4'>
-            <button
-              onClick={() => {
-                setIsPlaying(true);
-              }}
-            >
-              <Image
-                style={{ border: '5px solid white' }}
-                priority
-                width={200}
-                height={200}
-                src={'/images/portfolio/rs-video.png'}
-                alt={'RS Works App Demo'}
-                aria-label={'RS Works App Demo'}
-              />
-            </button>
-            <div>
-              <p>
-                Demo of the app provided by <br /> Resume Scripter founder Andrea Gerson
-              </p>
-            </div>
-          </div>
+      <div className='mt-10 mb-20'>
+        <div className='mb-4 flex flex-col justify-center items-center'>
+          <h4 className='uppercase text-zinc-80 font-semibold text-center'>Resume Scripter</h4>
+          <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
-          <div className='mb-4'>
-            <p className='font-light'>
-              This is the application that I have spent the better part of the last two years
-              developing. The code is proprietary, hence there is no github link to its content.
-              However the above link is hopefully indicative of the depth and complexity of code
-              that this app required. It is currently in use by the organization and is in beta-mode
-              development phase for shopping out, with strong interest from universities, school
-              systems, libraries and government agencies. We are also currently designing its
-              multi-lingual potentials.
+          <p className='font-light'>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have spent the better part
+            of the last two years developing. The code is proprietary, hence there is no github link
+            to its content. However the above link is hopefully indicative of the depth and
+            complexity of code that this app required. It is currently in use by the organization
+            and is in beta-mode development phase for shopping out, with strong interest from
+            universities, school systems, libraries and government agencies. We are also currently
+            developing its multi-lingual potentials.
+          </p>
+        </div>
+
+        <div className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md flex-col'>
+          <div>
+            <h3 className='font-semibold uppercase text-zinc-800 text-center'>
+              RS Works: Resume Building Application
+            </h3>
+            <p className='font-normal text-zinc-600 text-center'>
+              An app built for employees of a resume-building agency to aid with the development of
+              highly personalized job-seeker documents; e.g. resumes, cover letters, on-line
+              presence development, etc.
             </p>
           </div>
 
-    
+          <div className='flex-col text-center justify-center items-center'>
+            <div className='m-4'>
+              <button
+                onClick={() => {
+                  setIsPlaying(true);
+                }}
+              >
+                <Image
+                  style={{ border: '5px solid white' }}
+                  priority
+                  width={200}
+                  height={200}
+                  src={'/images/portfolio/rs-video.png'}
+                  alt={'RS Works App Demo'}
+                  aria-label={'RS Works App Demo'}
+                />
+              </button>
+              <div>
+                <p className='text-zinc-600'>
+                  Demo of the app provided by <br /> Resume Scripter founder Andrea Gerson
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col justify-center items-center text-center w-full'>
+
+        <div className='m-4 flex flex-row justify-center rounded bg-zinc-50 bg-opacity-50 overflow-hidden shadow-lg w-full'>
+            <BsLinkedin size='1.5rem' />
+            <a
+              target='_blank'
+              href={
+                'https://www.linkedin.com/feed/update/urn:li:activity:7094743929450856448?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7094743929450856448%29'
+              }
+              className='font-sm italic underline text-bluesteel mx-2'
+            >
+              Link to Resume Scripter's LinkedIn post in reference to my work with them
+            </a>
+            <HiOutlineExternalLink size='1.5rem' />
+          </div>
+
           <a
             target='_blank'
-            href={
-              'https://www.linkedin.com/feed/update/urn:li:activity:7094743929450856448?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7094743929450856448%29'
-            }
+            href={'https://resumescripter.com/'}
+            className='underline-offset-4 text-base text-zinc-800'
           >
-            <span className='flex justify-center bg-gradient-to-r from-indigo-500 via-blue-500 to-red-500 m-2 p-1'>
-              <BsLinkedin size='1.5rem' />
-              <p className='font-sm italic underline text-teallt mx-2'>
-                external link to Resume Scripter's LinkedIn post in reference to my work with them
-              </p>
-              <HiOutlineExternalLink size='1.5rem' />
-            </span>
+            https://resumescripter.com/
           </a>
-
-
-          <Link href={'https://resumescripter.com/'}>
-            <p className='text-base text-grey font-normal'>https://resumescripter.com/</p>
-          </Link>
         </div>
       </div>
     </>
