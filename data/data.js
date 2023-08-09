@@ -124,15 +124,15 @@ export const portfolioData = {
     //   imgSrc: '/images/portfolio/rs-video.png',
     //   imgAlt: 'RS Works Demo',
     // },
-    {
-      cardTitle: "Website for Papa's G's Organics",
-      org: "Papa G's Organic Tofu",
-      link: 'https://papagstofu.com/',
-      description:
-        'A website built with Reactjs. Designed and created all components, graphics, artwork, and layout.',
-      imgSrc: '/images/portfolio/papa-gs-link.png',
-      imgAlt: "Papa G's Website Link",
-    },
+    // {
+    //   cardTitle: "Website for Papa's G's Organics",
+    //   org: "Papa G's Organic Tofu",
+    //   link: 'https://papagstofu.com/',
+    //   description:
+    //     'A website built with Reactjs. Designed and created all components, graphics, artwork, and layout.',
+    //   imgSrc: '/images/portfolio/papa-gs-link.png',
+    //   imgAlt: "Papa G's Website Link",
+    // },
     {
       cardTitle: 'Civic Tech Index',
       org: 'Hack for LA',

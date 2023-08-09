@@ -1,11 +1,10 @@
 'use client';
 import { useState } from 'react';
 import ReactPlayer from 'react-player/youtube';
+import { GiClick } from 'react-icons/gi';
 import { BsLinkedin } from 'react-icons/bs';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import { AiFillLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const RSWvideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -35,7 +34,7 @@ const RSWvideo = () => {
           <h4 className='uppercase text-zinc-80 font-semibold text-center'>Resume Scripter</h4>
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
-          <p className='font-light'>
+          <p className='font-light mx-20'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have spent the better part
             of the last two years developing. The code is proprietary, hence there is no github link
             to its content. However the above link is hopefully indicative of the depth and
@@ -68,8 +67,8 @@ const RSWvideo = () => {
                 <Image
                   style={{ border: '5px solid white' }}
                   priority
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   src={'/images/portfolio/rs-video.png'}
                   alt={'RS Works App Demo'}
                   aria-label={'RS Works App Demo'}
@@ -84,25 +83,25 @@ const RSWvideo = () => {
           </div>
         </div>
         <div className='flex flex-col justify-center items-center text-center w-full'>
-
-        <div className='m-4 flex flex-row justify-center rounded bg-zinc-50 bg-opacity-50 overflow-hidden shadow-lg w-full'>
-            <BsLinkedin size='1.5rem' />
+          <div className='m-4 p-2 flex flex-row justify-center rounded bg-zinc-50 bg-opacity-50 opacity-80 overflow-hidden shadow-lg w-full'>
+            <BsLinkedin size='1.5rem' style={{ color: '#550180' }} />
+            <GiClick size='1.5rem' style={{ color: '#550180' }} />
             <a
               target='_blank'
               href={
                 'https://www.linkedin.com/feed/update/urn:li:activity:7094743929450856448?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7094743929450856448%29'
               }
-              className='font-sm italic underline text-bluesteel mx-2'
+              className='font-md italic font-semibold text-violhabbit mx-2'
             >
               Link to Resume Scripter's LinkedIn post in reference to my work with them
             </a>
-            <HiOutlineExternalLink size='1.5rem' />
+            <HiOutlineExternalLink size='1rem' style={{ color: '#550180' }} />
           </div>
 
           <a
             target='_blank'
             href={'https://resumescripter.com/'}
-            className='underline-offset-4 text-base text-zinc-800'
+            className='underline-offset-4 text-base font-normal text-zinc-800'
           >
             https://resumescripter.com/
           </a>
