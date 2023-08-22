@@ -24,7 +24,7 @@ const {title, examples} = data;
             key={imgTitle}
             className='col-span-1 flex justify-center items-center bg-zinc-100 shadow-md rounded'
           >
-            <div className='p-2 rounded-md overflow-hidden w-auto h-auto'>
+            <div className='p-2 rounded-md overflow-hidden'>
               <Image
                 priority
                 width={200}

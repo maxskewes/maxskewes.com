@@ -16,8 +16,8 @@ const PapaGsWebsite = () => {
 
           <p className='font-light mx-20'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What started out a branch product website from a page on
-            the main company's became a complete rebranding of the product. I was hired to design a
-            new logo and expand the aesthic to the website overhaul each variety of the product's
+            the main company&apos;s became a complete rebranding of the product. I was hired to design a
+            new logo and expand the aesthic to the website overhaul each variety of the product&apos;s
             label.
           </p>
         </div>
@@ -25,7 +25,7 @@ const PapaGsWebsite = () => {
         <div className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md flex-col'>
           <div>
             <h3 className='font-semibold uppercase text-zinc-800 text-center'>
-              Papa G's Organic Tofu
+              Papa G&apos;s Organic Tofu
             </h3>
             <p className='font-normal text-zinc-600 text-center'>
               A product website built with Reactjs and Chakra UI. Designed and created all

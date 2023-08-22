@@ -93,7 +93,7 @@ const RSWvideo = () => {
               }
               className='font-md italic font-semibold text-violhabbit mx-2'
             >
-              Link to Resume Scripter's LinkedIn post in reference to my work with them
+              Link to Resume Scripter&apos;s LinkedIn post in reference to my work with them
             </a>
             <HiOutlineExternalLink size='1rem' style={{ color: '#550180' }} />
           </div>
