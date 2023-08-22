@@ -12,7 +12,7 @@ const PapaGsWebsite = () => {
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
           <p className='font-light mx-20'>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate from the parent company. This led to a new logo design with the aesthic expanded to the website, which then required a complete redesign of each variety of the product&apos;s label and the Product Sales' sheet for promotion and distribution.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate from the parent company. This led to a new logo design with the aesthic expanded to the website, which then required a complete redesign of each variety of the product&apos;s label and the Product Sales&apos; sheet for promotion and distribution.
           </p>
         </div>
 
