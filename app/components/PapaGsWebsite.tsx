@@ -1,10 +1,7 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
 
 const PapaGsWebsite = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   return (
     <>
       <div className='mt-10 mb-20'>
@@ -15,10 +12,7 @@ const PapaGsWebsite = () => {
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
           <p className='font-light mx-20'>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What started out a branch product website from a page on
-            the main company&apos;s became a complete rebranding of the product. I was hired to design a
-            new logo and expand the aesthic to the website overhaul each variety of the product&apos;s
-            label.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate from the parent company. This led to a new logo design with the aesthic expanded to the website, which then required a complete redesign of each variety of the product&apos;s label and the Product Sales' sheet for promotion and distribution.
           </p>
         </div>
 
@@ -34,34 +28,30 @@ const PapaGsWebsite = () => {
           </div>
 
           <div className='flex-col text-center justify-center items-center'>
-            <div className='m-4'>
-              <button
-                onClick={() => {
-                  setIsPlaying(true);
-                }}
-              >
+            <a
+              target='_blank'
+              href={'https://papagstofu.com/'}
+              className='flex flex-col w-full'
+            >
+              <div className='m-4'>
                 <Image
-                  priority
+                  // priority
                   width={300}
                   height={300}
+                  className='m-auto'
                   src={'/images/portfolio/papa-gs-link.png'}
-                  alt={'RS Works App Demo'}
-                  aria-label={'RS Works App Demo'}
+                  alt={"Papa G's Tofu site link"}
+                  aria-label={"Papa G's Tofu site link"}
                 />
-              </button>
-            </div>
-            <div className='flex justify-center items-center text-center'>
-          <a
-            target='_blank'
-            href={'https://papagstofu.com/'}
-            className='underline-offset-4 text-base text-zinc-800'
-          >
-            https://papagstofu.com/
-          </a>
-        </div>
+              </div>
+              <div className='flex justify-center items-center text-center'>
+                <p className='underline-offset-4 text-base text-zinc-800'>
+                  https://papagstofu.com/
+                </p>
+              </div>
+            </a>
           </div>
         </div>
-   
       </div>
     </>
   );

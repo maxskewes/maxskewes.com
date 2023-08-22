@@ -4,6 +4,7 @@ import Link from 'next/link';
 import SectionHeader from './SectionHeader';
 import RSWvideo from './RSWvideo';
 import PapaGsWebsite from './PapaGsWebsite';
+import CTI from './CTI';
 
 type PortfolioProps = {
   data: {
@@ -26,13 +27,15 @@ const Portfolio = ({ data }: PortfolioProps) => {
     <section id='portfolio'>
       <SectionHeader title={title} />
       <div className='grid gap-4 auto-rows-max'>
+        
         <RSWvideo />
         <PapaGsWebsite />
-        {cardInfo.map(({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
+        <CTI />
+        
+        {/* {cardInfo.map(({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
           <div key={cardTitle} className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md'>
             <h3 className='font-semibold uppercase text-zinc-800'>{cardTitle}</h3>
             <h4 className='uppercase text-zinc-600 font-semibold'>{org}</h4>
-
             <p className='mt-2 font-normal text-zinc-800'>{description}</p>
             <div className='flex-col text-center'>
               <div className='flex justify-center items-center'>
@@ -54,7 +57,8 @@ const Portfolio = ({ data }: PortfolioProps) => {
               </Link>
             </div>
           </div>
-        ))}
+        ))} */}
+  
       </div>
     </section>
   );

@@ -133,15 +133,15 @@ export const portfolioData = {
     //   imgSrc: '/images/portfolio/papa-gs-link.png',
     //   imgAlt: "Papa G's Website Link",
     // },
-    {
-      cardTitle: 'Civic Tech Index',
-      org: 'Hack for LA',
-      link: 'http://civictechindex.org/home',
-      description:
-        'A Hack for LA project, the CTI is web application to catalog every open source civic tech project and enable developers to connect willing volunteers with their dream projects to help with civic issues.',
-      imgSrc: '/images/portfolio/cti-link.png',
-      imgAlt: 'CTI Website Link',
-    },
+    // {
+    //   cardTitle: 'Civic Tech Index',
+    //   org: 'Hack for LA',
+    //   link: 'http://civictechindex.org/home',
+    //   description:
+    //     'A Hack for LA project, the CTI is web application to catalog every open source civic tech project and enable developers to connect willing volunteers with their dream projects to help with civic issues.',
+    //   imgSrc: '/images/portfolio/cti-link.png',
+    //   imgAlt: 'CTI Website Link',
+    // },
     // {
     //   cardTitle: 'Music Festival Website',
     //   org: 'Bridgetown Bluegrass Festival',
@@ -159,7 +159,7 @@ export const graphicDesignData = {
   examples: [
     {
       imgTitle: 'evicerated-banjo',
-      imgSrc: '/images/design/evicerated-banjo.jpeg',
+      imgSrc: '/images/design/evicerated-banjo.png',
       imgAlt: 'Block Carving of Evicerated Banjo',
     },
     {
@@ -174,22 +174,17 @@ export const graphicDesignData = {
     },
     {
       imgTitle: 'papags-logo',
-      imgSrc: '/images/design/papags-site-logo.svg',
+      imgSrc: '/images/design/papags-site-logo.png',
       imgAlt: 'Papa Gs Tofu Website Logo',
     },
-    // {
-    //   imgTitle: 'papags-sesame',
-    //   imgSrc: '/images/design/pg-sesame.jpg',
-    //   imgAlt: "Papa G's Tofu Sesame Label",
-    // },
     {
       imgTitle: 'papags-bbq',
-      imgSrc: '/images/design/pg-bbq.jpg',
+      imgSrc: '/images/design/pg-bbq.png',
       imgAlt: "Papa G's Tofu BBQ Label",
     },
     {
       imgTitle: 'sherlock-holmes-story-club',
-      imgSrc: '/images/design/sherlock-holmes-story-club.jpg',
+      imgSrc: '/images/design/sherlock-holmes-story-club.png',
       imgAlt: 'Sherlock Holmes Story Club',
     },
   ],
