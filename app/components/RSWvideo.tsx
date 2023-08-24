@@ -80,6 +80,7 @@ const RSWvideo = () => {
                 </p>
               </div>
             </div>
+            <i>The source code for this project is proprietary, hence unavailable.</i>
           </div>
         </div>
         <div className='flex flex-col justify-center items-center text-center w-full'>

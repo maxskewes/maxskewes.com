@@ -12,7 +12,10 @@ const PapaGsWebsite = () => {
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
           <p className='font-light mx-20'>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate from the parent company. This led to a new logo design with the aesthic expanded to the website, which then required a complete redesign of each variety of the product&apos;s label and the Product Sales&apos; sheet for promotion and distribution.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate
+            from the parent company. This led to a new logo design with the aesthic expanded to the
+            website, which then required a complete redesign of each variety of the product&apos;s
+            label and the Product Sales&apos; sheet for promotion and distribution.
           </p>
         </div>
 
@@ -28,11 +31,7 @@ const PapaGsWebsite = () => {
           </div>
 
           <div className='flex-col text-center justify-center items-center'>
-            <a
-              target='_blank'
-              href={'https://papagstofu.com/'}
-              className='flex flex-col w-full'
-            >
+            <a target='_blank' href={'https://papagstofu.com/'} className='flex flex-col w-full'>
               <div className='m-4'>
                 <Image
                   // priority
@@ -45,8 +44,15 @@ const PapaGsWebsite = () => {
                 />
               </div>
               <div className='flex justify-center items-center text-center'>
-                <p className='underline-offset-4 text-base text-zinc-800'>
-                  https://papagstofu.com/
+                <i>website:</i>
+                <p className='underline text-base text-zinc-800 mx-2'>https://papagstofu.com/</p>
+              </div>
+            </a>
+            <a target='_blank' href={'https://github.com/maxskewes/papa-gs'}>
+              <div className='flex justify-center items-center text-center'>
+                <i>source code:</i>
+                <p className='underline text-base text-zinc-800 mx-2'>
+                  github.com/maxskewes/papa-gs
                 </p>
               </div>
             </a>
