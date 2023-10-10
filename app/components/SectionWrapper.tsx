@@ -30,7 +30,7 @@ const SectionWrapper = ({ title, children }: SectionHeaderProps) => {
       </div>
 
       <div className='flex w-full justify-center'>
-        <div className='max-w-4xl'>{children}</div>
+        <div className='w-full max-w-4xl'>{children}</div>
       </div>
     </div>
   );

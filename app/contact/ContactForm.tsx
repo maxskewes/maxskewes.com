@@ -58,7 +58,7 @@ export default function ContactForm() {
           minLength={3}
           maxLength={150}
           required
-          className=' p-4 bg-gray-50 border border-indigo-800 rounded-sm'
+          className='min-w-full p-4 bg-gray-50 border border-indigo-800 rounded-sm'
           autoComplete='off'
           id='name'
         />

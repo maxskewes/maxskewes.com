@@ -48,9 +48,9 @@ const NavSide = () => {
             />
 
             <div className='uppercase text-white mb-2'>
-              <h1 className='text-left'>Maxwell</h1>
+              <h1 className='text-center'>Maxwell</h1>
               <h1 className='text-center'>Countryman</h1>
-              <h1 className='text-right'>Skewes</h1>
+              <h1 className='text-center'>Skewes</h1>
             </div>
 
             <div className='my-2 w-full uppercase text-center'>
@@ -72,7 +72,7 @@ const NavSide = () => {
               </div>
             </div>
 
-            <div className='flex flex-col gap-2 my-4'>
+            <div className='flex flex-col text-center gap-2 my-4'>
               <MLinkSm to={'#about'}>About</MLinkSm>
               <MLinkSm to={'#resume-cv'}>Resume/CV</MLinkSm>
               <MLinkSm to={'#professional-experience'}>
