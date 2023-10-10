@@ -1,12 +1,15 @@
 import React from 'react';
-import SectionHeader from '../components/SectionHeader';
 import ContactForm from '../contact/ContactForm';
+import SectionWrapper from './SectionWrapper';
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <SectionHeader title={'Contact'} />
-      <div className='m-4'><ContactForm /></div>
+    <section id='contact'>
+      <SectionWrapper title={'Contact'}>
+        <div className='m-4'>
+          <ContactForm />
+        </div>
+      </SectionWrapper>
     </section>
   );
 };

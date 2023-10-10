@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionHeader from '../components/SectionHeader';
+import SectionHeader from '../components/SectionWrapper';
 import ContactForm from './ContactForm';
 
 const ContactPage = () => {

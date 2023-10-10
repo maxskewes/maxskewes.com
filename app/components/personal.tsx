@@ -1,4 +1,4 @@
-import SectionHeader from './SectionHeader';
+import SectionWrapper from './SectionWrapper';
 
 type PersonalProps = {
   data: {
@@ -11,13 +11,14 @@ const Personal = ({ data }: PersonalProps) => {
 
   return (
     <section id='personal' className='pb-1'>
-      <SectionHeader title={'Personal'} />
-      <div className='ml-4'>
-        <p className='mb-6'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {body}
+      <SectionWrapper title={'Personal'}>
+        <div className='ml-4'>
+          <p className='mb-6'>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {body}
           </p>
-      </div>
+        </div>
+      </SectionWrapper>
     </section>
   );
 };

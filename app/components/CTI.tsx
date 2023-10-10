@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { BsGithub } from 'react-icons/bs';
-import { HiOutlineExternalLink } from 'react-icons/hi';
 
 const CTI = () => {
   return (

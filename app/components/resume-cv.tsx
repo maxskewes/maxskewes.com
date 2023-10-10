@@ -63,7 +63,7 @@ const Resume = () => {
       <div className={josefin.className}>
         <div className='flex flex-col justify-center items-center'>
           <h2 className='uppercase mb-2 pt-12 font-semibold text-bluesteel'>
-            Résumé -<a className='tracking-tight'> Curriculum Vitæ</a>
+            Résumé
           </h2>
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>
             &nbsp;
@@ -125,7 +125,7 @@ const Resume = () => {
                 github.com/maxskewes
               </i>
               <i className='font-light text-sm xl:text-base'>
-           linkedin.com/in/maxskewes
+                linkedin.com/in/maxskewes
               </i>
               <i className='font-light text-sm xl:text-base'>
                 Portland, OR 97215
@@ -178,9 +178,7 @@ const Resume = () => {
               title={'Associate Degree of Liberal Arts'}
               location='Marylhurst, OR'
             >
-              <p className='font-light'>
-             Assiciate Degree of Liberal Arts
-              </p>
+              <p className='font-light'>Assiciate Degree of Liberal Arts</p>
               <i className='text-zinc-500'>
                 Minor focus on Irish Language &#40;Gaeilge&#41;.
               </i>

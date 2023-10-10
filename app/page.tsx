@@ -19,7 +19,6 @@ import {
 } from '../data/data';
 
 const Page: React.FC = () => {
-
   return (
     <div className='z-1 bg-white/[.850] w-full pl-0 md:pl-[200px] lg:pl-[300px]'>
       <motion.div
@@ -28,12 +27,13 @@ const Page: React.FC = () => {
         transition={{ duration: 0.2 }}
         className='px-4 lg:px-8'
       >
+        <Portfolio data={portfolioData} />
+
+        <GraphicDesign data={graphicDesignData} />
         <About data={aboutData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
         <Education data={educationData} />
-        <Portfolio data={portfolioData} />
-        <GraphicDesign data={graphicDesignData} />
         <Personal data={personalData} />
         <Contact />
         <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
