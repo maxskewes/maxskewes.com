@@ -25,9 +25,15 @@ const Portfolio = ({ data }: PortfolioProps) => {
     <section id='portfolio'>
       <SectionWrapper title={title}>
         <div className='grid gap-4 auto-rows-max'>
+        <div className='mt-2 md:mt-10 mb-20'>
           <RSWvideo />
+          </div>
+          <div className='mt-2 md:mt-10 mb-20'>
           <PapaGsWebsite />
+          </div>
+          <div className='mt-2 md:mt-10 mb-20'>
           <CTI />
+          </div>
         </div>
       </SectionWrapper>
     </section>

@@ -6,9 +6,7 @@ const Contact = () => {
   return (
     <section id='contact'>
       <SectionWrapper title={'Contact'}>
-        <div className='w-full m-4'>
-          <ContactForm />
-        </div>
+        <ContactForm />
       </SectionWrapper>
     </section>
   );
