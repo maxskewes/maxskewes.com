@@ -1,9 +1,9 @@
 export const aboutData = {
   title: 'Introduction',
   bullets: [
-    '- I created intuitive websites for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
-    '- I co-founded a nonprofit music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',
-    '- I served as lead developer throughout the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with MUI framework to realize a Figma design.',
+    'CREATED INTUITIVE WEBSITES for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
+    'CO-FOUNDED A NON-PROFIT music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',
+    'SERVED AS LEAD DEVELOPER during the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with MUI framework to realize a Figma design.',
   ],
 };
 

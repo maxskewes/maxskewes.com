@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player/lazy';
 import { GiClick } from 'react-icons/gi';
 import { BsLinkedin } from 'react-icons/bs';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -12,7 +12,7 @@ const RSWvideo = () => {
   const StartVideo = () => {
     return (
       <div className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'>
-        <ReactPlayer url='https://www.youtube.com/watch?v=kB7g9qxbEvc&t=81s' playing />
+        <ReactPlayer url='https://resumescripter.com/hubfs/2023%20RS%20Works%20Demo.mp4' playing controls />
       </div>
     );
   };
