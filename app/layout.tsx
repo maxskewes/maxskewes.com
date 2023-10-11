@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={worksans.className}>
+    <html lang='en'>
       <body>
         <header className='z-99'>
           <nav>
