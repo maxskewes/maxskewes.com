@@ -4,7 +4,10 @@ import SectionWrapper from './SectionWrapper';
 type AboutProps = {
   data: {
     title: string;
-    bullets: string[];
+    bullets: {
+      b: string;
+      p: string;
+    }[];
   };
 };
 
@@ -31,7 +34,7 @@ const About = ({ data }: AboutProps) => {
             {bullets?.map((el, i) => (
               <div className='p-1 pt-2 my-3 bg-zinc-100 shadow-md rounded text-zinc-800'>
                 <p key={`${id}_${i}`} className='pb-2 ml-4'>
-                  {el}
+                  <b className='text-zinc-700'>{el.b}</b>{el.p}
                 </p>
               </div>
             ))}

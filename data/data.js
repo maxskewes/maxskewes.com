@@ -1,9 +1,19 @@
 export const aboutData = {
   title: 'Introduction',
   bullets: [
-    'CREATED INTUITIVE WEBSITES for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
-    'CO-FOUNDED A NON-PROFIT music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',
-    'SERVED AS LEAD DEVELOPER during the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with MUI framework to realize a Figma design.',
+    {
+      b: 'Created intuitive websites ',
+      p: 'for companies across sectors including legal services, real estate, entertainment, and food and beverage sectors, using ReactJS with TypeScript and frameworks including MUI and Chakra UI.',
+    },
+
+    {
+      b: 'Co-founded a non-profit ',
+      p: 'music festival which raised over $15,000 for a Portland-based women’s shelter. I managed web development and promotional initiatives which achieved an 80% annual increase in festival revenue.',
+    },
+    {
+      b: 'Served as lead front-end developer ',
+      p: 'during the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with MUI framework to realize a Figma design.',
+    },
   ],
 };
 
@@ -14,10 +24,8 @@ export const skillsData = {
     { icon: '👥', text: 'Collaboration' },
     { icon: '⽓', text: 'Teamwork' },
     { icon: '💡', text: 'Creative Problem Solving' },
-    { icon: '⌛️', text: 'Time management' },
   ],
   hard: [
-    { icon: '💻', text: 'Python' },
     { icon: 'ʦ', text: 'TypeScript' },
     { icon: '🚀', text: 'React' },
     { icon: '💾', text: 'SQL' },
@@ -37,7 +45,7 @@ export const educationData = {
         'Six-month on-site intensive coursework in HTML, CSS, JavaScript, React, MySQL, and Node.js.',
     },
     {
-      certificate: "Associate Degree of Liberal Arts",
+      certificate: 'Associate Degree of Liberal Arts',
       institution: 'Marylhurst University',
       location: 'Lake Oswego, OR',
       description: 'Minor focus on Modern Irish Language (Gaeilge)',
@@ -192,4 +200,5 @@ export const graphicDesignData = {
 
 export const personalData = {
   title: 'Personal',
-  body: "My primary passion is music, most specifically bluegrass banjo, from which I made the majority of my income before entering web development five years ago. I enjoy wood working, which quickly turned into doing minor work repair work on instruments for my music students before trainsitioning into full-on luthiery: the hand-making of stringed instruments. I tend to focus primarily on banjos, but currently I am building my first Irish bouzouki, one of my favorite instruments to play. Having been given the opportunity to travel to multiple continents playing music, I've toured New Zealand on multiple occasions, spent several months in Uganda as a house band in a local bar, and most recently my bluegrass band was awarded a federal grant issued by the US State Department to tour in eastern Russia. I enjoy teaching others and have taught classes to both individuals and through various colleges and universities. I have always loved experiencing foreign cultures, often an eye-opening and humbling experience, and spent my college years in Cork in the south of Ireland. As part of my degree, I studied Gaeilge, the native Irish language, and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science, having spent twelve years as a brewer and cider maker, and enjoy building my own stills for making spirits and tinctures at home. Currently I live with my wife and our two young lads in Portland, the city where I grew up.",};
+  body: "My primary passion is music, most specifically bluegrass banjo, from which I made the majority of my income before entering web development five years ago. I enjoy wood working, which quickly turned into doing minor work repair work on instruments for my music students before trainsitioning into full-on luthiery: the hand-making of stringed instruments. I tend to focus primarily on banjos, but currently I am building my first Irish bouzouki, one of my favorite instruments to play. Having been given the opportunity to travel to multiple continents playing music, I've toured New Zealand on multiple occasions, spent several months in Uganda as a house band in a local bar, and most recently my bluegrass band was awarded a federal grant issued by the US State Department to tour in eastern Russia. I enjoy teaching others and have taught classes to both individuals and through various colleges and universities. I have always loved experiencing foreign cultures, often an eye-opening and humbling experience, and spent my college years in Cork in the south of Ireland. As part of my degree, I studied Gaeilge, the native Irish language, and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science, having spent twelve years as a brewer and cider maker, and enjoy building my own stills for making spirits and tinctures at home. Currently I live with my wife and our two young lads in Portland, the city where I grew up.",
+};

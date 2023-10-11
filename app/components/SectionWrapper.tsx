@@ -8,7 +8,7 @@ const josefin = Josefin_Sans({
 
 type SectionHeaderProps = {
   title: string;
-  children: any;
+  children?: any;
 };
 
 const SectionWrapper = ({ title, children }: SectionHeaderProps) => {
