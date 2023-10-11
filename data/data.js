@@ -51,7 +51,7 @@ export const educationData = {
       description: 'Minor focus on Modern Irish Language (Gaeilge)',
     },
     {
-      certificate: 'Certificate of Irish Studies',
+      certificate: 'Arts Degree Programme, Certificate of Irish Studies',
       institution: 'University College Cork',
       institution2: '(Coláiste na hOllscoile)',
       location: 'Cork, Ireland',

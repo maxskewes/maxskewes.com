@@ -27,5 +27,5 @@
 }
 
 section {
-  @apply pb-20;
+  @apply pb-10 md:pb-20;
 }
