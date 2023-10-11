@@ -2,7 +2,7 @@ import React from 'react';
 import RSWvideo from './RSWvideo';
 import PapaGsWebsite from './PapaGsWebsite';
 import CTI from './CTI';
-import SectionWrapper from './SectionWrapper';
+import { SectionWrapper } from './SectionWrapper';
 
 type PortfolioProps = {
   data: {
@@ -19,7 +19,7 @@ type PortfolioProps = {
 };
 
 const Portfolio = ({ data }: PortfolioProps) => {
-  const { title, cardInfo } = data;
+  const { title } = data;
 
   return (
     <section id='portfolio'>
@@ -28,33 +28,6 @@ const Portfolio = ({ data }: PortfolioProps) => {
           <RSWvideo />
           <PapaGsWebsite />
           <CTI />
-
-          {/* {cardInfo.map(({ cardTitle, org, link, description, imgSrc, imgAlt }) => (
-          <div key={cardTitle} className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md'>
-            <h3 className='font-semibold uppercase text-zinc-800'>{cardTitle}</h3>
-            <h4 className='uppercase text-zinc-600 font-semibold'>{org}</h4>
-            <p className='mt-2 font-normal text-zinc-800'>{description}</p>
-            <div className='flex-col text-center'>
-              <div className='flex justify-center items-center'>
-                <Link href={link}>
-                  <Image
-                    style={{ border: '5px solid white' }}
-                    priority
-                    width={200}
-                    height={200}
-                    className='m-1'
-                    src={imgSrc}
-                    alt={imgAlt}
-                    aria-label={imgAlt}
-                  />
-                </Link>
-              </div>
-              <Link href={link}>
-                <p className='text-base text-grey font-normal'>{link}</p>
-              </Link>
-            </div>
-          </div>
-        ))} */}
         </div>
       </SectionWrapper>
     </section>

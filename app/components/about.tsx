@@ -1,5 +1,4 @@
-import { useId } from 'react';
-import SectionWrapper from './SectionWrapper';
+import { SectionWrapper } from './SectionWrapper';
 
 type AboutProps = {
   data: {
@@ -13,7 +12,6 @@ type AboutProps = {
 
 const About = ({ data }: AboutProps) => {
   const { title, bullets } = data;
-  const id = useId();
   return (
     <section id='about' className='pt-0'>
       <SectionWrapper title={title}>
@@ -31,10 +29,14 @@ const About = ({ data }: AboutProps) => {
             real estate, entertainment, and career services.
           </p>
           <div>
-            {bullets?.map((el, i) => (
-              <div className='p-1 pt-2 my-3 bg-zinc-100 shadow-md rounded text-zinc-800'>
-                <p key={`${id}_${i}`} className='pb-2 ml-4'>
-                  <b className='text-zinc-700'>{el.b}</b>{el.p}
+            {bullets?.map((bullet, i) => (
+              <div
+                key={i}
+                className='p-1 pt-2 my-3 bg-zinc-100 shadow-md rounded text-zinc-800'
+              >
+                <p className='pb-2 ml-4'>
+                  <b className='text-zinc-700'>{bullet.b}</b>
+                  {bullet.p}
                 </p>
               </div>
             ))}

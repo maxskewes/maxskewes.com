@@ -1,4 +1,4 @@
-import SectionWrapper from './SectionWrapper';
+import { SectionWrapper } from './SectionWrapper';
 
 type PersonalProps = {
   data: {

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import LeadInSentence from './components/LeadInSentence';
 import About from './components/about';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
@@ -27,8 +28,8 @@ const Page: React.FC = () => {
         transition={{ duration: 0.2 }}
         className='px-4 lg:px-8'
       >
+        <LeadInSentence />
         <Portfolio data={portfolioData} />
-
         <GraphicDesign data={graphicDesignData} />
         <About data={aboutData} />
         <Resume />

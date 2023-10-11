@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SectionWrapper from './SectionWrapper';
+import { SectionWrapper } from './SectionWrapper';
 
 type GraphicDesignProps = {
   data: {

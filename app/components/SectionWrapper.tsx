@@ -11,21 +11,21 @@ type SectionHeaderProps = {
   children?: any;
 };
 
-const SectionWrapper = ({ title, children }: SectionHeaderProps) => {
+export const SectionWrapper = ({ title, children }: SectionHeaderProps) => {
   return (
     <div className='pb-2'>
       <div className={josefin.className}>
-      <div className='flex w-full justify-center'>
-        <div className='flex w-full justify-right max-w-6xl'>
-        <div>
-          <h1 className='uppercase mb-2 pt-12 font-semibold text-bluesteel'>
-            {title}
-          </h1>
-          <span className='pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit pb-2'>
-            &nbsp;
-          </span>
-        </div>
-        </div>
+        <div className='flex w-full justify-center'>
+          <div className='flex w-full justify-right max-w-6xl'>
+            <div>
+              <h1 className='uppercase mb-2 pt-12 font-semibold text-bluesteel'>
+                {title}
+              </h1>
+              <span className='pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit pb-2'>
+                &nbsp;
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -36,4 +36,10 @@ const SectionWrapper = ({ title, children }: SectionHeaderProps) => {
   );
 };
 
-export default SectionWrapper;
+export const ContentLimiter = ({ children }) => {
+  return (
+    <div className='flex w-full justify-center'>
+      <div className='w-full max-w-4xl'>{children}</div>
+    </div>
+  );
+};

@@ -29,12 +29,12 @@ const RSWvideo = () => {
         </div>
       ) : null}
 
-      <div className='mt-10 mb-20'>
+      <div className='mb-20'>
         <div className='mb-4 flex flex-col justify-center items-center'>
           <h4 className='uppercase text-zinc-80 font-semibold text-center'>Resume Scripter</h4>
           <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
-          <p className='font-light mx-20'>
+          <p className='font-light mx-4 md:mx-20'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have spent the better part
             of the last two years developing. The code is proprietary, hence there is no github link
             to its content. However the above link is hopefully indicative of the depth and
