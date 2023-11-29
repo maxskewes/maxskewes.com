@@ -29,7 +29,7 @@ const MLinkSm = ({ to, name, children }: MLinkSmProps) => {
 
 const NavSide = () => {
   return (
-    <div className='hidden md:inline-block h-screen w-[200px] lg:w-[300px] bg-stone-800 fixed p-0'>
+    <div className='hidden md:inline-block overflow-y-scroll no-scrollbar h-screen w-[200px] lg:w-[300px] bg-stone-800 fixed p-0'>
       <motion.div
         initial={{ x: -40, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

@@ -6,9 +6,8 @@ const LeadInSentence = () => {
       <div className='w-full max-w-lg'>
         <p className='text-center'>
           <i>
-            JavaScript Developer with several years experience <br/>
-            creating and contributing to the design and development of
-            <br/> interactive websites and custom applications
+            I'm a JavaScript Developer, fluent in several JS languages, <br/>frameworks, Typescript, and REST APIs. <br />
+            I have several years experience creating and contributing to the design and development of interactive websites and custom applications.
           </i>
         </p>
       </div>
