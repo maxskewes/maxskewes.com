@@ -36,6 +36,7 @@ const Page: React.FC = () => {
         <ProfessionalExperience data={professionalExperienceData} />
         <Education data={educationData} />
         <Personal data={personalData} />
+        ENV TESTING
         <Contact />
         <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
           <div className='flex justify-center items-end'>
