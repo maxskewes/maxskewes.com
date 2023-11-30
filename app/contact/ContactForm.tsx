@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import React from 'react';
 import { Josefin_Sans } from 'next/font/google';
+import { ToastSent, ToastError } from './contact-toasts';
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -10,7 +11,14 @@ const josefin = Josefin_Sans({
 });
 
 export default function ContactForm() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [toast, setToast] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+
+  const handleResetToast = () => {
+    setToast(false);
+    setError(false);
+  };
 
   async function handleSubmit(event: any) {
     event.preventDefault();
@@ -33,7 +41,7 @@ export default function ContactForm() {
     });
 
     if (response.ok) {
-      //add toast
+      setToast(true);
       console.log('Message sent successfully');
       setLoading(false);
       // reset the form
@@ -42,67 +50,74 @@ export default function ContactForm() {
       event.target.message.value = '';
     }
     if (!response.ok) {
-      //add error message
+      setError(true);
       console.log('Error sending message');
       setLoading(false);
     }
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <div className='w-full flex flex-col md:my-4 '>
-        <label className='font-bold text-bluesteel pb-1' htmlFor='name'>
-          Name
-        </label>
-        <input
-          type='text'
-          minLength={3}
-          maxLength={150}
-          required
-          className='min-w-full p-4 bg-gray-50 border border-indigo-800 rounded-sm'
-          autoComplete='off'
-          id='name'
-        />
-      </div>
-      <div className='w-full flex flex-col my-4'>
-        <label className='font-bold text-bluesteel pb-1' htmlFor='email'>
-          Email
-        </label>
-        <input
-          type='email'
-          minLength={5}
-          maxLength={150}
-          required
-          className=' p-4 bg-gray-50 border border-indigo-800 rounded-sm'
-          autoComplete='off'
-          id='email'
-        />
-      </div>
-      <div>
-        <label className='font-semibold text-bluesteel' htmlFor='message'>
-          Message
-        </label>
-        <div className='pt-1'>
-          <textarea
-            rows={4}
-            required
-            minLength={10}
-            maxLength={500}
-            name='message'
-            className='w-full p-4 bg-gray-50 border border-indigo-800 rounded-sm'
-          />
+    <div onClick={handleResetToast}>
+      <form onSubmit={handleSubmit}>
+        <div className='relative w-full flex flex-col md:my-4'>
+          {toast && <ToastSent />}
+          {error && <ToastError />}
+
+          <div>
+            <label className='font-bold text-bluesteel pb-1' htmlFor='name'>
+              Name
+            </label>
+            <input
+              type='text'
+              minLength={3}
+              maxLength={150}
+              required
+              className='min-w-full p-4 bg-gray-50 border border-indigo-800 rounded-sm'
+              autoComplete='off'
+              id='name'
+            />
+          </div>
+          <div className='w-full flex flex-col my-4'>
+            <label className='font-bold text-bluesteel pb-1' htmlFor='email'>
+              Email
+            </label>
+            <input
+              type='email'
+              minLength={5}
+              maxLength={150}
+              required
+              className=' p-4 bg-gray-50 border border-indigo-800 rounded-sm'
+              autoComplete='off'
+              id='email'
+            />
+          </div>
+          <div>
+            <label className='font-semibold text-bluesteel' htmlFor='message'>
+              Message
+            </label>
+            <div className='pt-1'>
+              <textarea
+                rows={4}
+                required
+                minLength={10}
+                maxLength={500}
+                name='message'
+                className='w-full p-4 bg-gray-50 border border-indigo-800 rounded-sm'
+              />
+            </div>
+          </div>
+          <div className='relative w-full flex justify-center items-center pt-2 md:pt-6'>
+            <div className={josefin.className}>
+              <button
+                type='submit'
+                disabled={loading}
+                className='px-4 py-2 w-40 bg-bluesteel disabled:bg-grey disabled:text-indigo-800 text-white uppercase font-medium mt-4 rounded-md'
+              >
+                Send
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className='flex justify-center items-center pt-2 md:pt-6'>
-        <div className={josefin.className}>
-          <button
-            type='submit'
-            disabled={loading}
-            className='px-4 py-2 w-40 bg-bluesteel disabled:bg-grey disabled:text-indigo-800 text-white uppercase font-medium mt-4 rounded-md'
-          >
-            Send
-          </button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
