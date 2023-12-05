@@ -7,7 +7,7 @@ const LeadInSentence = () => {
         <p className='text-center'>
           <i>
             I&apos;m a JavaScript Developer, fluent in several JS languages, <br/>frameworks, Typescript, and REST APIs. <br />
-            I have several years experience creating and contributing to the design and development of interactive websites and custom applications.
+            With several years experience creating and contributing to the design and development of interactive websites and custom applications, I love the continuous learning in this ever-evolving field and the problem solving that comes with it.
           </i>
         </p>
       </div>
