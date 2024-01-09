@@ -3,6 +3,7 @@ import RSWvideo from './RSWvideo';
 import PapaGsWebsite from './PapaGsWebsite';
 import CTI from './CTI';
 import { SectionWrapper } from './SectionWrapper';
+import BridgetownBluegrassWebsite from './BridgetownBluegrassWebsite';
 
 type PortfolioProps = {
   data: {
@@ -30,6 +31,9 @@ const Portfolio = ({ data }: PortfolioProps) => {
           </div>
           <div className='mt-2 md:mt-10 mb-20'>
           <PapaGsWebsite />
+          </div>
+          <div className='mt-2 md:mt-10 mb-20'>
+          <BridgetownBluegrassWebsite />
           </div>
           <div className='mt-2 md:mt-10 mb-20'>
           <CTI />
