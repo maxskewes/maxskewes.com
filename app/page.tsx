@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import LeadInSentence from './components/LeadInSentence';
+import SkipToPortfolioButton from './components/SkipToPortfolioButton';
 import About from './components/about';
 import ProfessionalExperience from './components/professional-experience';
 import Education from './components/education';
@@ -28,10 +28,10 @@ const Page: React.FC = () => {
         transition={{ duration: 0.2 }}
         className='px-4 lg:px-8'
       >
-        <LeadInSentence />
+        <SkipToPortfolioButton />
+        <About data={aboutData} />
         <Portfolio data={portfolioData} />
         <GraphicDesign data={graphicDesignData} />
-        <About data={aboutData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
         <Education data={educationData} />
@@ -39,9 +39,7 @@ const Page: React.FC = () => {
         <Contact />
         <div className='w-full pt-12 sm:pt-18 md:pt-20 pb-2'>
           <div className='flex justify-center items-end'>
-            <p className='text-bluesteel font-light opacity-50'>
-              maxskewes@gmail.com
-            </p>
+            <p className='text-bluesteel font-light opacity-50'>maxskewes@gmail.com</p>
           </div>
         </div>
       </motion.div>

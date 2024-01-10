@@ -24,6 +24,9 @@
   i {
     @apply text-sm xl:text-base font-light leading-4 lg:leading-5 text-bluesteel;
   }
+  b {
+    @apply text-bluesteel;
+  }
 }
 
 section {

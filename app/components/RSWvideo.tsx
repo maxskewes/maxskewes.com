@@ -34,10 +34,10 @@ const RSWvideo = () => {
       ) : null}
 
       <div className='mb-4 flex flex-col justify-center items-center'>
-        <h4 className='uppercase text-zinc-80 font-semibold text-center'>
+        <h4 className='uppercase text-bluesteel font-semibold text-center'>
           Resume Scripter
         </h4>
-        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>
           &nbsp;
         </p>
 
