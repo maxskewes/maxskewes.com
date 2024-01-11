@@ -18,7 +18,6 @@ import {
   personalData,
   portfolioData,
 } from '../data/data';
-import Skills from './components/Skills';
 
 const Page: React.FC = () => {
   return (
@@ -31,7 +30,6 @@ const Page: React.FC = () => {
       >
         <SkipToPortfolioButton />
         <About data={aboutData} />
-        <Skills />
         <Portfolio data={portfolioData} />
         <GraphicDesign data={graphicDesignData} />
         <Resume />

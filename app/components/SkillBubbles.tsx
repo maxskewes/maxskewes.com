@@ -1,5 +1,3 @@
-import React from 'react';
-import { SectionWrapper } from './SectionWrapper';
 import {
   SiGimp,
   SiJavascript,
@@ -41,7 +39,7 @@ import {
 import { IoGitNetwork, IoLogoFigma, IoLogoBitbucket } from 'react-icons/io5';
 import { BsStripe, BsVectorPen } from 'react-icons/bs';
 
-const Skills = () => {
+const SkillBubbles = () => {
   const SkillBubble = ({ skill, icon }) => {
     return (
       <div>
@@ -53,8 +51,11 @@ const Skills = () => {
   };
 
   return (
-    <section id='about' className='pt-0'>
-      <SectionWrapper title={'Skills and Technologies'}>
+    <>
+      <div className='m-4 flex flex-col justify-center items-center'>
+        <h4 className='uppercase text-bluesteel font-semibold text-center'>Skills and Tech</h4>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
+
         <div className='p-2 mb-4'>
           <div className='flex justify-center items-center flex-wrap'>
             <SkillBubble skill={'typescript'} icon={<SiTypescript />} />
@@ -97,9 +98,9 @@ const Skills = () => {
             <SkillBubble skill={'github'} icon={<FaGithub />} />
           </div>
         </div>
-      </SectionWrapper>
-    </section>
+      </div>
+    </>
   );
 };
 
-export default Skills;
+export default SkillBubbles;

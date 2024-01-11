@@ -2,6 +2,7 @@ import { SectionWrapper } from './SectionWrapper';
 import { FaMusic } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { FaGlobeAsia } from 'react-icons/fa';
+import SkillBubbles from './SkillBubbles';
 
 type AboutProps = {
   data: {
@@ -73,6 +74,7 @@ const About = ({ data }: AboutProps) => {
             </div>
           </div>
         </div>
+        <SkillBubbles />
       </SectionWrapper>
     </section>
   );
