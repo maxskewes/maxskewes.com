@@ -43,7 +43,7 @@ const SkillBubbles = () => {
   const SkillBubble = ({ skill, icon }) => {
     return (
       <div>
-        <div className='flex items-center bg-bluesteel text-white m-1 py-1 px-3 rounded-full'>
+        <div className='flex items-center bg-bluesteel text-white m-1 py-1 px-3 rounded-full whitespace-nowrap'>
           <div className='mr-2'>{icon}</div> {skill}
         </div>
       </div>

@@ -6,44 +6,32 @@ const CTI = () => {
   return (
     <>
       <div className='mb-4 flex flex-col justify-center items-center'>
-        <h4 className='uppercase text-zinc-80 font-semibold text-center'>
-          Hack for LA
-        </h4>
-        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>
-          &nbsp;
-        </p>
+        <h4 className='uppercase text-zinc-80 font-semibold text-center'>Hack for LA</h4>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
 
         <p className='font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initially volunteered with Hack for
-          LA&apos;s Civic Tech Index project during a day-log
-          &ldquo;hack-a-thon&rdquo; in which I helped with some simple front-end
-          responsiveness. I instantly realized the potential for enormous
-          benefit that, when completed, this application could provide. I signed
-          on as a regular volunteer and, over the next year and a half, was one
-          of several developers who gave around ten hours a week of their time.
-          I was later promoted to Lead Front-End Developer, which required a
-          more organizational role as well more regular meetings with project
-          managers. Unfortunately, due to an undisclosed higher-level
-          organizational concern, the project was haulted weeks before a
-          projected Alpha-Release and has yet to be revisited. Following the
-          link below will give access to the majority of what was created and
-          hopefully a decent indication of what this project, when completed,
-          could accomplish.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initially volunteered with Hack for LA&apos;s Civic Tech
+          Index project during a day-log &ldquo;hack-a-thon&rdquo; in which I helped with some
+          simple front-end responsiveness. I instantly realized the potential for enormous benefit
+          that, when completed, this application could provide. I signed on as a regular volunteer
+          and, over the next year and a half, was one of several developers who gave around ten
+          hours a week of their time. I was later promoted to Lead Front-End Developer, which
+          required a more organizational role as well more regular meetings with project managers.
+          Unfortunately, due to an undisclosed higher-level organizational concern, the project was
+          haulted weeks before a projected Alpha-Release and has yet to be revisited. Following the
+          link below will give access to the majority of what was created and hopefully a decent
+          indication of what this project, when completed, could accomplish.
         </p>
       </div>
 
       <div className='p-6 rounded overflow-hidden bg-zinc-100 shadow-md flex-col'>
         <div>
-          <h3 className='font-semibold uppercase text-zinc-800 text-center'>
-            Civic Tech Index
-          </h3>
+          <h3 className='font-semibold uppercase text-zinc-800 text-center'>Civic Tech Index</h3>
           <p className='font-normal text-zinc-600 text-center'>
-            A Hack for LA project, the CTI is a web application to connect
-            willing volunteers with projects relavant to civic issues,
-            world-wide. Through use of its &ldquo;Tag Generator Wizard&rdquo;,
-            projects are tagged with appropriatly related topics, enabling them
-            to be cataloged and easily accessed by developers and project
-            leaders globally.
+            A Hack for LA project, the CTI is a web application to connect willing volunteers with
+            projects relavant to civic issues, world-wide. Through use of its &ldquo;Tag Generator
+            Wizard&rdquo;, projects are tagged with appropriatly related topics, enabling them to be
+            cataloged and easily accessed by developers and project leaders globally.
           </p>
         </div>
 
@@ -79,9 +67,7 @@ const CTI = () => {
             className='flex flex-row justify-center w-full'
           >
             <BsGithub size='1.25rem' />
-            <p className='mx-2'>
-              Click here to visit the GitHub repository and view source code.
-            </p>
+            <p className='mx-2'>Click here to visit the GitHub repository and view source code.</p>
           </a>
         </div>
       </div>

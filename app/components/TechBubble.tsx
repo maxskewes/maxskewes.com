@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 type TechBubbleProps = {
-tech: string
+  tech: string;
 };
 
-
-const TechBubble = ({tech}:TechBubbleProps) => {
+const TechBubble = ({ tech }: TechBubbleProps) => {
   return (
-    <div className='bg-bluesteel text-white m-1 py-1 px-3 rounded-full'>{tech}</div>
-  )
-}
+    <div className='bg-bluesteel text-white m-1 py-1 px-3 rounded-full whitespace-nowrap'>
+      {tech}
+    </div>
+  );
+};
 
-export default TechBubble
+export default TechBubble;
