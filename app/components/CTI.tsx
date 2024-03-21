@@ -1,13 +1,24 @@
 'use client';
 import Image from 'next/image';
 import { BsGithub } from 'react-icons/bs';
+import TechBubble from './TechBubble';
+import TechBubbleWrapper from './TechBubbleWrapper';
 
 const CTI = () => {
   return (
     <>
       <div className='mb-4 flex flex-col justify-center items-center'>
         <h4 className='uppercase text-zinc-80 font-semibold text-center'>Hack for LA</h4>
-        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-zinc-400'>&nbsp;</p>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
+
+        <TechBubbleWrapper>
+          <TechBubble tech={'cra'} />
+          <TechBubble tech={'react'} />
+          <TechBubble tech={'node'} />
+          <TechBubble tech={'axios'} />
+          <TechBubble tech={'rest api'} />
+          <TechBubble tech={'MUI'} />
+        </TechBubbleWrapper>
 
         <p className='font-light mx-4 md:mx-20'>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initially volunteered with Hack for LA&apos;s Civic Tech

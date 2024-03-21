@@ -18,6 +18,7 @@ import {
   personalData,
   portfolioData,
 } from '../data/data';
+import TechThisSite from './components/TechThisSite';
 
 const Page: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const Page: React.FC = () => {
         transition={{ duration: 0.2 }}
         className='px-4 lg:px-8'
       >
+        <TechThisSite />
         <SkipToPortfolioButton />
         <About data={aboutData} />
         <Portfolio data={portfolioData} />
