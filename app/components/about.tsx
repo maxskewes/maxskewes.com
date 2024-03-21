@@ -56,7 +56,7 @@ const About = ({ data }: AboutProps) => {
                 sectors including legal services, real estate, entertainment, and food and beverage
                 sectors, using <b className='text-bluesteel'>ReactJS</b> with{' '}
                 <b className='text-bluesteel'>TypeScript</b> and frameworks including MUI and Chakra
-                UI.',
+                UI.,
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const About = ({ data }: AboutProps) => {
               <p className='pb-2 ml-4'>
                 <b className='text-bluesteel'>Co-founded a non-profit </b>
                 music festival which raised over <b className='text-bluesteel'>$15,000</b> for a
-                Portland-based women’s shelter. I managed web development and promotional
+                Portland-based women&apos;s shelter. I managed web development and promotional
                 initiatives which achieved an <b className='text-bluesteel'>80% annual</b> increase
                 in festival revenue.
               </p>
