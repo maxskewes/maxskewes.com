@@ -5,6 +5,8 @@ import { GiClick } from 'react-icons/gi';
 import { BsLinkedin } from 'react-icons/bs';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import Image from 'next/image';
+import TechBubbleWrapper from './TechBubbleWrapper';
+import TechBubble from './TechBubble';
 
 const RSWvideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,6 +38,18 @@ const RSWvideo = () => {
       <div className='mb-4 flex flex-col justify-center items-center'>
         <h4 className='uppercase text-bluesteel font-semibold text-center'>Resume Scripter</h4>
         <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
+
+        <TechBubbleWrapper>
+          <TechBubble tech={'formik'} />
+          <TechBubble tech={'yup'} />
+          <TechBubble tech={'Chakra UI'} />
+          <TechBubble tech={'wordpress'} />
+          <TechBubble tech={'elementor'} />
+          <TechBubble tech={'node'} />
+          <TechBubble tech={'reactjs'} />
+          <TechBubble tech={'create-react-app'} />
+          <TechBubble tech={'figma'} />
+        </TechBubbleWrapper>
 
         <p className='font-light mx-4 md:mx-20'>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have spent the better part of

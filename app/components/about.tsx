@@ -20,7 +20,7 @@ const About = ({ data }: AboutProps) => {
     <section id='about' className='pt-0'>
       <SectionWrapper title={title}>
         <div className='pb-4 text-zinc-800'>
-          <i className='font-normal text-md text-center text-zinc-800'>I’m a Dev, and I love it.</i>
+          <p>I’m a Dev. I learn languages for a living. And I love it.</p>
           <p className='indent-8'>
             The constant puzzle-solving and continuous learning are what keeps me drawn to this
             ever-evolving field. With several years of experience creating, implementing, and
