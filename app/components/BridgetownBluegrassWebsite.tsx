@@ -40,8 +40,8 @@ const BridgetownBluegrassWebsite = () => {
           <p className='font-normal text-zinc-600 text-center'>
             An annual music event website built with Nextjs, Tailwind CSS, APIs, REST requests
             against IMAP and SMTP servers, Stripe commerce integration, and styled with Chakra UI.
-            Stripe integration allows for direct purchase of tickets and merchandise from the
-            website. I built all front and back end integration through node.js, designed and
+            Eventbrite integration allows external link for purchase of tickets and merchandise from
+            the website. I built all front and back end integration through node.js, designed and
             created all components, graphics, artwork, and layout.
           </p>
         </div>
@@ -49,7 +49,7 @@ const BridgetownBluegrassWebsite = () => {
         <div className='flex-col text-center justify-center items-center'>
           <a
             target='_blank'
-            href={'https://bridgetownbluegrass-com.vercel.app/'}
+            href={'https://bridgetownbluegrass.com/'}
             className='flex flex-col w-full'
           >
             <div className='m-4'>
@@ -58,24 +58,16 @@ const BridgetownBluegrassWebsite = () => {
                 width={300}
                 height={300}
                 className='m-auto'
-                src={'/images/portfolio/bridgetown-thumbnail.png'}
-                alt={'Bridgetown Bluegrass development site'}
-                aria-label={'Bridgetown Bluegrass development site link'}
+                src={'/images/portfolio/bridgetown-site-thumbnail.png'}
+                alt={'Bridgetown Bluegrass website thumbnail image'}
+                aria-label={'Bridgetown Bluegrass site link'}
               />
             </div>
 
-            <div className='flex justify-center items-center text-center mb-2'>
-              <i>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The website is currently under production as we update
-                the merchandise and roster for the 2024 event, as well as integrate Stripe for our
-                commerce purposes. Follow the links below to view the production site.
-              </i>
-            </div>
-
             <div className='flex justify-center items-center text-center'>
-              <i>view development website:</i>
+              <i>website:</i>
               <p className='underline text-base text-zinc-800 mx-2'>
-                https://bridgetownbluegrass-com.vercel.app/
+                https://bridgetownbluegrass.com/
               </p>
             </div>
           </a>
