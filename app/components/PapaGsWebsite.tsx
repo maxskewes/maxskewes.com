@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import TechBubble from './TechBubble';
+import TechBubbleWrapper from './TechBubbleWrapper';
 
 const PapaGsWebsite = () => {
   return (
@@ -11,18 +12,15 @@ const PapaGsWebsite = () => {
         </h4>
         <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
 
-        <div className='flex flex-col justify-center p-2 mb-4'>
-          <i className='text-zinc-600 text-center m-1'>Technologies Used:</i>
-          <div className='flex flex-wrap justify-center items-center min-h-[30px]'>
-            <TechBubble tech={'nextjs'} />
-            <TechBubble tech={'react'} />
-            <TechBubble tech={'axios'} />
-            <TechBubble tech={'rest api'} />
-            <TechBubble tech={'nodemailer'} />
-            <TechBubble tech={'framer-motion'} />
-            <TechBubble tech={'tailwind css'} />
-          </div>
-        </div>
+        <TechBubbleWrapper>
+          <TechBubble tech={'nextjs'} />
+          <TechBubble tech={'react'} />
+          <TechBubble tech={'axios'} />
+          <TechBubble tech={'rest api'} />
+          <TechBubble tech={'nodemailer'} />
+          <TechBubble tech={'framer-motion'} />
+          <TechBubble tech={'tailwind css'} />
+        </TechBubbleWrapper>
 
         <p className='font-light mx-4 md:mx-20'>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate
