@@ -36,8 +36,12 @@ const RSWvideo = () => {
       ) : null}
 
       <div className='mb-4 flex flex-col justify-center items-center'>
-        <h4 className='uppercase text-bluesteel font-semibold text-center'>Resume Scripter</h4>
-        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
+        <h4 className='uppercase text-bluesteel font-semibold text-center'>
+          Resume Scripter
+        </h4>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>
+          &nbsp;
+        </p>
 
         <TechBubbleWrapper>
           <TechBubble tech={'formik'} />
@@ -51,14 +55,16 @@ const RSWvideo = () => {
           <TechBubble tech={'figma'} />
         </TechBubbleWrapper>
 
-        <p className='font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have spent the better part of
-          the last two years developing. The code is proprietary, hence there is no github link to
-          its content. However the above link is hopefully indicative of the depth and complexity of
-          code that this app required. It is currently in use by the organization and is in
-          beta-mode development phase for shopping out, with strong interest from universities,
-          school systems, libraries and government agencies. We are also currently developing its
-          multi-lingual potentials.
+        <p className='text-justify md:text-center font-light mx-4 md:mx-20'>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have
+          spent the better part of the last two years developing. The code is
+          proprietary, hence there is no github link to its content. However the
+          above link is hopefully indicative of the depth and complexity of code
+          that this app required. It is currently in use by the organization and
+          is in beta-mode development phase for shopping out, with strong
+          interest from universities, school systems, libraries and government
+          agencies. We are also currently developing its multi-lingual
+          potentials.
         </p>
       </div>
 
@@ -67,10 +73,10 @@ const RSWvideo = () => {
           <h3 className='font-semibold uppercase text-zinc-800 text-center'>
             RS Works: Resume Building Application
           </h3>
-          <p className='font-normal text-zinc-600 text-center'>
-            An app built for employees of a resume-building agency to aid with the development of
-            highly personalized job-seeker documents; e.g. resumes, cover letters, on-line presence
-            development, etc.
+          <p className='text-justify md:text-center font-normal text-zinc-600'>
+            An app built for employees of a resume-building agency to aid with
+            the development of highly personalized job-seeker documents; e.g.
+            resumes, cover letters, on-line presence development, etc.
           </p>
         </div>
 
@@ -93,11 +99,14 @@ const RSWvideo = () => {
             </button>
             <div>
               <p className='text-zinc-600'>
-                Demo of the app provided by <br /> Resume Scripter founder Andrea Gerson
+                Demo of the app provided by <br /> Resume Scripter founder
+                Andrea Gerson
               </p>
             </div>
           </div>
-          <i>The source code for this project is proprietary, hence unavailable.</i>
+          <i>
+            The source code for this project is proprietary, hence unavailable.
+          </i>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center text-center w-full'>
@@ -111,17 +120,19 @@ const RSWvideo = () => {
             }
             className='font-md italic font-semibold text-violhabbit mx-2'
           >
-            Link to Resume Scripter&apos;s LinkedIn post in reference to my work with them
+            Link to Resume Scripter&apos;s LinkedIn post in reference to my work
+            with them
           </a>
           <HiOutlineExternalLink size='1rem' style={{ color: '#550180' }} />
         </div>
 
-        <a
-          target='_blank'
-          href={'https://resumescripter.com/'}
-          className='underline-offset-4 text-base font-normal text-zinc-800'
-        >
-          https://resumescripter.com/
+        <a target='_blank' href={'https://resumescripter.com/'}>
+          <div className='flex flex-col md:flex-row justify-center items-center text-center'>
+            <i>website:</i>
+            <p className='underline text-zinc-800 mx-2'>
+              https://resumescripter.com/
+            </p>
+          </div>
         </a>
       </div>
     </>

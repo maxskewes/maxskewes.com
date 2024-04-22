@@ -10,7 +10,9 @@ const PapaGsWebsite = () => {
         <h4 className='uppercase text-bluesteel font-semibold text-center'>
           Secret Society Organics
         </h4>
-        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>&nbsp;</p>
+        <p className='text-[.5rem] pr-14 sm:pr-10 lg:pr-14 border-t-4 border-violhabbit'>
+          &nbsp;
+        </p>
 
         <TechBubbleWrapper>
           <TechBubble tech={'nextjs'} />
@@ -22,11 +24,13 @@ const PapaGsWebsite = () => {
           <TechBubble tech={'tailwind css'} />
         </TechBubbleWrapper>
 
-        <p className='font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a product website separate
-          from the parent company. This led to a new logo design with the aesthic expanded to the
-          website, which then required a complete redesign of each variety of the product&apos;s
-          label and the Product Sales&apos; sheet for promotion and distribution.
+        <p className='text-justify md:text-center font-light mx-4 md:mx-20'>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a
+          product website separate from the parent company. This led to a new
+          logo design with the aesthic expanded to the website, which then
+          required a complete redesign of each variety of the product&apos;s
+          label and the Product Sales&apos; sheet for promotion and
+          distribution.
         </p>
       </div>
 
@@ -35,14 +39,18 @@ const PapaGsWebsite = () => {
           <h3 className='font-semibold uppercase text-zinc-800 text-center'>
             Papa G&apos;s Organic Tofu
           </h3>
-          <p className='font-normal text-zinc-600 text-center'>
-            A product website built with Reactjs and Chakra UI. Designed and created all components,
-            graphics, artwork, and layout.
+          <p className='font-normal text-zinc-600 text-justify md:text-center'>
+            A product website built with Reactjs and Chakra UI. Designed and
+            created all components, graphics, artwork, and layout.
           </p>
         </div>
 
         <div className='flex-col text-center justify-center items-center'>
-          <a target='_blank' href={'https://papagstofu.com/'} className='flex flex-col w-full'>
+          <a
+            target='_blank'
+            href={'https://papagstofu.com/'}
+            className='flex flex-col w-full'
+          >
             <div className='m-4'>
               <Image
                 // priority
@@ -54,15 +62,19 @@ const PapaGsWebsite = () => {
                 aria-label={"Papa G's Tofu site link"}
               />
             </div>
-            <div className='flex justify-center items-center text-center'>
+            <div className='flex flex-col md:flex-row justify-center items-center text-center'>
               <i>website:</i>
-              <p className='underline text-base text-zinc-800 mx-2'>https://papagstofu.com/</p>
+              <p className='underline text-zinc-800 mx-2'>
+                https://papagstofu.com/
+              </p>
             </div>
           </a>
           <a target='_blank' href={'https://github.com/maxskewes/papa-gs'}>
-            <div className='flex justify-center items-center text-center'>
+            <div className='flex flex-col md:flex-row justify-center items-center text-center pt-2 md:pt-0'>
               <i>source code:</i>
-              <p className='underline text-base text-zinc-800 mx-2'>github.com/maxskewes/papa-gs</p>
+              <p className='underline text-zinc-800 mx-2'>
+                github.com/maxskewes/papa-gs
+              </p>
             </div>
           </a>
         </div>
