@@ -32,7 +32,7 @@ const Page: React.FC = () => {
         <TechThisSite />
         <SkipToPortfolioButton />
         <About data={aboutData} />
-        <Portfolio data={portfolioData} />
+        {/* <Portfolio data={portfolioData} /> */}
         <GraphicDesign data={graphicDesignData} />
         <Resume />
         <ProfessionalExperience data={professionalExperienceData} />
