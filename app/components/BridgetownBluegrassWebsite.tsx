@@ -26,10 +26,10 @@ const BridgetownBluegrassWebsite = () => {
           <TechBubble tech={'chakra ui'} />
         </TechBubbleWrapper>
 
-        <p className='text-justify md:text-center font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a Portland-based music festival
-          occuring annually that my business partner and I founded and built
-          from the ground up, beginning in 2017.
+        <p className='text-justify md:text-center font-light mx-4 md:mx-20 indent-4 md:indent-0'>
+          This is a Portland-based music festival occuring annually that my
+          business partner and I founded and built from the ground up, beginning
+          in 2017.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ const BridgetownBluegrassWebsite = () => {
           <h3 className='font-semibold uppercase text-zinc-800 text-center '>
             A Bluegrass and Folk Music Festival
           </h3>
-          <div className='font-normal text-zinc-600 text-justify md:text-center'>
+          <div className='font-normal text-zinc-600 text-justify md:text-center indent-4 md:indent-0'>
             <p>
               An annual music event website built with Nextjs, Tailwind CSS,
               APIs, REST requests against IMAP and SMTP servers, Stripe commerce
@@ -83,7 +83,7 @@ const BridgetownBluegrassWebsite = () => {
             <div className='flex flex-col md:flex-row justify-center items-center text-center pt-2 md:pt-0'>
               <i>source code:&nbsp;</i>
               <p className='underline text-zinc-800'>
-              github.com/maxskewes/bridgetownbluegrass.com
+                github.com/maxskewes/bridgetownbluegrass.com
               </p>
             </div>
           </a>

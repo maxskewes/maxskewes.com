@@ -55,16 +55,15 @@ const RSWvideo = () => {
           <TechBubble tech={'figma'} />
         </TechBubbleWrapper>
 
-        <p className='text-justify md:text-center font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the application that I have
-          spent the better part of the last two years developing. The code is
-          proprietary, hence there is no github link to its content. However the
-          above link is hopefully indicative of the depth and complexity of code
-          that this app required. It is currently in use by the organization and
-          is in beta-mode development phase for shopping out, with strong
-          interest from universities, school systems, libraries and government
-          agencies. We are also currently developing its multi-lingual
-          potentials.
+        <p className='text-justify md:text-center md:font-light mx-4 md:mx-20 indent-4 md:indent-0'>
+          This is the application that I have spent the better part of the last
+          two years developing. The code is proprietary, hence there is no
+          github link to its content. However the above link is hopefully
+          indicative of the depth and complexity of code that this app required.
+          It is currently in use by the organization and is in beta-mode
+          development phase for shopping out, with strong interest from
+          universities, school systems, libraries and government agencies. We
+          are also currently developing its multi-lingual potentials.
         </p>
       </div>
 
@@ -73,7 +72,7 @@ const RSWvideo = () => {
           <h3 className='font-semibold uppercase text-zinc-800 text-center'>
             RS Works: Resume Building Application
           </h3>
-          <p className='text-justify md:text-center font-normal text-zinc-600'>
+          <p className='text-justify md:text-center font-normal text-zinc-600 indent-4 md:indent-0'>
             An app built for employees of a resume-building agency to aid with
             the development of highly personalized job-seeker documents; e.g.
             resumes, cover letters, on-line presence development, etc.

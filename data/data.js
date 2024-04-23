@@ -17,23 +17,6 @@ export const aboutData = {
   ],
 };
 
-export const skillsData = {
-  soft: [
-    { icon: '👂🏼', text: 'Active Listening' },
-    { icon: '💬', text: 'Effective Communication' },
-    { icon: '👥', text: 'Collaboration' },
-    { icon: '⽓', text: 'Teamwork' },
-    { icon: '💡', text: 'Creative Problem Solving' },
-  ],
-  hard: [
-    { icon: 'ʦ', text: 'TypeScript' },
-    { icon: '🚀', text: 'React' },
-    { icon: '💾', text: 'SQL' },
-    { icon: '💾', text: 'noSQL' },
-    { icon: '📈', text: 'Data Structures and Algorithms' },
-  ],
-};
-
 export const educationData = {
   title: 'Education',
   education: [
@@ -95,10 +78,10 @@ export const professionalExperienceData = {
       location: 'Portland, OR',
       description:
         'As a Co-Founder of a nonprofit music festival, I oversaw the launch and expansion of events which have showcased the work of over 250 talented artists to date, contributing to the development of an organizational website, social media presence, registration processes, and e-commerce features. My work has led to favorable reviews in regional media outlets, including Willamette Week and multiple regional radio stations and programs, successfully raising over $15,000 for a Portland-based women’s shelter and achieving an 80% increase in festival revenue.',
-      hightlights: [
-        '• Created content to engage broader audiences which led to nearly 250% increase in event attendance in one-year-period.',
-        '• Designed festival posters, promotional videos, pamphlets and merchandise, selling out of limited-edition t-shirts during all events.',
-        '• Trained and supervised over 100 dedicated volunteers to date, overseeing scheduling of shifts and venue walkthroughs.',
+      highlights: [
+        '• Created content to engage broader audiences which led to nearly 250% increase in event attendance in one-year-period.\n',
+        '• Designed festival posters, promotional videos, pamphlets and merchandise, selling out of limited-edition t-shirts during all events.\n',
+        '• Trained and supervised over 100 dedicated volunteers to date, overseeing scheduling of shifts and venue walkthroughs.\n',
       ],
       skills:
         ' Web Applications · REST APIs · Digital Media · People Management · Responsive Web Design · Project Management · Community Organizing · Full-Stack Development',
@@ -110,7 +93,7 @@ export const professionalExperienceData = {
       location: 'Remote (Los Angeles, CA)',
       description:
         'I served as the lead developer throughout the creation of a React application projected to serve over 100,000 volunteers worldwide, utilizing ReactJS with Material-UI framework to realize a Figma design. During this time, I built an online index application uniting civic tech organizations, allowing users to quickly locate and filter organizations and volunteer opportunities based on causes, affiliations, and regions.',
-      hightlights: [
+      highlights: [
         '• Leveraged GitHub open-source communities to make charitable work more visible to potential donors and volunteers, with application currently serving 300+ organizations working on hunger remediation, criminal justice reform, and affordable housing.',
         '• Worked with product managers throughout development of features and improvements, promoting seamless user experiences.',
       ],
@@ -121,7 +104,7 @@ export const professionalExperienceData = {
 };
 
 export const portfolioData = {
-  title: 'App and Website Portfolio',
+  title: 'Portfolio - Websites and Apps',
   cardInfo: [
     // {
     //   cardTitle: 'Resume-Building Application',
@@ -166,39 +149,45 @@ export const graphicDesignData = {
   title: 'Graphic Design',
   examples: [
     {
-      imgTitle: 'evicerated-banjo',
-      imgSrc: '/images/design/evicerated-banjo.png',
+      srcTitle: 'evicerated-banjo',
       imgAlt: 'Block Carving of Evicerated Banjo',
     },
     {
-      imgTitle: 'bbff-tshirt-2022',
-      imgSrc: '/images/design/bbff-tshirt-2022.png',
+      srcTitle: 'bbff-tshirt-2022',
       imgAlt: 'T-shirt Bluegrass Fest 2022',
     },
     {
-      imgTitle: 'scratchdog',
-      imgSrc: '/images/design/scratchdog-tshirt.png',
+      srcTitle: 'scratchdog-tshirt',
       imgAlt: 'Scratchdog Stringband Tshirt design',
     },
     {
-      imgTitle: 'papags-logo',
-      imgSrc: '/images/design/papags-site-logo.png',
+      srcTitle: 'papa-gs-site-logo',
       imgAlt: 'Papa Gs Tofu Website Logo',
     },
     {
-      imgTitle: 'papags-bbq',
-      imgSrc: '/images/design/pg-bbq.png',
+      srcTitle: 'papa-gs-bbq',
       imgAlt: "Papa G's Tofu BBQ Label",
     },
     {
-      imgTitle: 'sherlock-holmes-story-club',
-      imgSrc: '/images/design/sherlock-holmes-story-club.png',
+      srcTitle: 'sherlock-holmes-story-club',
       imgAlt: 'Sherlock Holmes Story Club',
+    },
+    {
+      srcTitle: 'bridgetown-zombie-picks-comic',
+      imgAlt: 'Bridgetown Zombie Banjo Picks',
+    },
+    {
+      srcTitle: 'papa-gs-sales-sheet',
+      imgAlt: 'Papa Gs Sales Sheet',
+    },
+    {
+      srcTitle: 'bull-mountain',
+      imgAlt: 'Bull Mountain T-shirt design',
     },
   ],
 };
 
 export const personalData = {
   title: 'Personal',
-  body: "My primary passion is music, most specifically bluegrass banjo, from which I made the majority of my income before entering web development five years ago. I enjoy wood working, which quickly turned into doing minor work repair work on instruments for my music students before trainsitioning into full-on luthiery: the hand-making of stringed instruments. I tend to focus primarily on banjos, but currently I am building my first Irish bouzouki, one of my favorite instruments to play. Having been given the opportunity to travel to multiple continents playing music, I've toured New Zealand on multiple occasions, spent several months in Uganda as a house band in a local bar, and most recently my bluegrass band was awarded a federal grant issued by the US State Department to tour in eastern Russia. I enjoy teaching others and have taught classes to both individuals and through various colleges and universities. I have always loved experiencing foreign cultures, often an eye-opening and humbling experience, and spent my college years in Cork in the south of Ireland. As part of my degree, I studied Gaeilge, the native Irish language, and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass Festival each year, earning money for homeless shelters and youth music programs. I also posses a strong interest in fermentation science, having spent twelve years as a brewer and cider maker, and enjoy building my own stills for making spirits and tinctures at home. Currently I live with my wife and our two young lads in Portland, the city where I grew up.",
+  body: "My primary enjoyment is derived from music: playing, listening, composing, as well as instrument design and construction.  Having done plenty of repairs on instruments belonging to my bluegrass banjo students, my love for woodworking quickly trainsitioned into luthiery: the hand-making of stringed instruments. Though I predominantly build banjos, I have made a variety of other instruments and am currently constructing my first Irish bouzouki: one of my favorite instruments to play. Music has given me the opportunity to travel to multiple continents to perform as well as to teach; I've toured New Zealand on multiple occasions, spent several months in Uganda as a house band in a local bar, and most recently my bluegrass band was awarded a federal grant issued by the US State Department to tour in eastern Russia. I enjoy teaching others and have taught classes to both individuals and through various colleges and universities. I have always loved experiencing foreign cultures, often an eye-opening and humbling experience, and spent my college years in Cork in the south of Ireland. As part of my degree, I studied Gaeilge, the native Irish language, and love to converse with anyone else who shares this arcane interest. Myself and my colleague run a non-profit that puts on the Bridgetown Bluegrass & Folk Festival each year, earning money to build shelters for those in need as well as fund youth music programs. I also posses a strong interest in fermentation science, having spent twelve years as a brewer and cider maker, and enjoy building stills of my own design for making spirits and tinctures at home. Currently I live with my wife and our two young lads in Portland, Oregon, the city I grew up in.",
 };

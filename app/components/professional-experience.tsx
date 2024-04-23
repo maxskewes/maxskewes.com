@@ -44,11 +44,21 @@ const ProfessionalExperience = ({ data }: ProfessionalExperienceProps) => {
                   {location}
                 </p>
                 <i className='text-base text-zinc-600 font-normal'>{dates}</i>
-                <p className='mt-2'>&nbsp;&nbsp;{description}</p>
+                <p className='mt-2 text-justify indent-4'>{description}</p>
                 {highlights ? <p className='mt-2'>Key Highlights:</p> : null}
-                <p className='pl-2'>{highlights}</p>
+                {highlights ? (
+                  <ul>
+                    {highlights.map((h, i) => {
+                      return (
+                        <li className='indent-4' key={i}>
+                          {h}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                ) : null}
                 <p className='mt-2'>Skills:</p>
-                <p className='pl-2'>{skills}</p>
+                <p className='pl-2 text-center'>{skills}</p>
               </div>
             )
           )}

@@ -24,13 +24,12 @@ const PapaGsWebsite = () => {
           <TechBubble tech={'tailwind css'} />
         </TechBubbleWrapper>
 
-        <p className='text-justify md:text-center font-light mx-4 md:mx-20'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was hired to design and build a
-          product website separate from the parent company. This led to a new
-          logo design with the aesthic expanded to the website, which then
-          required a complete redesign of each variety of the product&apos;s
-          label and the Product Sales&apos; sheet for promotion and
-          distribution.
+        <p className='text-justify md:text-center font-light mx-4 md:mx-20 indent-4 md:indent-0'>
+          I was hired to design and build a product website separate from the
+          parent company. This led to a new logo design with the aesthic
+          expanded to the website, which then required a complete redesign of
+          each variety of the product&apos;s label and the Product Sales&apos;
+          sheet for promotion and distribution.
         </p>
       </div>
 
@@ -39,7 +38,7 @@ const PapaGsWebsite = () => {
           <h3 className='font-semibold uppercase text-zinc-800 text-center'>
             Papa G&apos;s Organic Tofu
           </h3>
-          <p className='font-normal text-zinc-600 text-justify md:text-center'>
+          <p className='font-normal text-zinc-600 text-justify md:text-center indent-4 md:indent-0'>
             A product website built with Reactjs and Chakra UI. Designed and
             created all components, graphics, artwork, and layout.
           </p>

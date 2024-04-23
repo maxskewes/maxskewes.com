@@ -13,7 +13,7 @@ const Personal = ({ data }: PersonalProps) => {
     <section id='personal' className='pb-1'>
       <SectionWrapper title={'Personal'}>
         <div className='ml-4'>
-          <p className='mb-6'>
+          <p className='mb-6 text-justify'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {body}
           </p>
