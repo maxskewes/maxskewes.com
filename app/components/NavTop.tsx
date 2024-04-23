@@ -23,7 +23,10 @@ type MLinkProps = {
 
 const MLink = ({ to, name, children }: MLinkProps) => {
   return (
-    <Link href={to} className='ease-in-out text-white hover:text-bluesteellight py-2'>
+    <Link
+      href={to}
+      className='ease-in-out text-white hover:text-bluesteellight py-2'
+    >
       {children}
       <p className='uppercase'>{name}</p>
     </Link>
@@ -61,34 +64,31 @@ const NavTop = () => {
   return (
     <div className='md:hidden'>
       {scrollPos > 1 ? (
-        <motion.div
-          initial={{ y: 0, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.2 }}
-          id='page-top'
-          className='fixed top-0 h-auto w-full bg-zinc-800 p-4'
-        >
-          <div className={josefin.className}>
-            <div className='flex justify-between items-start pt-1'>
-              <div>
-                <p className='pt-1 text-left uppercase whitespace-nowrap text-white'>
-                  Maxwell Countryman Skewes
-                </p>
-              </div>
-              <div className='sticky'>
-                <SkipToPortfolioButtonMobile />
-              </div>
-              <button
-                onClick={() => setNavOpen(!NavOpen)}
-                className='pt-1 text-white ease-in-out hover:text-bluesteellight'
-              >
-                {NavOpen ? <MdClose /> : <BiMenuAltRight />}
-              </button>
-            </div>
+        <div className='relative'>
+          <div
+            id='page-top'
+            className='fixed top-0 h-auto w-full bg-zinc-800 p-4'
+          >
+            <div className={josefin.className}>
+              <div className='flex justify-between items-start pt-1'>
+                <div>
+                  <p className='pt-1 text-left uppercase whitespace-nowrap text-white'>
+                    Maxwell Countryman Skewes
+                  </p>
+                </div>
 
-            {NavOpen && <LinkBox />}
+                <button
+                  onClick={() => setNavOpen(!NavOpen)}
+                  className='pt-1 text-white ease-in-out hover:text-bluesteellight'
+                >
+                  {NavOpen ? <MdClose /> : <BiMenuAltRight />}
+                </button>
+              </div>
+
+              {NavOpen && <LinkBox />}
+            </div>
           </div>
-        </motion.div>
+        </div>
       ) : (
         <div id='page-top' className='top-0 h-auto w-full bg-zinc-800 p-4'>
           <motion.div
@@ -105,7 +105,9 @@ const NavTop = () => {
                     <p className='text-left'>Skewes</p>
                   </div>
                   <div>
-                    <p className='font-serif text-[12px] font-light pt-2'>maxskewes@gmail.com</p>
+                    <p className='font-serif text-[12px] font-light pt-2'>
+                      maxskewes@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -141,7 +143,10 @@ const NavTop = () => {
               </div>
 
               <div className='w-full flex justify-between'>
-                <button onClick={() => setNavOpen(!NavOpen)} className=' text-zinc-800'>
+                <button
+                  onClick={() => setNavOpen(!NavOpen)}
+                  className=' text-zinc-800'
+                >
                   {NavOpen ? <MdClose /> : <BiMenuAltRight />}
                 </button>
                 <motion.div
