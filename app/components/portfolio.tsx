@@ -4,6 +4,7 @@ import PapaGsWebsite from './PapaGsWebsite';
 import CTI from './CTI';
 import { SectionWrapper } from './SectionWrapper';
 import BridgetownBluegrassWebsite from './BridgetownBluegrassWebsite';
+import BBFF25 from './BBFF25';
 
 type PortfolioProps = {
   data: {
@@ -26,6 +27,9 @@ const Portfolio = ({ data }: PortfolioProps) => {
     <section id='portfolio'>
       <SectionWrapper title={title}>
         <div className='grid gap-4 auto-rows-max'>
+          <div className='mt-2 md:mt-10 mb-20'>
+            <BBFF25 />
+          </div>
           <div className='mt-2 md:mt-10 mb-20'>
             <RSWvideo />
           </div>
